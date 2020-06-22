@@ -1,9 +1,8 @@
-# cloud-extension-html5-sample
+# Managed HTML5 Application Sample
 
 ## Build custom Fiori User Experience
-The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of Helium on Neo to the Multi-Cloud environment.
+The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Cloud Platfrom Neo Environment to the Multi-Cloud environment.
 
-This application also showcases - Connectivity to S/4, ECC and SAP cloud solutions required.
 
 ## Prerequisites
 
