@@ -1,4 +1,11 @@
 # Managed HTML5 Application Sample
+SAP Cloud Platform enables you to access and run HTML5 Applications in a cloud environment without the need to maintain your own runtime infrastructure.
+
+HTML5 Applications consist of static content that runs on a browser. Then you develop your applications - either in SAP Business Application Studio, or in your own IDE (integrated development environment) - and deploy them to the HTML5 Application Repository.
+
+Depending on your backend application setup, you either configure the destinations during development, or define them after deploying the application. Finally, to consume the applications, you can create a site in SAP Cloud Platform Portal, build the URL, and define custom domains.
+
+For more information, please refer [here](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/c1b9d6facfc942e3bca664ae06387e9b.html)
 
 ## Build custom Fiori User Experience
 The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Cloud Platfrom Neo Environment to the Multi-Cloud environment.
@@ -44,12 +51,11 @@ Make sure that the below susciptions are active for your sub account <br/>
 
 
 ### Destination Setup
-1. You have access to SAP Business Application Studio. See Set Up SAP Business Application Studio for Development.
-2. A destination to ES5 is configured in the subaccount from which you accessed the SAP Business Application Studio. See:
-   
-    a. Create an Account on the Gateway Demo System using the steps [here] (https://developers.sap.com/tutorials/gateway-demo-signup.html)
-   
-    b. Create a Destination within the Cloud Foundry Environment using the steps [here] (https://developers.sap.com/tutorials/cp-cf-create-destination.html), and set the ES5 destination properties as follows:
+A destination to ES5 is to be configured in the subaccount from which you will access the SAP Business Application Studio.
+To do this, please follow the steps below:
+
+1. Create an Account on the Gateway Demo System using the steps [here](https://developers.sap.com/tutorials/gateway-demo-signup.html)
+2. Create a Destination within the Cloud Foundry Environment using the steps [here](https://developers.sap.com/tutorials/cp-cf-create-destination.html), and set the ES5 destination properties as follows:
     Common properties
     - Name: ES5
     - Type: HTTP
