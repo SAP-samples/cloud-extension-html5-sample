@@ -1,0 +1,24 @@
+specVersion: '1.0'
+metadata:
+  name: BP
+type: application
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8
+builder:
+  customTasks:
+  - name: webide-extension-task-updateManifestJson
+    afterTask: generateVersionInfo
+    configuration:
+      appFolder: webapp
+      destDir: dist
+  - name: webide-extension-task-resources
+    afterTask: webide-extension-task-updateManifestJson
+    configuration:
+      nameSpace: ns
+  - name: webide-extension-task-copyFile
+    afterTask: webide-extension-task-resources
+    configuration:
+      srcFile: "/xs-app.json"
+      destFile: "/xs-app.json"
+  

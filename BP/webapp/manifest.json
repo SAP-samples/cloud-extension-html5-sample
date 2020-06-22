@@ -1,0 +1,136 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "ns.BP",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "ach": "set-ach",
+    "resources": "resources.json",
+    "dataSources": {
+      "mainService": {
+        "uri": "ES5/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0",
+          "localUri": "localService/metadata.xml"
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "sap-icon://detail-view",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "ns.BP.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.66.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.f": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ns.BP.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false
+        }
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.f.routing.Router",
+        "viewType": "XML",
+        "viewPath": "ns.BP.view",
+        "controlId": "layout",
+        "controlAggregation": "beginColumnPages",
+        "bypassed": {
+          "target": "notFound"
+        },
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "master",
+          "target": "master"
+        },
+        {
+          "pattern": "BusinessPartnerSet/{objectId}",
+          "name": "object",
+          "target": [
+            "master",
+            "object"
+          ]
+        }
+      ],
+      "targets": {
+        "master": {
+          "viewName": "Master",
+          "viewLevel": 1,
+          "viewId": "master"
+        },
+        "object": {
+          "viewName": "Detail",
+          "viewId": "detail",
+          "viewLevel": 1,
+          "controlAggregation": "midColumnPages"
+        },
+        "detailObjectNotFound": {
+          "viewName": "DetailObjectNotFound",
+          "viewId": "detailObjectNotFound",
+          "controlAggregation": "midColumnPages"
+        },
+        "notFound": {
+          "viewName": "NotFound",
+          "viewId": "notFound"
+        }
+      }
+    }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "bp_ServiceManaged"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "xsappname": "cloud-extension-html5",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.BPViewer",
+      "description": "BusinessPartner Role"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "BPViewerRole",
+      "description": "BusinessPartner Role Template",
+      "scope-references": [
+        "$XSAPPNAME.BPViewer"
+      ]
+    }
+  ],
+  "role-collections": [
+        {
+        "name": "BPViewerRC",
+        "description": "BusinessPartner Role Collection",
+        "role-template-references": [
+          "$XSAPPNAME.BPViewerRole"
+            ]
+        }
+    ]
+}
