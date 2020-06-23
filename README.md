@@ -106,8 +106,8 @@ To do this, please follow the steps below:
 Here, we describe the steps to configure a Continuous Integration and Delivery pipeline in the SAP Cloud Platform
 
 ### Steps
-1. Subscribe to the Continuous Integration and Delivery as explained (above)[#subscriptions]
-2. Add the Role Collection "CI CD Service Administrator" as explained (above)[#role-collections]
+1. Subscribe to the Continuous Integration and Delivery as explained [above](#subscriptions)
+2. Add the Role Collection "CI CD Service Administrator" as explained [above](#role-collections)
 3. Fork this repository to your own account. 
 3. Open the application from Subaccount Overview > Subscriptions > Continuous Integration and Delivery > Go to Applicatiion. 
 4. Login to the application using your cloud account credentials
