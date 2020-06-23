@@ -28,8 +28,7 @@ Make sure that the below susciptions are active for your sub account <br/>
  b. Portal <br/>
  
  #### Steps
-1. In the Subaccount Overview page, Expand Security and Click on Trust Configuration
-1.  Click on "Subscriptions"
+1. From the Subaccount Overview page, click on the tab "Subscriptions"
 2.  Search for "Portal"
 2.  Click on "Portal"
 1.  Click on "Subscribe"
