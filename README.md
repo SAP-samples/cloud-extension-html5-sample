@@ -8,7 +8,7 @@ Depending on your backend application setup, you either configure the destinatio
 For more information, please refer [here](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/c1b9d6facfc942e3bca664ae06387e9b.html)
 
 ## Build custom Fiori User Experience
-The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Cloud Platfrom Neo Environment to the Multi-Cloud environment.
+The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Cloud Platform Neo Environment to the Multi-Cloud environment.
 
 
 ## Prerequisites
@@ -23,7 +23,7 @@ Make sure that you have an account with below entitlements for your sub account
 | HTML5 Application                 | app-host   |          2          |
 
 ### Subscriptions
-Make sure that the below susciptions are active for your sub account <br/>
+Make sure that the below subscriptions are active for your sub account <br/>
  a. Business Application Studio <br/>
  b. Portal <br/>
  
@@ -98,7 +98,7 @@ To do this, please follow the steps below:
 12. Run the command - ```mbt build```
 13. Once the build is complete, expand the mta_archives folder in the project root folder.
 18. Right click on the cloud-extension-html5-sample-1.0.0.mtar and select " Deploy MTA Archive"
-19. Now, run the command ```cf html5-list -d -u```. Open the url corresponding to the application.
+19. Now, run the command ```cf html5-list -d -u```. Open the URL corresponding to the application.
 ![BuildAndDeploy](/doc/img/BuildAndDeploy.png)
 
 ## Configure CI/CD for the application (Optional)
@@ -109,7 +109,7 @@ Here, we describe the steps to configure a Continuous Integration and Delivery p
 1. Subscribe to the Continuous Integration and Delivery as explained [above](#subscriptions)
 2. Add the Role Collection "CI CD Service Administrator" as explained [above](#role-collections)
 3. Fork this repository to your own account. 
-3. Open the application from Subaccount Overview > Subscriptions > Continuous Integration and Delivery > Go to Applicatiion. 
+3. Open the application from Subaccount Overview > Subscriptions > Continuous Integration and Delivery > Go to Application. 
 4. Login to the application using your cloud account credentials
 5. Click on the tab 'Credentials' and add the below credentials
   - Github credentials 
@@ -119,7 +119,7 @@ Here, we describe the steps to configure a Continuous Integration and Delivery p
 7. In the next screen, enter the following inputs :
   - Job Name: cloud-extension-html5-sample
   - URL: <enter the url of your forked repository>
-  - Repository credentials : <choose the github credetial created in step 5>
+  - Repository credentials : <choose the github credential created in step 5>
   - Branch: master
   - Add new job for user Input  pipeline:  sap-ui5-cf 
   - Version: latest
@@ -131,13 +131,13 @@ Here, we describe the steps to configure a Continuous Integration and Delivery p
   - Space: <cf space>
   - Credentials: <choose the cloud credential created in step 5>
 8. Click "ADD"
-9. In the pop up, copy the Payload Url and the Secret
+9. In the pop up, copy the Payload URL and the Secret
 10. Open your github repository and click on Settings tab
 11. Click on Hooks to add a webhook to your repository
 12. Click on Add Webhook
   ![Webhook](/doc/img/Webhook.png)
-13. In the next screen, enter the following :
-  - Payload Url  : <enter the payload url from step 9>
+13. In the next screen, enter the following:
+  - Payload URL  : <enter the payload url from step 9>
   - Content Type : 'application/json'
   - Secret       : <enter the secret from step 9>
 
