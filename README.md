@@ -101,48 +101,6 @@ To do this, please follow the steps below:
 19. Now, run the command ```cf html5-list -u -d```. Open the URL corresponding to the application.
 ![BuildAndDeploy](/doc/img/BuildAndDeploy.png)
 
-## Configure CI/CD for the application (Optional)
-
-Here, we describe the steps to configure a Continuous Integration and Delivery pipeline in the SAP Cloud Platform
-
-### Steps
-1. Subscribe to the Continuous Integration and Delivery as explained [above](#subscriptions)
-2. Add the Role Collection "CI CD Service Administrator" as explained [above](#role-collections)
-3. Fork this repository to your own account. 
-3. Open the application from Subaccount Overview > Subscriptions > Continuous Integration and Delivery > Go to Application. 
-4. Login to the application using your cloud account credentials
-5. Click on the tab 'Credentials' and add the below credentials
-  - Github credentials 
-  - Cloud account credentials
- ![CICD-Credentials](/doc/img/CICD-Credentials.png)
-6. Click on the tab Jobs and Click on '+' icon to create a new job.
-7. In the next screen, enter the following inputs :
-  - Job Name: cloud-extension-html5-sample
-  - URL: <enter the url of your forked repository>
-  - Repository credentials : <choose the github credential created in step 5>
-  - Branch: master
-  - Add new job for user Input  pipeline:  sap-ui5-cf 
-  - Build retention: Keep the Logs : 25 days
-  - Check if Build  State to 'ON'
-  - Change the Deploy State  'ON'
-  - API Endpoint: <cf api endpoint of your subaccount>
-  - Org Name: <cf organisation>
-  - Space: <cf space>
-  - Credentials: <choose the cloud credential created in step 5>
-8. Click "ADD"
-9. In the pop up, copy the Payload URL and the Secret
-10. Open your github repository and click on Settings tab
-11. Click on Hooks to add a webhook to your repository
-12. Click on Add Webhook
-  ![Webhook](/doc/img/Webhook.png)
-13. In the next screen, enter the following:
-  - Payload URL  : <enter the payload url from step 9>
-  - Content Type : 'application/json'
-  - Secret       : <enter the secret from step 9>
-
-Now any new commits or PR to this repository will trigger the CI/CD pipeline you have created. To trigger the pipeline manually, go back to the CI/CD pipeline and click on the 'Run' icon as shown below.
-![RunCICD](/doc/img/RunCICD.png)
-
 ## Known Issues
 
 No known issues.
