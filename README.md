@@ -98,7 +98,7 @@ To do this, please follow the steps below:
 12. Run the command - ```mbt build```
 13. Once the build is complete, expand the mta_archives folder in the project root folder.
 18. Right click on the cloud-extension-html5-sample-1.0.0.mtar and select " Deploy MTA Archive"
-19. Now, run the command ```cf html5-list -d -u```. Open the URL corresponding to the application.
+19. Now, run the command ```cf html5-list -u -d```. Open the URL corresponding to the application.
 ![BuildAndDeploy](/doc/img/BuildAndDeploy.png)
 
 ## Configure CI/CD for the application (Optional)
