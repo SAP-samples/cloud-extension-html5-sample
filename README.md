@@ -59,7 +59,7 @@ To do this, please follow the steps below:
     - Name: ES5
     - Type: HTTP
     - Description: ES5
-    - URL: https://sapes5.sapdevcenter.com/sap/opu/odata/iwbep/GWSAMPLE_BASIC
+    - URL: https://sapes5.sapdevcenter.com
     - Proxy Type: Internet
     - Authentication: BasicAuthentication
     - User Name: Your ES5 Gateway user
