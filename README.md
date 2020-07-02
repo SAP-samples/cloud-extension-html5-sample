@@ -1,7 +1,7 @@
 # Managed HTML5 Application Sample
 SAP Cloud Platform enables you to access and run HTML5 Applications in a cloud environment without the need to maintain your own runtime infrastructure.
 
-HTML5 Applications consist of static content that runs on a browser. Then you develop your applications - either in SAP Business Application Studio, or in your own IDE (integrated development environment) - and deploy them to the HTML5 Application Repository.
+HTML5 Applications consist of static content that runs on a browser. You can develop your applications - either in SAP Business Application Studio, or in your own IDE (integrated development environment) - and deploy them to the HTML5 Application Repository.
 
 Depending on your backend application setup, you either configure the destinations during development, or define them after deploying the application. Finally, to consume the applications, you can create a site in SAP Cloud Platform Portal, build the URL, and define custom domains.
 
@@ -122,12 +122,11 @@ Here, we describe the steps to configure a Continuous Integration and Delivery p
   - Repository credentials : <choose the github credential created in step 5>
   - Branch: master
   - Add new job for user Input  pipeline:  sap-ui5-cf 
-  - Version: latest
   - Build retention: Keep the Logs : 25 days
-  - Click on tasks and change Build  State to 'ON'
+  - Check if Build  State to 'ON'
   - Change the Deploy State  'ON'
   - API Endpoint: <cf api endpoint of your subaccount>
-  - Org Name: <cf organisation/subaccount>
+  - Org Name: <cf organisation>
   - Space: <cf space>
   - Credentials: <choose the cloud credential created in step 5>
 8. Click "ADD"
