@@ -6,11 +6,10 @@
    },
    "routes":[
       {
-         "authenticationType":"xsuaa",
+         "authenticationType":"none",
          "csrfProtection":false,
          "source":"^/sap/opu/odata/iwbep/GWSAMPLE_BASIC/",
-         "destination":"ES5",
-         "target":"$1"
+         "destination":"ES5"
       },
       {
          "source":"^(.*)$",

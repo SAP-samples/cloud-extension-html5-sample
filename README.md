@@ -29,11 +29,11 @@ Make sure that the below subscriptions are active for your sub account <br/>
  
  #### Steps
 1. From the Subaccount Overview page, click on the tab "Subscriptions"
-2.  Search for "Portal"
-2.  Click on "Portal"
-1.  Click on "Subscribe"
-2.  Click on your subaccount
-3. Similarly, subscribe to Business Application Studio.
+2. Search for "Portal"
+3. Click on "Portal"
+4. Click on "Subscribe"
+5. Click on your subaccount
+6. Similarly, subscribe to Business Application Studio.
      ![Subscription](/doc/img/Subscription.png)
  
  ### Role Collections
@@ -41,11 +41,11 @@ Make sure that the below subscriptions are active for your sub account <br/>
  
 1. In the Subaccount Overview page, Expand Security and Click on Trust Configuration
 2. Click on "SAP ID Service"
-1.  Enter Email Address and Click on "Show Assignments"
-3. Click on "Add User" to add the user to the SAP ID Service (if user is not already present in the IDP)
-1.  Click on "Assign Role Collection"
-2. Select "Business_Application_Studio_Developer"
-2.  Click on "Assign Role collection"
+3.  Enter Email Address and Click on "Show Assignments"
+4. Click on "Add User" to add the user to the SAP ID Service (if user is not already present in the IDP)
+5.  Click on "Assign Role Collection"
+6. Select "Business_Application_Studio_Developer"
+7.  Click on "Assign Role collection"
     ![AssignRoleCollection](/doc/img/AssignRoleCollection.png)
 
 
@@ -59,7 +59,7 @@ To do this, please follow the steps below:
     - Name: ES5
     - Type: HTTP
     - Description: ES5
-    - URL: https://sapes5.sapdevcenter.com
+    - URL: https://sapes5.sapdevcenter.com:443
     - Proxy Type: Internet
     - Authentication: BasicAuthentication
     - User Name: Your ES5 Gateway user
@@ -81,26 +81,26 @@ To do this, please follow the steps below:
 4. Enter the name of the space and Choose "SAP Fiori" and select "Launchpad Module" from Additional Extensions
     ![BizappDevSpace](/doc/img/BizappDevSpace.png)
 5. Once the devspace is created, open it.
-7. Go to View-> Select "Find Command"
+6. Go to View-> Select "Find Command"
     ![FindCommand](/doc/img/FindCommand.png)
-2. Search for "CF Login"
-3. Select for "CF: Login on to Cloud Foundry"
+7. Search for "CF Login"
+8. Select for "CF: Login on to Cloud Foundry"
     ![CFLoginBizapp](/doc/img/CFLoginBizapp.png)
-4. Enter CF API endpoint
-5. Enter "Email" and "Password" when prompted
-6. Select your org and space to login to Cloud Foundry
-6. Go to View > Find Command
-7. Search for "Clone" and select the command "Git:Clone"
-8. In the pop up, enter the git repository [link](../../)
-9. Once the cloning is complete, you can view the project in 'Explorer'
-10. Go to Terminal > New Terminal
-11. In the terminal window, navigate to the project root folder
-12. Run the command - ```mbt build```
-13. Once the build is complete, expand the mta_archives folder in the project root folder.
-18. Right click on the cloud-extension-html5-sample-1.0.0.mtar and select " Deploy MTA Archive"
-19. Add the role collection "BPViewerRC" to your user using the steps mentioned [above](#role-collections).
-20. Now, run the command ```cf html5-list -u -d```. Open the URL corresponding to the application.
+9. Enter CF API endpoint
+10. Enter "Email" and "Password" when prompted
+11. Select your org and space to login to Cloud Foundry
+12. Go to View > Find Command
+13. Search for "Clone" and select the command "Git:Clone"
+14. In the pop up, enter the git repository [link](../../)
+15. Once the cloning is complete, you can view the project in 'Explorer'
+16. Go to Terminal > New Terminal
+17. In the terminal window, navigate to the project root folder
+18. Run the command - ```mbt build```
+19. Once the build is complete, expand the mta_archives folder in the project root folder.
+20. Right click on the cloud-extension-html5-sample-1.0.0.mtar and select " Deploy MTA Archive"
 ![BuildAndDeploy](/doc/img/BuildAndDeploy.png)
+21. Add the role collection "BPViewerRC" to your user using the steps mentioned [above](#role-collections).
+22. Now, run the command ```cf html5-list -u -d```. Open the URL corresponding to the application.
 
 ## Known Issues
 
@@ -109,3 +109,7 @@ No known issues.
 ## How to Obtain Support
 
 In case you find a bug, or you need additional support, please open an issue here in GitHub.
+
+## License
+
+Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSE) file.
