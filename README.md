@@ -5,9 +5,9 @@ HTML5 Applications consist of static content that runs on a browser. You can dev
 
 Depending on your backend application setup, you either configure the destinations during development, or define them after deploying the application. Finally, to consume the applications, you can create a site in SAP Cloud Platform Portal, build the URL, and define custom domains.
 
-For more information, please refer [here](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/c1b9d6facfc942e3bca664ae06387e9b.html)
+For more information, please refer to the documentation on [SAP Help Portal](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/c1b9d6facfc942e3bca664ae06387e9b.html).
 
-## Build custom Fiori User Experience
+## Build Custom SAP Fiori User Experience
 The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Cloud Platform Neo Environment to the Multi-Cloud environment.
 
 
@@ -73,7 +73,7 @@ To do this, please follow the steps below:
         ![Destination](/doc/img/Destination.png)
     
 
-## Build and Deploy of the application
+## Build and Deploy of the Application
 
 1. Open the Business Application Studio from Subaccount> Subscriptions
 2. Login to the Application using your CF account login credentials
@@ -108,8 +108,8 @@ No known issues.
 
 ## How to Obtain Support
 
-In case you find a bug, or you need additional support, please open an issue here in GitHub.
+In case you find a bug, or you need additional support, please [open an issue](https://github.com/SAP-samples/cloud-extension-html5-sample/issues/new) here in GitHub.
 
 ## License
 
-Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSE) file.
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSE) file.
