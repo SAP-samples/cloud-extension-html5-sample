@@ -1,7 +1,7 @@
 # Mission: Setup for SAP S/4HANA side-by-side UI Extensions on SAP Cloud Platform
 
 The main focus of this mission is to show the full end-to-end setup for a SAP S/4HANA on-premise extension on SAP Cloud Platform (Cloud Foundry) this includes the following steps:
-* Setup o the S/4HANA on-premise system
+* Setup of the S/4HANA on-premise system
 * Setup of the SAP Cloud Platform account and development environment
 * End-to-End Connection setup with Principal Propagation (SSO)
 * DevOps - using SAP Cloud Continuous Integration & Delivery and monitoring
