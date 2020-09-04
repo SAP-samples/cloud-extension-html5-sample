@@ -6,7 +6,6 @@ For running the HTML5 mission you will need the following services in your SAP C
 * SAP Business Application Studio
 * SAP Cloud Portal 
 * SAP HTML5 Application (kernel service - no quota necessary)
-* Destination (minimum 2 quotas)
 * SAP Continuous Integration & Delivery Service (optional)
 
 The entitlement differs for the pricing option of your account:
