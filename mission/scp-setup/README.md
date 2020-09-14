@@ -48,9 +48,9 @@ Before running the booster please check for which regions and infrastructures th
 
 3.  Review the Components that will be installed with the Booster - click Start
     
-    ![Booster Overview](./images/booster3.png)
+    ![Booster Overview](./images/booster33.png)
  
-4.  Check Prerequisites - the Booster checks if you have all the entitlements that are needed to run it. There is only a check for mandatory components. As the "Continous Integration & Delivery service" is optional the Booster will not check for it. If you want to use it, be sure that you have an entitlement for this service.
+4.  Check Prerequisites - the Booster checks if you have all the entitlements that are needed to run it. There is only a check for mandatory components. As the "Continous Integration & Delivery service" is optional, the Booster will not check for it. If you want to use it, be sure that you have an Entitlement for this service.
    
     ![Check Prerequisites](./images/booster4.png)
  
@@ -58,7 +58,7 @@ Before running the booster please check for which regions and infrastructures th
     Here you set the necessary quota for running HTML5 applications on your subaccount.
     For running this mission, below mentioned quota of the services are the minimum requirements, for building additional applications in your subaccount you have to increase the quota accordingly.
 
-    If you haven't entitled the Continous Integration & Delivery service it won't apire in the list. For accounts with the consumption-based model you can delete it, if you don't want to use it.
+    If you do not entitlement for the Continous Integration & Delivery service it will not appear in the list. For accounts with the consumption-based model you can delete it, if you don't want to use it as it is an optional service.
     
     
     ![Booster Overview](./images/booster5a.png)
@@ -78,11 +78,11 @@ Before running the booster please check for which regions and infrastructures th
 
 
 
-7.  Add Users - in this section we can add additional users as administrators and developers for the subaccount. The user who is using the Booster is added automatically
+7.  Add Users - in this section we can add additional users as administrators and developers for the subaccount. The user who is using the Booster is added automatically as "Administrator" and also added as a Security Admin.
     1. Select your user origin 
     2. Add administrator
     3. Add developer
-    4. Press next.
+    4. Press Next.
 
     ![Booster Overview](./images/booster6.png)
 
@@ -113,39 +113,28 @@ In your new subaccount check the following
 
      ![Check account](./images/check-booster4.png)
 
-3. Security - Select "Role Collection" in the Security section. You can see all the role collections for the different services that are created by the Booster. There are two specific collection called **Extension_UX_Administrator** and **Extension_UX_Developer** . Those are the master collections either for admins or developer and contains all the necessary roles which are needed to access the services to build and deploy a HTML5 extension application. If you want to add additional users later, you have to assign those role collection to them.
+3. Security - Select "Role Collection" in the Security section. You can see all the role collections for the different services that are created by the Booster. There are two specific collection called **Extension_UX_Administrator** and **Extension_UX_Developer** . Those are the master collections either for Administrators or Developers and contains all the necessary roles which are needed to access the services to build and deploy a HTML5 extension application. If you want to add additional users later, you have to assign those role collection to them. Click on the role *Extension_UX_Administrator*.
    
      ![Check account](./images/check-booster2.png)
 
-4. Security - Add Portal Admin role
-   
-   The Portal_Admin is not part of the **Extension_UX_Developer** role collection. To administrate the SAP Cloud Portal you have to add this role to your user.
-   1.  Select Security - Trust Configuration
-   2.  Click on the name of your ID Service
-   
-   ![Add Portal_Admin role](./images/portalrole1.png)
-    
-   1. In the Role Collection Assignment enter your email address
-   2. Click on "Show Assignments"
-   3. Then click on "Assign Role Collection"
+4. You can check that all necessary roles already assigned for the Administrator users to access *Business Application Studio*, *Portal* and *Continous Integration & Delivery service*. 
 
-   ![Add Portal_Admin role](./images/portalrole2.png)
+     ![Check account](./images/adminRole.png)
+     
+5. Now click on *Extension_UX_Deverloper* in the previous acreen to see the assigned roles for developer. If you have addtional developers later, then add the developers in this screen by clicking the 'Edit' button and selecting the 'Identity Provider'.
 
-    1. Select the Portal_Admin role collection
-    2. Click on "Assign Role Collection"
+     ![Check account](./images/developerRole.png)
+     
+6. Go back to the Overview of your subaccount.
 
-   ![Add Portal_Admin role](./images/portalrole3.png)
-
-   Go back to the overview of your subaccount
-
-5. Select the "Subscriptions" menu. You should see that the following services have been subscribed
+7. Select the "Subscriptions" menu. You should see that the following services have been subscribed
     * SAP Business Application Studio
     * SAP Cloud Portal 
     * Continuous Integration & Delivery Service (optional)
 
      ![Check account](./images/check-booster3.png)
 
-     Click on "Go to Application" to see if you're able to access the subscriptions.
+8. Click on "Go to Application" to see if you're able to access the subscriptions.
 
 
 ## Summary
