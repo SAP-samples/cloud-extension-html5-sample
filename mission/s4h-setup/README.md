@@ -9,8 +9,8 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
 ## Step-by-Step
 
 ### Activate oData Service
-1. Logon S/4HANA system using SAP GUI with your adminstrator user
-2. Call transaction /IWFND/MAINT_SERVICE
+1. Logon S/4HANA system using SAP GUI with your adminstrator user.
+2. Call transaction /N/IWFND/MAINT_SERVICE.
 3. Click on "Add Service"
 
    ![Add Service](./images/add-service.png)
@@ -22,7 +22,7 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
    ![Add selected Service](./images/add-selected-service.png)
 
 
-5. Check the box of API_BUSINESS_PARTNER_SRV and click on "Add Selected Service"
+5. Check the box of API_BUSINESS_PARTNER and click on "Add Selected Service"
  
    ![Add selected Service](./images/add-selected-service2.png)
 
@@ -34,7 +34,7 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
    
    ![Add service](./images/add-service2.png)
 
-**Result:** The API_BUINESS_PARTNER_SRV is now activated and you can leave the transaction.
+**Result:** The API_BUSINESS_PARTNER is now activated and you can leave the transaction.
 
 ### Create User and assign Roles and Authorization Objects
 
@@ -163,11 +163,13 @@ In this section we generate a custom authorization object which is necessary to 
 
 To see if the setup was done correctly call the Business Partner API with the new user. 
 
-* Call Transaction /IWFND/MAINT_SERVICE
+* Call Transaction /N/IWFND/MAINT_SERVICE
     1. Double-click on ZAPI_BUSINESS_PARTNER
     2. Click on Call Browser
    
     ![Test Bupa](./images/test-bupa1.png)
+    
+    Hint: If you use a CAL system, kindly check and use the relevant IP address instead of the default system host name as the host name has to be resolvable by the browser.
 
 * Enter the credentials of the user we have created. You should then see the structure of the BusinessPartner oData service.
 
