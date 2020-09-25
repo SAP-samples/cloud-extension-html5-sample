@@ -8,7 +8,7 @@ The main focus of this mission is to show the full end-to-end setup for a SAP S/
 
 We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the different SAP Launchpads environments
 
-[Mission in SAP Cloud Platform Discovery Center](https://discovery-center.cloud.sap/protected/index.html#/missiondetail/3239/3325)
+[Mission in SAP Cloud Platform Discovery Center](https://discovery-center.cloud.sap/missiondetail/3239/3325)
 
 
 These are the step-by-step guidelines for running the mission. It is divided in two workstreams:
