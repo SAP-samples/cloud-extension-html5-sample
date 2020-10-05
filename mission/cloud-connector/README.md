@@ -69,14 +69,16 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 
 7. Setup User Interface
    1. Click on “User Interface” tab
-   2. In the UI certificate, click on “Copy System certificate and re-use as UI certificate” icon
-   3. Click on “Restart” cloud connector icon in the header (wait for restart)
+   2. In the UI certificate, click on “Copy System certificate and re-use as UI certificate” icon. In the popup press OK to overwrite the current UI Certificate.
+   3. Click on “Restart" icon in the header and restart the SAP Cloud Connector (wait for restart)
    
      ![Setup PP](./images/CertificateCloudConnector7.png)
 
 [For more details see SAP Help: Setup Trust](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/c84d4d0b12d34890b334998185f49e88.html)
 
 ### **C: Create Trust to SAP Cloud Connector and configure Principal Propagation in the SAP S/4HANA System**
+
+***Hint:** The following screenshots are done with SAP GUI 7.50 - by using SAP GUI 7.60 the usage could differ e.g tick button instead of a continue button etc.*
 
 1. Logon to your SAP S/4HANA with SAP GUI
 2. Call Transaction STRUST
@@ -89,7 +91,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 
 3. Upload Certificate
    1. Under the tab 'File', choose the file path of “sys_Cert.DER” file which you have download from the SAP Cloud Connector System certificate step 3.
-   2. Click “Ok”
+   2. Click “Ok” and confirm
    3. Click on “Add to Certificate List” button
    4. Click on "Save" button
 
@@ -97,7 +99,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 4. Create Certification Rule - call transaction /nCERTRULE
    1. Click on “Display/Change” icon to Edit mode.
    2. Click on “Import certificate” icon next to Subject textbox. Choose the “scc_sample_cert.DER” file which you have downloaded from SAP Cloud Connector Principal propagation tab in step 5. 
-   3. Click on “Rule” button   
+   3. Click on “Rule” button and confirm.   
    ![STRUST](./images/S4PrincipalPropagation2.png)
    
 
@@ -112,7 +114,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 6. Change System Parameter - call transaction /nRZ10
    1. Choose Profile “DEFAULT"
    2. Choose “Extended maintenance” under edit profile
-   3. Click on “Change” button
+   3. Click on “Change” button and press Save in the popup.
       
    ![STRUST](./images/S4PrincipalPropagation3.png)
 
@@ -139,7 +141,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 
      For taking the certificate and profile change effect you have to restart the SAP S/4HANA system. - Call transaction **/nSMICM**    
     
-     1. In the menue go to "Administration"
+     1. In the menu go to "Administration"
      2. Click on "ICM > Hard Shut down > Global"
 
      ![STRUST](./images/S4PrincipalPropagation7.png) 

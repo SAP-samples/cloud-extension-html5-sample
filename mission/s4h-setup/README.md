@@ -8,16 +8,18 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
 
 ## Step-by-Step
 
+***Hint:** The following screenshots are done with SAP GUI 7.50 - by using SAP GUI 7.60 the usage could differ e.g tick button instead of a continue button etc.*
+
 ### Activate oData Service
 1. Logon S/4HANA system using SAP GUI with your adminstrator user.
-2. Call transaction /N/IWFND/MAINT_SERVICE.
+2. Call transaction /n/IWFND/MAINT_SERVICE.
 3. Click on "Add Service"
 
    ![Add Service](./images/add-service.png)
 4. In the Add Service screen enter the following values:
    1. System Alias = LOCAL
    2. Technical Service Name = API_BU*
-   3. Press enter - you should see the API_BUSINESS_PARTNER_SRV in the list box.
+   3. Press enter - you should see the API_BUSINESS_PARTNER in the list box.
    
    ![Add selected Service](./images/add-selected-service.png)
 
@@ -28,7 +30,7 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
 
 6. The "Add Service" screen opens
    1. Specify "Package Assignment” e.g. $TMP by clicking on Local Object
-   2. Enable the checkbox for “Enable oAuth for Service”
+   2. Enable the checkbox for “Enable OAuth for Service”
    3. Click on Continue to activate the changes
    4. Click on Continue to confirm the message box
    
@@ -53,7 +55,7 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
     3.  Set a valid e-mail address. 
         
         ***Important:** this email is the principal for the SSO communication that we will configure in a later section*
-    4. Select the "Logon" tabulator.
+    4. Select the "Logon Data" tabulator.
 
     ![Set Address](./images/MaintainUser1.png)
 
@@ -77,7 +79,7 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
 
 6. Role Selection:
    1. Select the SAP_BR_BUPA_MASTER Specialist role
-   2. Click on enter.
+   2. Click on enter/copy.
    
        ***Hint:** This role is necessary to get access to the Business Partner data and the Business Partner Fiori application*
    
@@ -108,7 +110,7 @@ In this section we generate a custom authorization object which is necessary to 
 
 3.  Choose Template
     1.  Select the Template for Gateway users (/IWFND/RT_GW_USER)
-    2.  Click "Apply Template"
+    2.  Click "Apply Template" and click on "Save"
 
     ![Apply Template](./images/choose_template.png)
 
@@ -138,14 +140,14 @@ In this section we generate a custom authorization object which is necessary to 
 
    ![Object List](./images/object2.png)
 
-9.  Copy the TADIR service to the Menue
+9.  Copy the TADIR service to the Menu and press save.
       
       ![Object](./images/copy-object.png)
 
 10. User Setup
     1.  Save the Authorization Object
     2.  Select the User tabulator
-    3.  Enter or select the user ID
+    3.  Enter or select the user ID you have created in section A
     4.  Click on "User Comparision"
    
     ![User Comparsion](./images/user-comparison.png)

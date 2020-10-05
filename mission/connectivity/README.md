@@ -27,15 +27,15 @@
    ![Create new Subaccount](./images/CCCreateSubaccount.png)
 
 4. Do the following
-   1. Region: Select the region of the API Endpoint of your Subaccount
-   2. Subaccount: Enter the ID of your Subaccount
-   3. Display Name: The name of this connection which is displayed in your SAP Cloud Platform subaccount
-   4. Login E-Mail: Name of the connection user
-   5. Password: Password of the connection user
-   6. Description: Enter a meaningful description 
+   1. *Region:* Select the region of the API Endpoint of your Subaccount
+   2. *Subaccount:* Enter the ID of your Subaccount
+   3. *Display Name:* The name of this connection which is displayed in your SAP Cloud Platform subaccount
+   4. *Subaccount User:* Name of the connection user - for testing you could use your SAP Cloud Platform account user, else you first have to create a specific connection user on your SAP Cloud Platform.
+   5. *Password:* Password of the connection user
+   6. *Description:* Enter a meaningful description 
    7. Click on Save
 
-   ![Add Subaccount](./images/CCDefineSubaccount.png) 
+   ![Add Subaccount](./images/addSubAccount.png) 
 
 5. Cloud to on-premise Setup
    1. In the added Subaccount, select the "Cloud to On-Premise" tabulator.
@@ -112,7 +112,7 @@
    
      ![status](./images/cc-status.png)
 
-11. In the overview of your subaccount you can see the Connectore State to the SAP Cloud Platform
+11. In the overview of your subaccount you can see the Connector State to the SAP Cloud Platform
  
     ![status](./images/cc-status2.png)
 
@@ -155,10 +155,7 @@ With this step the on-premise setup is finished.
 ### **C: Troubleshooting**
 Here are some hints when you face later errors by calling a backend service with Principal Propagation:  
 
-
-
 1. Ensure that you are using the latest version latest version of SAP Cloud Connector and Java VM 
-
 
    ![Troubleshooting](./images/toubleshooting1.png)
 
