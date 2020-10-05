@@ -8,10 +8,11 @@ Depending on your global account, you might see the default identity provider, w
 
 **Persona:** SCP Administrator
 
-
 ## Step-by-Step
 
 An SAML service provider interacts with an SAML 2.0 identity provider to authenticate users signing in by means of a single sign-on (SSO) mechanism. In this scenario, the SAP UAA service (User Account and Authentication Service) acts as a service provider representing a single subaccount. To establish trust between an identity provider and a subaccount, you must provide the SAML details for web-based authentication in the identity provider itself. Administrators must configure trust on both sides, in the subaccount of the service provider and in the SAML identity provider. Here we assume that the customer has purchased a tenant for SAP Cloud Platform Identity Authentication service.
+
+***Hint:** For the automatic trust establishing with Open ID Connect see this [guide](./AutomaticTrust.md).*
 
 ### Register SAP Cloud Platform Subaccount in the Custom SAML 2.0 Identity Provider
 
