@@ -123,24 +123,23 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Platf
     ![Disable DefaultIDP](./images/CustIDP-disableDefaultIDP.png)
 11. Click on Save button.
 
-12. Click on your Custom IDP.
-    
-    ![Role Mapping](./images/CustIDP_RoleMapping1.png)
+12. In the Security Menu select 'Role Collections' and then click on the Extension_UX_Administrator collection.
+   
+   ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
 
-13. Select "Role-Collection Mappings" and click on "New Role Collection Mapping"
-    
-    ![Role Mapping](./images/CustIDP_RoleMapping2.png)
+13. Click on Edit
 
-14. Select the "Extension_UX_Developer" role collection. Set "ExtensionDeveloper" as value and click save.
-    
-    ![Map Extension Developer role](./images/CustIDP_RoleMapping3.png)
+   ![Role Mapping](./images/CustIDP_RoleMapping2a.png)
 
+14. Select User Groups then enter the ExtensionAdministrator as name and select your 'Custom iAS' tenant as Identity Provider. Press Save.
 
-15. Repeat steps 13-14 and map the Extension_UX_Administrator role collection to the ExtensionAdministrator group
+   ![Role Mapping](./images/CustIDP_RoleMapping3a.png)
 
-    ![Map Extension Developer role](./images/CustIDP_RoleMapping4.png)    
+15. Repeat steps 13-14 by selecting the Extension_UX_Developer collection and map it to the ExtensionDeveloper user group.
 
-16. Open the SAP Business Application Studio in Subscriptions and see if your are able to login. (If you have already a open session restart your browser).
+   ![Role Mapping](./images/CustIDP_RoleMapping4a.png)   
+
+16. To test the configuration open the SAP Business Application Studio in Subscriptions and see if your are able to login with your custom IDP. (If you have already a open session restart your browser).
 
 
 ### References

@@ -110,24 +110,23 @@ Establishing the trust between your company's IDP could be done in an automatic 
     ![Disable DefaultIDP](./images/CustIDP-disableDefaultIDP.png)
 5.  Click on Save button.
 
-6.  Click on your Custom IDP.
-    
-    ![Role Mapping](./images/CustIDP_RoleMapping1.png)
+6. In the Security Menu select 'Role Collections' and then click on the Extension_UX_Administrator collection.
+   
+   ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
 
-7.  Select "Role-Collection Mappings" and click on "New Role Collection Mapping"
-    
-    ![Role Mapping](./images/CustIDP_RoleMapping2.png)
+7. Click on Edit
 
-8.  Select the "Extension_UX_Developer" role collection. Set "ExtensionDeveloper" as value and click save.
-    
-    ![Map Extension Developer role](./images/CustIDP_RoleMapping3.png)
+   ![Role Mapping](./images/CustIDP_RoleMapping2a.png)
 
+8. Select User Groups then enter the ExtensionAdministrator as name and select your 'Custom iAS' tenant as Identity Provider. Press Save.
 
-9.  Repeat steps 13-14 and map the Extension_UX_Administrator role collection to the ExtensionAdministrator group
+   ![Role Mapping](./images/CustIDP_RoleMapping3a.png)
 
-    ![Map Extension Developer role](./images/CustIDP_RoleMapping4.png)    
+9. Repeat steps 7-8 by selecting the Extension_UX_Developer collection and map it to the ExtensionDeveloper user group.
 
-10.  Open the SAP Business Application Studio in Subscriptions and see if your are able to login. (If you have already a open session restart your browser).
+   ![Role Mapping](./images/CustIDP_RoleMapping4a.png)   
+
+10. To test the configuration open the SAP Business Application Studio in Subscriptions and see if your are able to login with your custom IDP. (If you have already a open session restart your browser).
 
 
 ### References
