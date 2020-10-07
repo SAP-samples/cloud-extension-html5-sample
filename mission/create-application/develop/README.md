@@ -26,24 +26,25 @@ In this section, we would describe steps to develop a cloud application using SA
    ![Create DevSpace](./images/CreateDevSpace.png)
   
 8. Once the devspace is created, open it.
-9. In the tabs, click on View-> Select “Find Command”.
-10. Search for “CF Login”.
-11. Select for “CF: Login on to Cloud Foundry”.
+9. In the next step, we will login to Cloud Foundry in *Business Application Studio*, so let us copy the needed parameters in a text editor of your choice. 
+10. Switch to the SAP Cloud Platform tab and click on 'Overview' of the sub-account. Copy the API Endpoint and 'Org Name' into a text editor of your choice. 
+
+    ![copy Cloud Data](./images/copyCloudData.png)
+
+11. Choose 'Spaces' and write down the space name as well to a text editor of your choice. 
+
+    ![copy Space Name](./images/copySpaceName.png)
+ 
+12. In the tabs, click on View-> Select “Find Command”.
+13. Search for “CF Login” and select “CF: Login on to Cloud Foundry”.
 
     ![Login to CF](./images/loginToCF.png)
     
-12. Enter CF API endpoint or take the default suggested API endpoint. You can find the API endpoint of your region by logging into your SAP Cloud Platform account and copy the API Endpoint. Also write down the 'Org Name' into a text editor of your choice which is needed for the next step. 
-
-    ![copy Cloud Data](./images/copyCloudData.png)
-    
-13. Choose 'Spaces' and write down the space name to a text editor of your choice. 
-
-    ![copy Space Name](./images/copySpaceName.png)
-     
-14. Enter “Email” and “Password” when prompted.
-15. Select your Cloud Foundry "Org" which you have noted down in step 11. 
-16. Select the space name which you have noted down in step 12. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
-17. Now we have successfully created a Dev workspace and pointed to our desired Cloud Platform "Org" and "Space".
+14. Enter CF API endpoint which you copied in step 10 or take the default suggested API endpoint.     
+15. Enter your cloud platform account “Email” and “Password” when prompted.
+16. Select your Cloud Foundry "Org" which you have noted down in step 10. 
+17. Select the space name which you have noted down in step 11. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
+18. Now we have successfully created a workspace and pointed to our desired Cloud Platform "Org" and "Space".
 
 ### Develop the application from project template
 
@@ -84,13 +85,13 @@ In this section, we would describe steps to develop a cloud application using SA
      - Select drop-down Object Collection to “A_BusinessPartner”.
      - Select drop-down Object Collection ID to “BusinessPartner”.
      - Select drop-down Object Title to “BusinessPartnerFullName”.
-     - Select drop-down Object Numeric Attribute to “Customer”.
-     - Select drop-down Object Unit of Measure to “Supplier”.
+     - Select drop-down Object Numeric Attribute to “Language”.
+     - Select drop-down Object Unit of Measure to “BusinessPartnerCategory”.
      - Select drop-Down Line Item Collection to “to_BusinessPartnerAddress”.
      - Select drop-down Line Item Collection ID to “AddressID”.
-     - Select drop-down Line Item Title to “Full Name”.
-     - Select drop-down Line Item Numeric Attribute to “Country”.
-     - Select drop-down Line Item Unit of Measure to “CityName”.
+     - Select drop-down Line Item Title to “CityName”.
+     - Select drop-down Line Item Numeric Attribute to “CompanyPostalCode”.
+     - Select drop-down Line Item Unit of Measure to “Country”.
      - Click "Next" and "Finish" to finish the project creation.
 
     ![Object Collection](./images/ObjectCollection.png)
@@ -99,5 +100,13 @@ In this section, we would describe steps to develop a cloud application using SA
 
     ![Object Collection](./images/OpenWorkspace.png)
     
+### Optional Step: Adding Internationalization to your project
+
+1. If you want your generated project to have meaningful titles and column names, you can change the default i18n file to any language file you want.
+2. In the opened workspace with your project, navigate to project folder **webapp**, then to folder **i18n** and open the file i18n.properties.
+3. As a sample content, we have provided you a sample i18n.properties in ![Sample i18n](./images/i18n.properties).
+4. Replace the contents of the i18n file with our sample content.
+5. You will see the customized column headers once we test the application in the next step. 
+
 ### Result
 You have now configured a development workspace and created a HTML5 Application successfully.
