@@ -90,17 +90,21 @@ This step describes how to create a Github repository in which you can store the
    ![Git Commit](./images/openCICDService.png)
 
 5. Login to the CI/CD application using the company identity provider account credentials.
-6. Configure credentials for connecting SAP Cloud Platform Continuous Integration and Delivery to other services.
+6. In the next step, we will configure credentials for connecting SAP Cloud Platform Continuous Integration and Delivery to other services like Git and Cloud Accounts.
 
-7. Create Credentials to connect to GitHub to clone the sources. This step is only needed if your GitHub repository is private.
+7. Let us create Credentials to connect to GitHub to clone the sources. This step is only needed if your GitHub repository is private else you can skip this step.
   - Choose the ‘Credentials’ tab and click '+'. For the user name, enter your Github user name. 
   - For 'Type', select 'Basic Authentication'.
   - For 'Password', use the personal access token which you created in the Github in previous step. 
 
      ![Git Commit](./images/gitCredentials.png)
    
-8. In the Credentials tab in SAP Cloud Platform Continuous Integration and Delivery, choose '+' (Create Credentials) to configure credentials of a Cloud Platform user, who has the appropriate permissions. The user must have the Space Developer role and also be a member of the specified Cloud Foundry organization and space. 
-We recommend using a technical user. However, you can use also use your cloud credentials.
+8. In the Credentials tab, choose '+' (Create Credentials) to configure credentials of a Cloud Platform user, who has the appropriate permissions. The user must have the Space Developer role and also be a member of the specified Cloud Foundry organization and space. 
+We recommend using a technical user. However, you can use also use your cloud credentials. 
+  - Enter a name for the cloud credentials, ex: cloud-credentials
+  - Type: Choose 'Basic Authentication'
+  - Username: Enter your SAP Cloud Platform email id
+  - Password: Enter your SAP Cloud Platform user password
 
    ![Cloud Credentials](./images/cloudCredentials.png)
 
