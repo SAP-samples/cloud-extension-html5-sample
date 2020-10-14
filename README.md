@@ -1,4 +1,6 @@
 # Managed HTML5 Application Sample
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-extension-html5-sample)](https://api.reuse.software/info/github.com/SAP-samples/cloud-extension-html5-sample)
+
 SAP Cloud Platform enables you to access and run HTML5 Applications in a cloud environment without the need to maintain your own runtime infrastructure.
 
 HTML5 Applications consist of static content that runs on a browser. You can develop your applications - either in SAP Business Application Studio, or in your own IDE (integrated development environment) - and deploy them to the HTML5 Application Repository.
