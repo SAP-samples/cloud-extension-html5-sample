@@ -104,7 +104,7 @@ In this section, we would describe steps to develop a cloud application using SA
 
 1. If you want your generated project to have meaningful titles and column names, you can change the default i18n file to any language file you want.
 2. In the opened workspace with your project, navigate to project folder **webapp**, then to folder **i18n** and open the file i18n.properties.
-3. As a sample content, we have provided you a sample i18n.properties in ![Sample i18n](./images/i18n.properties).
+3. As a sample content, we have provided you a sample i18n.properties in [Sample i18n](./images/i18n.properties).
 4. Replace the contents of the i18n file with our sample content.
 5. You will see the customized column headers once we test the application in the next step. 
 
