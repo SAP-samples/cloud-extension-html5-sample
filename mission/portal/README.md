@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this section, we would describe steps of how you can add expose your HTML5 application to the Portal application and how you can build a company site.
+In this section, we would describe steps of how you can add your HTML5 application to the Portal and how you can build a company site with the HTML5 application.
 
 **Persona:** Portal Administrator
 
@@ -44,7 +44,7 @@ In this section, we would describe steps of how you can add expose your HTML5 ap
 
 ### Expose HTML5 Applications in Portal
 
-In order that your HTML5 applications are visible to the Portal application, you have to currently add some information to the manifest.json file manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Portal. For more information, check [Expose HTML5 Applications in Portal]([https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
+In order that your HTML5 applications are visible to the Portal application, you have to currently add some information to the manifest.json file manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Portal. For more information, check [Expose HTML5 Applications in Portal](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
 
 
 1. Switch to the browser window with **Business Application Studio** and open the Workspace containing your HTML5 project.
@@ -89,13 +89,15 @@ In order that your HTML5 applications are visible to the Portal application, you
 
    ![create Site](./images/createSite.png)
    
-7. Now note that the portal site is created and click on *Provider Manager* to refresh the list of Applications. 
-
-   ![check Created Site](./images/checkCreatedSite.png)
+7. Now we have created a portal site. In the next step,let us create necessary Groups and Roles needed.
 
 ### Add HTML5 application to necessary Group and Role
   
-1. Now for the company portal site, let us create necessary Groups and Roles needed. Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP Cloud Platform. Then click on *Content Manager* to look and add the HTML5 apps to portal site.
+1. Click on *Provider Manager* to check the Content Providers and to refresh the list of HTML5 Applications. 
+
+   ![check Created Site](./images/checkCreatedSite.png)
+   
+2.  Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP Cloud Platform. This will fetch any new content deployed. Then click on *Content Manager* to look and add the HTML5 apps to portal site.
 
    ![refresh Content](./images/refreshContent.png)
    
@@ -137,7 +139,7 @@ In order that your HTML5 applications are visible to the Portal application, you
    
 11. Check the assigned App to the *Everyone* role and click the Globe icon to go the *Site Directory*.
 
-   ![goto Content Manager](./images/gotoContentManager.png)
+   ![goto Content Manager](./images/gotoSiteDirectory.png)
    
 
 
