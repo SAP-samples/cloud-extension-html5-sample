@@ -32,5 +32,6 @@ Once we have setup the landscape, we can now develop, test and run a Simple UI A
 * [Test the Simple UI Application](./create-application/test/README.md)
 * [Build and Deploy the Application to your SAP Cloud Foundry Account](./create-application/buildDeploy/README.md)
 * [Integrate the Continous Integration & Continous Delivery Service](./ci-cd-service/README.md)
+* [Integrate the Simple UI Application in SAP Cloud Portal](./portal/README.md)
   
 ![Solution Diagram](./images/solution_diagram.png)
