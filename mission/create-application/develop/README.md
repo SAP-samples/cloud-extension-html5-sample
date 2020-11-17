@@ -50,18 +50,20 @@ In this section, we would describe steps to develop a cloud application using SA
 
 1. Click on “Create project from template” in the Welcome page to create the project. Alternatively, Go to View -> Find Command and search for “Create Project”. Select the command “SAP Application Studio: Create project from Template”
 
-    ![Create Project](./images/createProject.png)
+   ![Create Project](./images/createProject.png)
+    
 2. In the New Project Wizard, Select “Fiori Project”. Click "Next"
 
-    ![Choose Template](./images/ChooseTemplate.png)
+   ![Choose Template](./images/ChooseTemplate.png)
 
 3. Select Target Running Environment as “Cloud Foundry”.
 4. Select Template as “SAP Fiori Master Detail Application”. Click "Next".
 
-    ![Choose Template](./images/ChooseTemplate2.png)
+   ![Choose Template](./images/ChooseTemplate2.png)
+   
 5. Enter Project Name as s4-extendui. Click "Next".
     
-    ![Enter Project](./images/EnterProjName.png)
+   ![Enter Project](./images/EnterProjName.png)
 
 6. Choose “Managed by SAP Cloud Platform” as HTML5 Application runtime.
 7. Enter “bpServiceManaged” as Managed service name. Click "Next".

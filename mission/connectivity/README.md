@@ -33,7 +33,8 @@
    4. *Subaccount User:* Name of the connection user - for testing you could use your SAP Cloud Platform account user, else you first have to create a specific connection user on your SAP Cloud Platform.
    5. *Password:* Password of the connection user
    6. *Description:* Enter a meaningful description 
-   7. Click on Save
+   7. *Location ID*: Optional field: If you plan to connect more than one cloud connector to a sub - account, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy). 
+   8. Click on Save
 
    ![Add Subaccount](./images/addSubAccount.png) 
 
@@ -134,6 +135,7 @@ With this step the on-premise setup is finished.
     * "URL" - URL of the Business Partner API that we have exposed in the SAP Cloud Connector =  https://\<virtual host\>:\<virtual port\>/sap/opu/odata/sap/API_BUSINESS_PARTNER
     * Proxy Type: "OnPremise"
     * Authentication: "Principal Propagation"
+    * Location ID: Optional field, you can use this field if you connect more than one cloud connectors to your account. See [Destination Configuration Help page](https://help.sap.com/viewer/6d3eac5a9e3144a7b43932a1078c7628/Cloud/en-US/0a2e5a45d5494ec08318ead2019d54db.html).
      
     Add the following properties by clicking on the "New Property" button:
 
@@ -142,6 +144,7 @@ With this step the on-premise setup is finished.
     * Name: "WebIDEEnabled" - value: "true"
     * Name: "WebIDEAdditionalData" - value: "full_url"
     * Name: "WebIDEUsage" - value: "odata_gen"
+    
 
    ![destination](./images/scp-destination2.png)
 

@@ -132,7 +132,7 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Platf
 
    ![Role Mapping](./images/CustIDP_RoleMapping2a.png)
 
-14. Select User Groups then enter the ExtensionAdministrator as name and select your 'Custom iAS' tenant as Identity Provider. Press Save.
+14. Select User Groups then enter the ExtensionAdministrator as name and select your 'Custom IAS' tenant as Identity Provider. Press Save.
 
    ![Role Mapping](./images/CustIDP_RoleMapping3a.png)
 
