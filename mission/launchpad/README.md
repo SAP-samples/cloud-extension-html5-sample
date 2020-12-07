@@ -1,10 +1,10 @@
-# Publishing your application to a Portal site
+# Publishing your application to SAP Launchpad Site
 
 ## Introduction
 
-In this section, we would describe steps of how you can add your HTML5 application to the Portal and how you can build a company site with the HTML5 application.
+In this section, we would describe steps of how you can add your HTML5 application to the Launchpad and how you can build a company site with the HTML5 application.
 
-**Persona:** Portal Administrator
+**Persona:** Launchpad Administrator
 
 
 ## Step-by-Step
@@ -42,9 +42,9 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 14. Select your Cloud Foundry "Org" which you have noted down in step 11. 
 15. Select the space name which you have noted down in step 12. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
 
-### Expose HTML5 Applications in Portal
+### Expose HTML5 Applications in Launchpad
 
-In order that your HTML5 applications are visible to the Portal application, you have to currently add some information to the manifest.json file manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Portal. For more information, check [Expose HTML5 Applications in Portal](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
+In order that your HTML5 applications are visible to the Launchpad application, you have to currently add some information to the manifest.json file manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Launchpad. For more information, check [Expose HTML5 Applications in Launchpad](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
 
 
 1. Switch to the browser window with **Business Application Studio** and open the Workspace containing your HTML5 project.
@@ -70,26 +70,26 @@ In order that your HTML5 applications are visible to the Portal application, you
    ```
 4.  You have to now build and deploy the application with these changes, refer to [Build, Deploy and Run HTML5 Application on SAP Cloud Platform](../create-application/buildDeploy/README.md).
 
-### Create a Portal Site
+### Create a Launchpad Site
 
 1. Login to your SAP Cloud Platform account. 
 2. Goto your Subaccount and click on Subscriptions. 
-3. Search for **SAP Business Application Studio** and click on 'Go to Application'. If you are not subcribed, first "Subscribe" to Portal and then open the application. 
+3. Search for **Launchpad** and click on 'Go to Application'. If you are not subcribed, first "Subscribe" to Launchpad and then open the application. 
 
 
-   ![Open Biz App Studio](./images/openPortal.png)
+   ![Open Biz App Studio](./images/openLaunchpad.png)
    
-4. Enter your SAP Cloud Platform Email and password to login to the Portal Application which opens in a separate browser tab.
+4. Enter your SAP Cloud Platform Email and password to login to the Launchpad Application which opens in a separate browser tab.
 
-5. Click on *Create Site* to create a company Portal site.
+5. Click on *Create Site* to create a company Launchpad site.
    
-   ![Open Portal](./images/logintoPortal.png)
+   ![Open Launchpad](./images/logintoLaunchpad.png)
 
-6. Enter a site name, for example : *companyPortalSite* and click *Ok*.
+6. Enter a site name, for example : *companyLaunchpadSite* and click *Ok*.
 
    ![create Site](./images/createSite.png)
    
-7. Now we have created a portal site. In the next step,let us create necessary Groups and Roles needed.
+7. Now we have created a Launchpad site. In the next step,let us create necessary Groups and Roles needed.
 
 ### Add HTML5 application to necessary Group and Role
   
@@ -97,11 +97,11 @@ In order that your HTML5 applications are visible to the Portal application, you
 
    ![check Created Site](./images/checkCreatedSite.png)
    
-2.  Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP Cloud Platform. This will fetch any new content deployed. Then click on *Content Manager* to look and add the HTML5 apps to portal site.
+2.  Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP Cloud Platform. This will fetch any new content deployed. Then click on *Content Manager* to look and add the HTML5 apps to Launchpad site.
 
    ![refresh Content](./images/refreshContent.png)
    
-2. In *Content Manager*, click on *Content Explorer* tab and click on *HTML5 Apps* to see the list of HTML5 applications to be added to the portal site.
+2. In *Content Manager*, click on *Content Explorer* tab and click on *HTML5 Apps* to see the list of HTML5 applications to be added to the Launchpad site.
 
     ![open Content Explorer](./images/openContentExplorer.png)
     
@@ -143,22 +143,22 @@ In order that your HTML5 applications are visible to the Portal application, you
    
 
 
-### Adding HTML5 application to the portal site
+### Adding HTML5 application to the Launchpad site
 
-1. In the Site Manager, you can see the company Portal site, click 'Go to site' to open the site.
+1. In the Site Manager, you can see the company Launchpad site, click 'Go to site' to open the site.
 
    ![open Created Site](./images/openCreatedSite.png)
    
-2. Enter the email and password for opening the portal site.
+2. Enter the email and password for opening the Launchpad site.
    
-3. You can see the *BusinessPartners* application available as a tile in the company portal site. Click on the tile to open the application.
+3. You can see the *BusinessPartners* application available as a tile in the company Launchpad site. Click on the tile to open the application.
 
-   ![check App in Portal](./images/checkAppinPortal.png)
+   ![check App in Launchpad](./images/checkAppinLaunchpad.png)
    
-4. You can see that the 'BusinessPartners' application opens in the portal site successfully as below. 
+4. You can see that the 'BusinessPartners' application opens in the Launchpad site successfully as below. 
 
    ![business Partners App](./images/businessPartnersApp.png)
 
 ### Result
 
-You have successfully created a portal site, giving necessary roles and groups and added your HTML5 application to the portal site.
+You have successfully created a Launchpad site, giving necessary roles and groups and added your HTML5 application to the Launchpad site.
