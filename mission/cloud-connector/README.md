@@ -6,6 +6,7 @@ In this section we setup the SAP Cloud Connector and create the certificate for 
 
 **Persona:** SAP S/4HANA Administrator
 
+
 ## Step-by-step Setup
 ### **A: Installation**
 

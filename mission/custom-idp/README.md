@@ -3,46 +3,47 @@
 
 ## Introduction
 
-In this section, we would configure a custom Identity Provider which has the users/employees to login to the SAP Cloud Platform Account.
+In this section, we would configure a custom Identity Provider which has the users/employees to login to the SAP Business Technology Platform subaccount.
 Depending on your global account, you might see the default identity provider, which is configured automatically. This cannot be deleted, it can only be enabled or disabled. 
 
-**Persona:** SCP Administrator
+**Persona:** Cloud Administrator
+**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 ## Step-by-Step
 
-An SAML service provider interacts with an SAML 2.0 identity provider to authenticate users signing in by means of a single sign-on (SSO) mechanism. In this scenario, the SAP UAA service (User Account and Authentication Service) acts as a service provider representing a single subaccount. To establish trust between an identity provider and a subaccount, you must provide the SAML details for web-based authentication in the identity provider itself. Administrators must configure trust on both sides, in the subaccount of the service provider and in the SAML identity provider. Here we assume that the customer has purchased a tenant for SAP Cloud Platform Identity Authentication service.
+An SAML service provider interacts with an SAML 2.0 identity provider to authenticate users signing in by means of a single sign-on (SSO) mechanism. In this scenario, the SAP UAA service (User Account and Authentication Service) acts as a service provider representing a single subaccount. To establish trust between an identity provider and a subaccount, you must provide the SAML details for web-based authentication in the identity provider itself. Administrators must configure trust on both sides, in the subaccount of the service provider and in the SAML identity provider. Here we assume that the customer has purchased a tenant for SAP Cloud Identity Authentication service.
 
 ***Hint:** For the automatic trust establishing with Open ID Connect see this [guide](./AutomaticTrust.md).*
 
-### Register SAP Cloud Platform Subaccount in the Custom SAML 2.0 Identity Provider
+### Register SAP BTP subaccount in the Custom SAML 2.0 Identity Provider
 
 You can manage trust configurations for a global account only if you have created the global account or if you are an SCP Administrator of the account and you are an Administrator in your company's Identity and Authentication Tenant(SAP IAS).
 
 
 1. Click on your Subaccount.
 2. Click on Security > Trust Configuration from left pane. 
-3. Click on “SAML Metadata” button and download the XML file.
+3. Click on **SAML Metadata** button and download the XML file.
    
    ![Download XML](./images/CustIDP-SAML.png)
    
 4. Now, open your company's Identity and Authentication Tenant (SAP IAS) and login to the same.
-5. Click on “Application & Resources” > Application from left pane.
-6. Click on “+ Add” add application button.
+5. Click on **Application & Resources** > Application from left pane.
+6. Click on **+ Add** add application button.
    
    ![Add App](./images/CustIDP-addApp.png)
    
-7. Enter Name. For eg., “ExtendUI_IDP”
+7. Enter Name. For eg., **ExtendUI_IDP**
 8. Click on Save button.
 
    ![Save App](./images/CustIDP-saveApp.png)
-9. Click on “SAML 2.0 Configuration” under Trust Tab.
+9. Click on **SAML 2.0 Configuration** under Trust Tab.
    
    ![Configure SAML](./images/CustIDP-configureSAML.png)
-10. Click on “Browse” button for Metadata file upload. Choose the metadata xml file downloaded from previous step number 3.
+10. Click on **Browse** button for Metadata file upload. Choose the metadata xml file downloaded from previous step number 3.
 
    ![Save SAML](./images/CustIDP-saveSAML.png)   
 11. Click on Save button.
-12. Click on “Subject Name Identifier”
+12. Click on **Subject Name Identifier**
     
    ![Subject NameID](./images/CustIDP-subjectNameID.png) 
    
@@ -96,9 +97,9 @@ You can manage trust configurations for a global account only if you have create
 21. Repeat steps 19&20 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
 
 ### Establish Trust with a custom SAML 2.0 Identity Provider in your Subaccount
-You have your company's SAML 2.0 identity provider, for example, SAP Cloud Platform Identity Authentication service. This is where your business users are stored. You must establish a trust relationship with your custom SAML 2.0 identity provider in your subaccount in SAP Cloud Platform. The following procedure describes how you establish trust in the SAP Cloud Platform Identity Authentication service.
+You have your company's SAML 2.0 identity provider, for example, SAP Cloud Identity Authentication service. This is where your business users are stored. You must establish a trust relationship with your custom SAML 2.0 identity provider in your subaccount in SAP BTP. The following procedure describes how you establish trust in the SAP Cloud Identity Authentication service.
 
-1. Click on “Application & Resources” > Tenant settings from the left pane.
+1. Click on **Application & Resources** > Tenant settings from the left pane.
 2. Click on SAML 2.0 Configuration.
 
    ![Download SAML](./images/CustIDP-IAS-SAML.png) 
@@ -112,12 +113,12 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Platf
  
    ![Configure Trust](./images/CustIDP-configurenewTrust.png)
    
-6. Click on “Upload” to upload metadata file. Choose the Tenant metadata file downloaded from previous step.
-7. Enter Name. For eg., “ExtendUI-Tenant”
+6. Click on **Upload** to upload metadata file. Choose the Tenant metadata file downloaded from previous step.
+7. Enter Name. For eg., **ExtendUI-Tenant**
    
    ![Configure Trust](./images/CustIDP-configurenewTrust1.png)
    
-8. Click on “Save”.
+8. Click on **Save**.
 9. Now let us disable the default SAP Identity Provider. Click on Edit button of SAP ID Service.
 10. Change Status to Inactive.
 

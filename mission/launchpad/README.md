@@ -6,40 +6,41 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 
 **Persona:** Launchpad Administrator
 
+**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 ## Step-by-Step
 
 ### Open Business Application Studio and login to Cloud Foundry
 
-1. Login to your SAP Cloud Platform account. 
-2. Goto your Subaccount and click on Subscriptions. 
-3. Search for **SAP Business Application Studio** and click on 'Go to Application'. 
+1. Login to your SAP BTP account. 
+2. Goto your subaccount and click on Subscriptions. 
+3. Search for **SAP Business Application Studio** and click on **Go to Application**. 
 
    ![Open Biz App Studio](./images/openBizAppStudio.png)
    
 4. You would be prompted with a login screen of the custom Identity Provider what you have configured.
 5. Login to the Application using your custom Identity Provider credentials.
-6. If your workspace is stopped, 'Start' it and then Open your previously created 'dev' workspace.
+6. If your workspace is stopped, **Start** it and then Open your previously created **dev** workspace.
 
    ![Start Workspace](./images/startWorkspace.png)
    
-7. Check if you are logged in to your Cloud Platform Account from *SAP Business Application Studio*.
+7. Check if you are logged in to your SAP BTP subaccount from *SAP Business Application Studio*.
 8. To login to Cloud Foundry, In the tabs, click on View-> Select “Find Command”.
 9. Search for “CF Login”.
 10. Select for “CF: Login on to Cloud Foundry”.
 
     ![Login to CF](./images/loginToCF.png) 
     
-11. Enter CF API endpoint or take the default suggested API endpoint. You can find the API endpoint of your region by switching into your SAP Cloud Platform account browser window and copy the API Endpoint. Also write down the 'Org Name' into a text editor of your choice which is needed for the next step.  
+11. Enter CF API endpoint or take the default suggested API endpoint. You can find the API endpoint of your region by switching into your SAP BTP subaccount browser window and copy the API Endpoint. Also write down the **Org Name** into a text editor of your choice which is needed for the next step.  
 
     ![copy Cloud Data](./images/copyCloudData.png)
     
-12. Choose 'Spaces' and write down the space name to a text editor of your choice. 
+12. Choose **Spaces** and write down the space name to a text editor of your choice. 
 
     ![copy Space Name](./images/copySpaceName.png)
      
 13. Enter “Email” and “Password” when prompted.
-14. Select your Cloud Foundry "Org" which you have noted down in step 11. 
+14. Select your Cloud Foundry **Org** which you have noted down in step 11. 
 15. Select the space name which you have noted down in step 12. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
 
 ### Expose HTML5 Applications in Launchpad
@@ -49,7 +50,7 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 
 1. Switch to the browser window with **Business Application Studio** and open the Workspace containing your HTML5 project.
 2. Expand your HTML5 project and open the manifest.json file which is under the folder BP -> webapp -> manifest.json 
-3. Open the manifest.json and add the following source code inside the "sap.app" section. Do not forget to add a "," to this "sap.app" section before you add the code below.
+3. Open the manifest.json and add the following source code inside the **sap.app** section. Do not forget to add a **,** to this **sap.app** section before you add the code below.
 
    ```
    "crossNavigation": {
@@ -68,18 +69,18 @@ In order that your HTML5 applications are visible to the Launchpad application, 
             }
         }
    ```
-4.  You have to now build and deploy the application with these changes, refer to [Build, Deploy and Run HTML5 Application on SAP Cloud Platform](../create-application/buildDeploy/README.md).
+4.  You have to now build and deploy the application with these changes, refer to [Build, Deploy and Run HTML5 Application on SAP BTP](../create-application/buildDeploy/README.md).
 
 ### Create a Launchpad Site
 
-1. Login to your SAP Cloud Platform account. 
-2. Goto your Subaccount and click on Subscriptions. 
-3. Search for **Launchpad** and click on 'Go to Application'. If you are not subcribed, first "Subscribe" to Launchpad and then open the application. 
+1. Login to your SAP BTP account. 
+2. Goto your subaccount and click on Subscriptions. 
+3. Search for **Launchpad** and click on **Go to Application**. If you are not subcribed, first **Subscribe** to Launchpad and then open the application. 
 
 
    ![Open Biz App Studio](./images/openLaunchpad.png)
    
-4. Enter your SAP Cloud Platform Email and password to login to the Launchpad Application which opens in a separate browser tab.
+4. Enter your SAP BTP email and password to login to the Launchpad Application which opens in a separate browser tab.
 
 5. Click on *Create Site* to create a company Launchpad site.
    
@@ -97,7 +98,7 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 
    ![check Created Site](./images/checkCreatedSite.png)
    
-2.  Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP Cloud Platform. This will fetch any new content deployed. Then click on *Content Manager* to look and add the HTML5 apps to Launchpad site.
+2.  Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP BTP. This will fetch any new content deployed. Then click on *Content Manager* to look and add the HTML5 apps to Launchpad site.
 
    ![refresh Content](./images/refreshContent.png)
    
@@ -113,15 +114,15 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 
    ![create Group1](./images/createGroup1.png)
    
-5. Enter a group name, for example: 'BusinessPartnersgroup' and a valid description.
+5. Enter a group name, for example: **BusinessPartnersgroup** and a valid description.
 
    ![create Group2](./images/createGroup2.png)
    
-6. Now in the *Assignments* section, search for *BusinessPartner* and add the listed HTML5 app by clicking '+' to the new group. Click 'Save' to save the changes.
+6. Now in the *Assignments* section, search for *BusinessPartner* and add the listed HTML5 app by clicking **+** to the new group. Click **Save** to save the changes.
 
     ![add App to Group](./images/addApptoGroup.png)
 
-7. Check the assigned App to the newly created group and click '<' to go the previous screen.
+7. Check the assigned App to the newly created group and click **<** to go the previous screen.
 
    ![goto Content Manager](./images/gotoContentManager.png)
    
@@ -129,11 +130,11 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 
    ![edit Everyone Role1](./images/editEveryoneRole1.png)
    
-9. Click 'Edit' to edit the *Everyone* role.
+9. Click **Edit** to edit the *Everyone* role.
 
    ![edit Everyone Role2](./images/editEveryoneRole2.png)
    
-10. In the *Assignments* section, search for *BusinessPartner* and add the listed HTML5 app by clicking '+'. Click 'Save' to save the changes.
+10. In the *Assignments* section, search for *BusinessPartner* and add the listed HTML5 app by clicking **+**. Click **Save** to save the changes.
 
    ![edit Everyone Role2](./images/editEveryoneRole3.png)
    
@@ -145,7 +146,7 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 
 ### Adding HTML5 application to the Launchpad site
 
-1. In the Site Manager, you can see the company Launchpad site, click 'Go to site' to open the site.
+1. In the Site Manager, you can see the company Launchpad site, click **Go to site** to open the site.
 
    ![open Created Site](./images/openCreatedSite.png)
    
@@ -155,7 +156,7 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 
    ![check App in Launchpad](./images/checkAppinLaunchpad.png)
    
-4. You can see that the 'BusinessPartners' application opens in the Launchpad site successfully as below. 
+4. You can see that the **BusinessPartners** application opens in the Launchpad site successfully as below. 
 
    ![business Partners App](./images/businessPartnersApp.png)
 

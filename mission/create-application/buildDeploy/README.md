@@ -7,14 +7,16 @@ In this section, we would describe steps to build and deploy your cloud applicat
 
 **Persona:** UX Developer
 
+**Abbreviation:** SAP Business Technology Platform = SAP BTP
+
 
 ## Step-by-Step
 
-### Open Business Application Studio and login to Cloud Foundry
+### Open Business Application Studio and login to your SAP BTP Cloud Foundry subaccount
 
-1. Login to your SAP Cloud Platform account. 
-2. Goto your Subaccount and click on Subscriptions. 
-3. Search for **SAP Business Application Studio** and click on 'Go to Application'. 
+1. Login to your SAP BTP account. 
+2. Goto your subaccount and click on Subscriptions. 
+3. Search for **SAP Business Application Studio** and click on **Go to Application**. 
 
    ![Open Biz App Studio](./images/openBizAppStudio.png)
    
@@ -24,14 +26,14 @@ In this section, we would describe steps to build and deploy your cloud applicat
 
    ![Start Workspace](./images/startWorkspace.png)
    
-7. Check if you are logged in to your Cloud Platform Account from *SAP Business Application Studio*.
-8. To login to Cloud Foundry, In the tabs, click on View-> Select “Find Command”.
-9. Search for “CF Login”.
-10. Select for “CF: Login on to Cloud Foundry”.
+7. Check if you are logged in to your SAP BTP subaccount from **SAP Business Application Studio**.
+8. Login to ypur Cloud Foundry account: In the tabs, click on View-> Select **Find Command**.
+9. Search for **CF Login**.
+10. Select for **CF: Login on to Cloud Foundry**.
 
     ![Login to CF](./images/loginToCF.png) 
     
-11. Enter CF API endpoint or take the default suggested API endpoint. You can find the API endpoint of your region by switching into your SAP Cloud Platform account browser window and copy the API Endpoint. Also write down the 'Org Name' into a text editor of your choice which is needed for the next step.  
+11. Enter CF API endpoint or take the default suggested API endpoint. You can find the API endpoint of your region by switching into your SAP BTP subaccount browser window and copy the API Endpoint. Also write down the 'Org Name' into a text editor of your choice which is needed for the next step.  
 
     ![copy Cloud Data](./images/copyCloudData.png)
     
@@ -39,18 +41,18 @@ In this section, we would describe steps to build and deploy your cloud applicat
 
     ![copy Space Name](./images/copySpaceName.png)
      
-13. Enter “Email” and “Password” when prompted.
-14. Select your Cloud Foundry "Org" which you have noted down in step 11. 
+13. Enter **Email** and **Password** when prompted.
+14. Select your Cloud Foundry **Org** which you have noted down in step 11. 
 15. Select the space name which you have noted down in step 12. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
 
 
 ### Add scopes and role templates to your HTML5 application
  
-1. Click on 'Explorer' and open the xs-app.json file.
+1. Click on **Explorer** and open the xs-app.json file.
 
    ![Open Explorer](./images/openExplorer.png)
    
-2. Add the scope in the xs-app.json file. Go to the xs-app.json add the line in the "routes" section as shown below: "scope": "$XSAPPNAME.BPViewer". Add a "," to the previous line. The block looks like below after adding the line.
+2. Add the scope in the xs-app.json file. Go to the xs-app.json add the line in the **routes** section as shown below: **scope**: **$XSAPPNAME.BPViewer**. Add a **,** to the previous line. The block looks like below after adding the line.
 
    ```
    {
@@ -105,14 +107,14 @@ In this section, we would describe steps to build and deploy your cloud applicat
     ![Build App](./images/BuildApp.png)
     
     
-### Deploy the HTML5 Application to the SAP Cloud Platform
+### Deploy the HTML5 Application to your SAP BTP space
 
-1. If you want to deploy to the SAP Cloud Platform account, make sure you are logged in to your Cloud Platform Account like shown in step above. 
-2. Now let us deploy the built archive. Expand the folder 'mta_archives' and right-click on the built file 'extend-ui-1.0.0.mtar' and select 'Deploy MTA Archive'.
+1. If you want to deploy to a SAP BTP space, make sure you are logged in to your SAP BTP subaccount like shown in step above. 
+2. Now let us deploy the built archive. Expand the folder **mta_archives** and right-click on the built file **extend-ui-1.0.0.mtar** and select **Deploy MTA Archive**.
 
     ![Deploy App](./images/DeployApp.png)
     
-3. You can see the progress of the deployment in a progress task window 'Task: Deploy MTA Archive'.
+3. You can see the progress of the deployment in a progress task window **Task: Deploy MTA Archive**.
    
    ![deploy Mta Progress](./images/deployMtaProgress.png)
      
@@ -125,24 +127,24 @@ In this section, we would describe steps to build and deploy your cloud applicat
 
 ### Assigning role collection to the user
 
-In the previous step, we have added a Role Collection "BPViewerRC" in "xs-security.json" file. So only users who are assigned to this role can view the application. 
+In the previous step, we have added a Role Collection **BPViewerRC** in **xs-security.json** file. So only users who are assigned to this role can view the application. 
 
 
-1. In the SAP Cloud Platform Subaccount Overview page, click on Security> Trust Configuration.
+1. In the SAP BTP subaccount Overview page, click on Security> Trust Configuration.
 2. Click on your company Identity Provider which has the users who will login to the application. 
-3. Click on 'Role Collection Assignment' and Enter your email id and click on “Show Assignments”. This User/Email has to be already configured to your identity provider.
+3. Click on **Role Collection Assignment** and Enter your email id and click on **Show Assignments**. This User/Email has to be already configured to your identity provider.
 
    ![Deploy App](./images/checkRoleColl.png)
    
-4. Click on “Assign Role Collection”.
-5. Select “BPViewerRC” and click on “Assign Role Collection”. (Same as in previous step).
+4. Click on **Assign Role Collection**.
+5. Select **BPViewerRC** and click on **Assign Role Collection**. (Same as in previous step).
 
    ![Assign Role Coll](./images/assignRoleColl.png)
    
 ### Accessing the deployed application
 
    
-1. To open your deployed HTML5 application, switch to the SAP Cloud Platform Sub-account page and choose 'HTML5 Applications'. Click on the application link to open the application. You have also noted this application link in the   earlier step in SAP Business Application Studio with command "cf html5-list -d -u".
+1. To open your deployed HTML5 application, switch to the SAP BTP subaccount page and choose **HTML5 Applications**. Click on the application link to open the application. You have also noted this application link in the  earlier step in SAP Business Application Studio with command **cf html5-list -d -u**.
   
    ![Open Running App](./images/openHTML5App.png)
      
@@ -152,7 +154,7 @@ In the previous step, we have added a Role Collection "BPViewerRC" in "xs-securi
    ![Running App](./images/RunningApp.png)
 
 ### Result
-You have successfully now built and deployed your HTML5 application to the Cloud Platform which fetches you business partner data from the configured backend system. 
+You have successfully now built and deployed your HTML5 application to SAP BTP which fetches you business partner data from the configured backend system. 
 
 ### Related Links
 

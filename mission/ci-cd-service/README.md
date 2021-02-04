@@ -1,10 +1,12 @@
-# Creating a CI/CD pipeline for the cloud application
+# Creating a CI/CD pipeline for your cloud application
 
 ## Introduction
 
 In this section, we describe steps how to configure and run predefined continuous integration and delivery (CI/CD) pipelines that automatically test, build, and deploy your code changes to speed up your development and delivery cycles.
 
-**Persona:** SCP Administrator / SCP Developer
+**Persona:** Cloud Administrator (SAP BTP) / Cloud Application Developer
+
+**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 
 ## Step-by-Step
@@ -38,9 +40,9 @@ This step describes how to create a Github repository in which you can store the
 
 ### Add Git repository to HTML5 project
 
-1. Login to your SAP Cloud Platform account. 
+1. Login to your SAP Business Technology Platform (BTP) account. 
 2. Goto your Subaccount and click on Subscriptions. 
-3. Search for **Business Application Studio** and click on 'Go to Application'. 
+3. Search for **Business Application Studio** and click on **Go to Application**. 
    
    ![Open Biz App Studio](./images/openBizAppStudio.png) 
    
@@ -83,86 +85,115 @@ This step describes how to create a Github repository in which you can store the
   
 ### Continuous Integration and Delivery pipeline setup
 
-1. In your subaccount in the SAP Cloud Platform cockpit, choose Subscriptions.
-2. Search for “Continuous Integration” and Click on “Continuous Integration & Delivery”
-4. Click “Subscribe”, if you have not already subscribed and click on “Go to Application”.
+1. In your subaccount in the SAP BTP cockpit, choose Subscriptions.
+2. Search for **Continuous Integration** and click on **Continuous Integration & Delivery**
+4. Click **Subscribe**, if you have not already subscribed and click on **Go to Application**.
 
    ![Git Commit](./images/openCICDService.png)
 
-5. Login to the CI/CD application using the company identity provider account credentials.
-6. In the next step, we will configure credentials for connecting SAP Cloud Platform Continuous Integration and Delivery to other services like Git and Cloud Accounts.
-
-7. Let us create Credentials to connect to GitHub to clone the sources. This step is only needed if your GitHub repository is private else you can skip this step.
-  - Choose the ‘Credentials’ tab and click '+'. For the user name, enter your Github user name. 
-  - For 'Type', select 'Basic Authentication'.
-  - For 'Password', use the personal access token which you created in the Github in previous step. 
+5. Login to the CI/CD application using the company identity provider account credentials. In the next steps, we will configure credentials and the repository for connecting SAP Continuous Integration and Delivery to other services like GitHub and cloud accounts.
+ 
+6. Let us create Credentials to connect to GitHub to clone the sources. This step is only needed if your GitHub repository is private else you can skip this step.
+  - Choose the **Credentials** tab and then choose **+**. For the user name, enter your Github user name. 
+  - For **Type**, select **Basic Authentication**.
+  - In the **Username** field enter your GitHub user.
+  - For **Password**, use the personal access token which you created in your GitHub account in the previous section. 
 
      ![Git Commit](./images/gitCredentials.png)
-   
-8. In the Credentials tab, choose '+' (Create Credentials) to configure credentials of a Cloud Platform user, who has the appropriate permissions. The user must have the Space Developer role and also be a member of the specified Cloud Foundry organization and space. 
+
+7. In the Credentials tab, choose '+' (Create Credentials) to configure credentials of a SAP BTP user, who has the appropriate permissions. The user must have the Space Developer role and also be a member of the specified Cloud Foundry organization and space. 
 We recommend using a technical user. However, you can use also use your cloud credentials. 
   - Enter a name for the cloud credentials, ex: cloud-credentials
-  - Type: Choose 'Basic Authentication'
-  - Username: Enter your SAP Cloud Platform email id
-  - Password: Enter your SAP Cloud Platform user password
+  - Type: Choose **Basic Authentication**
+  - Username: Enter your **SAP BTP email id**
+  - Password: Enter your **SAP BTP user password**
 
    ![Cloud Credentials](./images/cloudCredentials.png)
 
-9. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. 
-10. Login to your SAP Cloud Platform account and copy the API Endpoint, Org Name into a text editor of your choice.  
+
+    
+8. Select the **Repositories** tab and then choose the **+** icon to create a new repository.
+9. In the **Add Repository** screen enter the following values:
+   * In the **Name** field set the name for the repository for example: cloud-extension-html5-mission
+   * In the **Clone URL** set the clone URL of your GitHub repository
+   * In the **Credentials** field choose the credentials for your GitHub repository which you created in step 6  - it is necessary for private GitHub repositories.
+   * In the **Type** field chosse GitHub   
+   * In the **Weebhook Credential** field choose **\<GENERATE\>**
+   * Keep the **State** field on
+   * **Add** the repository  
+   
+   ![create repository](./images/repository1.png)
+
+10. Choose the **Webhook Data** of the created repository
+
+   ![create repository](./images/repository2.png)
+
+
+11. The Webhook Creation pop-up appears. It provides you with the data you need to define a webhook in GitHub. Copy the **Payload URL** and the **Secret** into a text editor of your choice.
+   
+     ![copy payload URL](./images/repository3.png)
+    
+12. Open your GitHub repository and choose **Settings** --> **Hooks** --> **Add webhook**.
+
+    ![add Web Hook](./images/addWebHook.png)
+
+
+
+13. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the API Endpoint, Org Name into a text editor of your choice.  
 
     ![copy Cloud Data](./images/copyCloudData.png)
     
-11. Choose 'Spaces' and copy the space name to a text editor of your choice. 
+14. Choose 'Spaces' and copy the space name to a text editor of your choice. 
 
     ![copy Space Name](./images/copySpaceName.png)
-    
-12. Choose the 'Jobs' tab and ‘+’ icon to create a new job.
-13. In the next screen, enter the following inputs :
-    
-    - Job Name: For example, 'cloud-extension-html5-sample'
-    - Repository URL: Enter the Github repository URL used in previous step.
-    - Repository credentials : <Choose the GitHub credential you've created in step 7>
-    - Branch: master
-    - Pipeline: sap-ui5-cf
-    - Version: latest or leave the default
-    - Build retention: Keep the Logs : 25 days
-    
-    ![create CICD Job](./images/createCICDJob1.png)
-    
-14. Choose 'Tasks'. By default, the Build task is ‘ON’
-15. Change the Deploy State ‘ON’
-16. For the fields 'API Endpoint', 'Org Name', 'Space', enter the values copied from step 10 and step 11. 
-17. Choose the cloud credentials created in step 8. 
-18. Choose 'Create' to create the Continous Integration Job.
 
-   ![create CICD Job](./images/createCICDJob2.png)
-   
-19. If you create the first job in a repository, the Webhook Creation pop-up appears. It provides you with the data you need to define a webhook in GitHub. Copy the 'Payload URL' and the 'Secret' into a text editor of your choice.
+15. Go back to the SAP Continous Integration and Delivery service. Choose the 'Jobs' tab and ‘+’ icon to create a new job.
 
-    ![copy payload URL](./images/payloadURL.png)
+16. In the next screen, enter the following inputs :
     
-20. Open your Github repository and choose 'Settings' --> 'Hooks' --> 'Add webhook'.
+    - In the **Job Name** field enter a name for example, **cloud-extension-html5-mission**
+    - In the **Repository** field choose the repository you have created in step 9. 
+    - In the **Branch** field enter the branch of your GitHub repository for example **master**
+    - As **Pipeline** choose **SAP Fiori in the Cloud Foundry environment** 
+    - In the **Version** field choose the latest or leave the default
+    - In the **Build Retention** fields keep the default values
+    
+    ![create CICD Job](./images/cicdjob1.png)
+    
+17. In the **Stages** section do the following:
+   - In the **Configuration Mode** field choose **Job Editor**
+   - Choose **ON** for the **State** field in the **Build** section
+   - In the Malware Scan section choose **ON** for the **State** field. This setting checks your
+   -  Also in the **Deploy** section set the **State** field to **ON**.
+   - In the **API Entpoint** and **Org Name** fields set the values from step 12.
+   - In the **Space** field set the value form step 14.
+   - In the **Credential** field select the credentials for your SAP BTP account that you have created in step 7.
+   - Choose **Create** to save your settings
+
+   ![create CICD Job](./images/cicdjob2.png)
+    
+18. Open your GitHub repository and choose **Settings** --> **Hooks** --> **Add webhook**.
 
     ![add Web Hook](./images/addWebHook.png)
     
-21. For the 'Payload URL' and 'Secret', copy and paste the payload URL and secret from step 19.
+19. For the **Payload URL** and **Secret**, copy and paste the payload URL and secret from step 10.
 
     ![add Web Hook](./images/addWebHook1.png)
     
-22. For 'Content Type', select 'application/json' and configure the job to be triggered for every 'Push' event and choose 'Add Webhook'. Now, any new push request to this repository triggers the CI/CD pipeline you have created.
-23. To trigger the pipeline manually, go back to the CI/CD pipeline and choose the ‘Run’ icon as shown below. 
+20. For **Content Type**, select **application/json** and configure the job to be triggered for every **Push** event and choose **Add Webhook**. Now, any new push request to this repository triggers the CI/CD pipeline you have created.
 
-    ![manual trigger Job](./images/manualTriggerJob.png)
+21. To trigger the pipeline manually, select the CI/CD job you have created and choose the **Trigger build** icon as shown below. 
+
+    ![manual trigger Job](./images/triggerbuild.png)
     
-24. You can see the successful log results of 'Build' and 'Deploy'. To view the full log file, click on the respective tile.
+22. You can see the successful log results of **Build** and **Deploy**. To view the full log file, click on the respective tile.
 	
-    ![Build Deploy Results](./images/buildDeployResults.png)   
+    ![Build Deploy Results](./images/buildresult.png)   
 
       
 ### Test automatic triggering of CI/CD job
 
-You've configured a webhook between GitHub and SAP Cloud Platform Continuous Integration and Delivery. Now, whenever you push changes to your GitHub repository, a webhook push event is sent to the service and triggers a build of the connected job.
+You've configured a webhook between GitHub and the SAP Continuous Integration and Delivery service . Now, whenever you push changes to your GitHub repository, a webhook push event is sent to the service and triggers a build of the connected job.
 
 1. To test automatic triggering of the build job, let us change a file and push the changes to the Git repository.
 2. Switch to the 'Business Application Studio' and open the workspace in which the project is created. 
@@ -173,11 +204,11 @@ You've configured a webhook between GitHub and SAP Cloud Platform Continuous Int
    ```
    ![update Project](./images/updateProject.png) 
    
-4. Switch to the 'Source Control: Git" tab and add the 'index.html' file from the unstaged changes to the staged changes by clicking the '+', Enter a commit message for example: "Test Commit". Click the tick symbol as shown in the screenshot to commit the changes.
+4. Switch to the **Source Control: Git** tab and add the **index.html** file from the unstaged changes to the staged changes by clicking the **+**, Enter a commit message for example: "Test Commit". Click the tick symbol as shown in the screenshot to commit the changes.
 
    ![commit Changes](./images/commitChanges.png)
    
-5. Let us push the commit by switching to the "Terminal" window like before and enter the following command, then enter your Git Username and Git Access Token.
+5. Let us push the commit by switching to the **Terminal** window like before and enter the following command, then enter your Git Username and Git Access Token.
 
    ```
    git push -u origin master
@@ -185,16 +216,16 @@ You've configured a webhook between GitHub and SAP Cloud Platform Continuous Int
 
    ![push Commit](./images/pushCommit.png)
    
-6. This Git push to the repository triggers the SAP Cloud Platform Continous Integration and Delivery job. Switch to the browser window "Continous Integration & Delivery" to check the automatically triggered job.
+6. This Git push to the repository triggers the SAP Continous Integration and Delivery job. Switch to the browser window **Continous Integration & Delivery** to check the automatically triggered job.
   
    ![retriggered Build Job](./images/retriggeredBuildJob.png)
-   
+
 ### Result
-You have successfully configured and added a Continous Integration / Continous Delivery pipeline to your cloud application.
+You have successfully configured and added a continous integration / continous delivery pipeline to your cloud application.
 
 ### Related Links
 - [Git Basic Authentication](https://developer.github.com/enterprise/2.20/v3/auth/#basic-authentication)
 - [Deprecating password authentication](https://developer.github.com/changes/2020-02-14-deprecating-password-auth/)
 - [Git - Initializing a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init)
-- [Assigning Roles and Permissions for SAP Cloud Platform Continous Integration and Delivery](https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/c679ebdbe76142bd9fb1071e5e53511d.html)
+- [Assigning Roles and Permissions for SAP Continous Integration and Delivery](https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/c679ebdbe76142bd9fb1071e5e53511d.html)
 

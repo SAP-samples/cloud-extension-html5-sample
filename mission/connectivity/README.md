@@ -4,23 +4,25 @@
 
 **Personas:** In this section the SAP S/4HANA admininstrator and the SAP Cloud administrator have to work together.
 
+**Abbreviation:** SAP Business Technology Platform = SAP BTP
+
 ## Step-by-Step
 
 ### **A: Configure End-to-end Connection in SAP Cloud Connector**
 
 
-1. Get the connection information of your SAP Cloud Platform Subaccount
-   1. Logon to your SAP Cloud Platform Subaccount. From the Overview page we need the following environment info.
+1. Get the connection information of your SAP BTP subaccount
+   1. Logon to your SAP BTB subaccount. From the overview page we need the following environment info.
    2. Subaccount ID
    3. API Endpoint 
    
    ![Get Subaccount](./images/subaccount.png) 
 
-2. (optional) If you don't want to use the SAP Cloud Platform administrator credentials as Communication User you can create a new user with the technical roles for the Cloud Connector. You find more details here:
+2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user you can create a new user with the technical roles for the SAP Cloud Connector. You find more details here:
    
    [Communication User](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/daca64dacc6148fcb5c70ed86082ef91.html) 
 
-3. Create a new Connector to your SAP Cloud Subaccount. 
+3. Create a new Connector to your SAP BTP subaccount. 
    1. Login to the SAP Cloud Connector and select the Connector entry
    2. Click on "+ Add Subaccount"
    
@@ -29,11 +31,11 @@
 4. Do the following
    1. *Region:* Select the region of the API Endpoint of your Subaccount
    2. *Subaccount:* Enter the ID of your Subaccount
-   3. *Display Name:* The name of this connection which is displayed in your SAP Cloud Platform subaccount
-   4. *Subaccount User:* Name of the connection user - for testing you could use your SAP Cloud Platform account user, else you first have to create a specific connection user on your SAP Cloud Platform.
+   3. *Display Name:* The name of this connection which is displayed in your SAP BTP subaccount
+   4. *Subaccount User:* Name of the connection user - for testing you could use your SAP BTP account user, else you first have to create a specific connection user at your SAP BTP account.
    5. *Password:* Password of the connection user
    6. *Description:* Enter a meaningful description 
-   7. *Location ID*: Optional field: If you plan to connect more than one cloud connector to a sub - account, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy). 
+   7. *Location ID*: Optional field: If you plan to connect more than one cloud connector to a subaccount, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy). 
    8. Click on Save
 
    ![Add Subaccount](./images/addSubAccount.png) 
@@ -100,7 +102,7 @@
 
    ***Hint:** You can either add for each oData service a resource or you set the URL path just to /sap/opu/odata/sap then all activated oData services are exposed. For security reasons and to keep a better control for the usage of the oData services the first approach should be preferred.* 
 
-9.  Synchronize your settings with your SAP Cloud Platform account
+9.  Synchronize your settings with your SAP BTP account
     1.  Select the "Principal Propagation" tabulator
     2.  Click on Synchronize
 
@@ -113,16 +115,16 @@
    
      ![status](./images/cc-status.png)
 
-11. In the overview of your subaccount you can see the Connector State to the SAP Cloud Platform
+11. In the overview of your subaccount you can see the Connector State to the SAP BTP
  
     ![status](./images/cc-status2.png)
 
 With this step the on-premise setup is finished.
 
-### **B: Create Destination on SAP Cloud Platform**
+### **B: Create Destination on SAP BTP**
 
 
-1. Login to your SAP Cloud Platform subaccount 
+1. Login to your SAP BTP subaccount 
 2. Create a new Destination
    1. Open the Connectivity entry and select Destination
    2. Click on "New Destination" 
@@ -196,7 +198,7 @@ Additional links:
 * [SAP Cloud Connector: Guided Answers](https://ga.support.sap.com/dtp/viewer/index.html#/tree/2183/actions/27936)
 
 ## Summary
-We have established a secure connection between the SAP S/4HANA on-premise system and the SAP Cloud Platform (SCP) account and we're now ready for building SAP S/4HANA extension on the SCP.
+We have established a secure connection between the SAP S/4HANA on-premise system and the SAP Business Technology Platform (SAP BTP) subaccount and we're now ready for building SAP S/4HANA extension on the SAP BTP.
 
 
 

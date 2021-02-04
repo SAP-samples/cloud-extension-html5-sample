@@ -2,29 +2,31 @@
 
 ## Introduction
 
-In this section, we would configure a custom Identity Provider which has the users/employees to login to the SAP Cloud Platform Account.
+In this section, we would configure a custom Identity Provider which has the users/employees to login to the SAP Business Technology Platform subaccount.
 Depending on your global account, you might see the default identity provider, which is configured automatically. This cannot be deleted, it can only be enabled or disabled. 
 
-**Persona:** SCP Administrator
+**Persona:** Cloud Administrator
+
+**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 
 ## Step-by-Step
 
 Use your SAP Cloud Platform Identity Authentication service tenant as an identity provider or a proxy to your own identity provider hosting your business users. This method avoids the upload and download of SAML meta data by using Open ID Connect (OIDC) to establish trust.
 
-### Register SAP Cloud Platform Subaccount in the Custom Identity Provider
+### Register SAP BTP subaccount in the Custom Identity Provider
 
 You can manage trust configurations for a global account only if you have created the global account or if you are an SCP Administrator of the account and you are an Administrator in your company's Identity and Authentication Tenant(SAP IAS).
 
 Establishing the trust between your company's IDP could be done in an automatic way.
-1. In the Cloud Platform cockpit of your subaccount select Security - Trust Configuration 
-2. Click on 'Establish Trust'
+1. In the  SAP BTP cockpit of your subaccount select Security - Trust Configuration 
+2. Click on **Establish Trust**
 
 ![Establish Trust](./images/CustIDP_AutoTrust.png)
 
 4. In the popup select your Identity provider.
 
-   ***!Hint:** If your Identity provider is not visible then the SAP Cloud Platform Account and the IDP have been created with different Customer IDs - in that case please follow the steps for the manual setup with SAML 2.0: [Link to Manual Setup Guide](./README.md).*
+   ***!Hint:** If your Identity provider is not visible then the SAP BTP account and the IDP have been created with different Customer IDs - in that case please follow the steps for the manual setup with SAML 2.0: [Link to Manual Setup Guide](./README.md).*
 
 5. Click on Establish Trust
 
@@ -59,7 +61,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
     
    ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
-15. Click on Add and select the Groups attribute, set the assertion attribute to "Groups" with capital G. Click on save
+15. Click on Add and select the Groups attribute, set the assertion attribute to **Groups** with capital G. Click on save
  
    ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
 
@@ -68,7 +70,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
    ![User Groups](./images/CustIDP-addGroups.png)
 
 17. Create a Extension Developer group. 
-    * Click on "+ Add"
+    * Click on **+ Add**
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
     * Enter a description
@@ -78,7 +80,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
 
 
 18.  Create a Extension Administrator group.     
-     * Click on "+ Add"
+     * Click on **+ Add**
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
@@ -88,7 +90,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
     * Open User Management
     * Select your user  
     * Click on User Groups
-    * Click on "Assign Groups"
+    * Click on **Assign Groups**
    
    ![User Groups](./images/CustIDP-assertGroup.png)
 
@@ -102,7 +104,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
 
 ### Map IDP Groups with Role Collection
 
-1. Go back to your SAP Cloud Platform subaccount
+1. Go back to your SAP BTP subaccount
 2. Select the Trust Configuration in the Security section.
 3. Now let us disable the default SAP Identity Provider. Click on Edit button of SAP ID Service.
 4.  Change Status to Inactive.
