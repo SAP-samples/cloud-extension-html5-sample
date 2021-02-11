@@ -124,12 +124,12 @@ We recommend using a technical user. However, you can use also use your cloud cr
    
    ![create repository](./images/repository1.png)
 
-10. Choose the **Webhook Data** of the created repository
+10. Select the created repository. On the right top choose the ... and then choose **Webhook Data**.
 
    ![create repository](./images/repository2.png)
 
 
-11. The Webhook Creation pop-up appears. It provides you with the data you need to define a webhook in GitHub. Copy the **Payload URL** and the **Secret** into a text editor of your choice.
+11. The **Webhook Creation** pop-up appears. It provides you with the data you need to define a webhook in GitHub. Copy the **Payload URL** and the **Secret** into a text editor of your choice.
    
      ![copy payload URL](./images/repository3.png)
     
