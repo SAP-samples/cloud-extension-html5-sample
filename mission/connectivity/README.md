@@ -12,7 +12,7 @@
 
 
 1. Get the connection information of your SAP BTP subaccount
-   1. Logon to your SAP BTB subaccount. From the overview page we need the following environment info.
+   1. Logon to your SAP BTP subaccount. From the overview page we need the following environment info.
    2. Subaccount ID
    3. API Endpoint 
    
