@@ -14,21 +14,21 @@ In this section, we would describe steps to develop a cloud application using SA
 ### Setup SAP Business Application Studio with Dev workspace
 
 1. Login to your SAP BTP account. 
-2. Goto your Subaccount and click on Subscriptions. 
-3. Search for **Business Application Studio** and click on **Go to Application**. If you have not yet Enabled this service, click on this tile and click on **Subscribe** and then open the application.
+2. Goto your Subaccount and click **Services** and choose **Instances and Subscriptions**. 
+3. Select the tab **Subscriptions**, in the line with **SAP Business Application Studio**, click the **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Business Application Studio**.
 
    ![Open Biz App Studio](./images/openBizAppStudio.png)
    
 4. You would be prompted with a login screen of the custom Identity Provider what you have configured.
 5. Login to the Application using your custom Identity Provider credentials.
 6. Click on **Create Dev Space**.
-7. Enter the name of the space and Choose **SAP Fiori** and select **Launchpad Module** from Additional SAP Extensions and click on **Create Dev Space**.
+7. Enter the name of the space and Choose **SAP Fiori** and click **Create Dev Space**.
 
    ![Create DevSpace](./images/CreateDevSpace.png)
   
-8. Once the devspace is created, open it.
+8. Once the devspace is created, open the dev space which you created now.
 9. In the next step, we will login to Cloud Foundry in **Business Application Studio**, so let us copy the needed parameters in a text editor of your choice. 
-10. Switch to the SAP BTP tab and click on **Overview** of the subaccount. Copy the API Endpoint and **Org Name** into a text editor of your choice. 
+10. Switch to the SAP BTP tab and click on **Overview** of the subaccount. Copy the **API Endpoint** and **Org Name** into a text editor of your choice. 
 
     ![copy Cloud Data](./images/copyCloudData.png)
 
@@ -49,11 +49,11 @@ In this section, we would describe steps to develop a cloud application using SA
 
 ### Develop the application from project template
 
-1. Click on **Create project from template** in the Welcome page to create the project. Alternatively, Go to View -> Find Command and search for **Create Project**. Select the command **SAP Application Studio: Create project from Template**
+1. Click on **Start from template** in the Welcome page to create the project. Alternatively, Go to View -> Find Command and search for **Create Project**. Select the command **SAP Application Studio: Create project from Template**
 
    ![Create Project](./images/createProject.png)
     
-2. In the New Project Wizard, Select **Fiori Project**. Click **Next**
+2. In the New Project Wizard, Select **SAP Fiori Freestyle Project (Deprecated)**. Click **Start**
 
    ![Choose Template](./images/ChooseTemplate.png)
 
@@ -66,8 +66,8 @@ In this section, we would describe steps to develop a cloud application using SA
     
    ![Enter Project](./images/EnterProjName.png)
 
-6. Choose **Managed by SAP BTP** as HTML5 Application runtime.
-7. Enter **bpServiceManaged” as Managed service name. Click **Next**.
+6. Choose **Managed Approuter** as HTML5 Application runtime.
+7. Enter **bpServiceManaged** as the unique name for the business solution of your project. Click **Next**.
 
     ![Create with Managed](./images/CreateWithServiceManaged.png)
     
