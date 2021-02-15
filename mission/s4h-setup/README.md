@@ -13,7 +13,7 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
 ### Activate oData Service
 1. Logon S/4HANA system using SAP GUI with your adminstrator user.
 2. Call transaction /n/IWFND/MAINT_SERVICE.
-3. Click on "Add Service"
+3. Click on **Add Service**
 
    ![Add Service](./images/add-service.png)
 4. In the Add Service screen enter the following values:
@@ -24,13 +24,13 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
    ![Add selected Service](./images/add-selected-service.png)
 
 
-5. Check the box of API_BUSINESS_PARTNER and click on "Add Selected Service"
+5. Check the box of API_BUSINESS_PARTNER and click on **Add Selected Service**
  
    ![Add selected Service](./images/add-selected-service2.png)
 
-6. The "Add Service" screen opens
-   1. Specify "Package Assignment” e.g. $TMP by clicking on Local Object
-   2. Enable the checkbox for “Enable OAuth for Service”
+6. The **Add Service** screen opens
+   1. Specify **Package Assignment** e.g. $TMP by clicking on Local Object
+   2. Enable the checkbox for **Enable OAuth for Service**
    3. Click on Continue to activate the changes
    4. Click on Continue to confirm the message box
    
@@ -50,12 +50,12 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
     ![Create User](./images/CreateUserS4.png)
  
 2.  Do the following:
-    1.  Select the "Address" tabulator
-    2.  Set the "Last name"
+    1.  Select the **Address** tabulator
+    2.  Set the **Last name**
     3.  Set a valid e-mail address. 
         
         ***Important:** this email is the principal for the SSO communication that we will configure in a later section*
-    4. Select the "Logon Data" tabulator.
+    4. Select the **Logon Data** tabulator.
 
     ![Set Address](./images/MaintainUser1.png)
 
@@ -72,7 +72,7 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
    ![Add Role](./images/add-role.png)
 
 5. Find Role
-   1. In the Single Role field enter "SAP_BR_BUPA*" 
+   1. In the Single Role field enter **SAP_BR_BUPA\*** 
    2. Click on Enter
    
     ![Search Role](./images/SAP-BR-BUPA.png)
@@ -104,17 +104,17 @@ In this section we generate a custom authorization object which is necessary to 
 2. Set Authorizations
    1. Click on Save
    2. Select the Authorization tabulator
-   3. Click the icon at "Change Authorization Data"
+   3. Click the icon at **Change Authorization Data**
    
    ![Authorization](./images/RoleAutha.png)
 
 3.  Choose Template
     1.  Select the Template for Gateway users (/IWFND/RT_GW_USER)
-    2.  Click "Apply Template" and click on "Save"
+    2.  Click **Apply Template** and click on **Save**
 
     ![Apply Template](./images/choose_template.png)
 
-4. Click on Status and then “Execute” to assign the Authorization
+4. Click on Status and then **Execute** to assign the Authorization
 
     ![Assign Authorization](./images/Assign-Authorization.png)
 
@@ -123,13 +123,13 @@ In this section we generate a custom authorization object which is necessary to 
 
 6. Menu
     1. Select the Menu tabulator
-    2. Click on Transaction and select "Authorization Default"
+    2. Click on Transaction and select **Authorization Default**
    
    ![Menu](./images/Authorization_default.png)
 
 7. Set Service
-   1. Select "TADIR Service" as Authorization Default
-   2. Select “IWSG SAP Gateway: Service Groups Metadata” as Object Type
+   1. Select **TADIR Service** as Authorization Default - since SAP S/4HANA version 2020 select **IWSG SAP Gateway: Service Groups Metadata** and skip step 2
+   2. Select **IWSG SAP Gateway: Service Groups Metadata** as Object Type 
    3. Open the Object list
 
    ![Object Type](./images/tadir1.png)
@@ -148,7 +148,7 @@ In this section we generate a custom authorization object which is necessary to 
     1.  Save the Authorization Object
     2.  Select the User tabulator
     3.  Enter or select the user ID you have created in section A
-    4.  Click on "User Comparision"
+    4.  Click on **User Comparision**
    
     ![User Comparsion](./images/user-comparison.png)
   
@@ -159,7 +159,7 @@ In this section we generate a custom authorization object which is necessary to 
 12. Click on Save and you have finished the setup of the user profile     
 
 
-***Hint:** If the Authentication tabulator turns to red, select this tabulator and select again "Change Authorization Data" - click again on Generate (Shift+F5) - Click on Save*
+***Hint:** If the Authentication tabulator turns to red, select this tabulator and select again **Change Authorization Data** - click again on Generate (Shift+F5) - Click on Save*
 
 ### Test the API_BUSINESS_PARTNER_SRV
 
