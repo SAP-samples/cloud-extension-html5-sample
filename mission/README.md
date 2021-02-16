@@ -34,6 +34,6 @@ Once we have setup the landscape, we can now develop, test and run a Simple UI A
 * [Test the Simple UI Application](./create-application/test/README.md)
 * [Build and Deploy the Application to your SAP BTP Cloud Foundry Account](./create-application/buildDeploy/README.md)
 * [Integrate the Continous Integration & Continous Delivery Service](./ci-cd-service/README.md)
-* [Publishing your application to a Portal site](./portal/README.md)
+* [Publishing your application to a SAP Launchpad site](./launchpad/README.md)
   
 ![Solution Diagram](./images/solution_diagram.png)

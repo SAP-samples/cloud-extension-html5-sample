@@ -12,43 +12,20 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 
 ### Open Business Application Studio and login to Cloud Foundry
 
-1. Login to your SAP BTP account. 
-2. Goto your subaccount and click on Subscriptions. 
-3. Search for **SAP Business Application Studio** and click on **Go to Application**. 
-
-   ![Open Biz App Studio](./images/openBizAppStudio.png)
-   
-4. You would be prompted with a login screen of the custom Identity Provider what you have configured.
-5. Login to the Application using your custom Identity Provider credentials.
-6. If your workspace is stopped, **Start** it and then Open your previously created **dev** workspace.
+1. Let us open the service **Business Application Studio** by following the steps described in [Open SAP Business Application Studio](../develop/README.md#open-sap-business-application-studio).
+2. If your workspace is stopped, click **Start** to start your dev space and click the name of your dev space to open your workspace.
 
    ![Start Workspace](./images/startWorkspace.png)
-   
-7. Check if you are logged in to your SAP BTP subaccount from *SAP Business Application Studio*.
-8. To login to Cloud Foundry, In the tabs, click on View-> Select “Find Command”.
-9. Search for “CF Login”.
-10. Select for “CF: Login on to Cloud Foundry”.
 
-    ![Login to CF](./images/loginToCF.png) 
-    
-11. Enter CF API endpoint or take the default suggested API endpoint. You can find the API endpoint of your region by switching into your SAP BTP subaccount browser window and copy the API Endpoint. Also write down the **Org Name** into a text editor of your choice which is needed for the next step.  
+3. Login to Cloud Foundry following the steps described in [Login to CF](../develop/README.md#login-to-cloud-foundry-in-sap-business-application-studio).
 
-    ![copy Cloud Data](./images/copyCloudData.png)
-    
-12. Choose **Spaces** and write down the space name to a text editor of your choice. 
-
-    ![copy Space Name](./images/copySpaceName.png)
-     
-13. Enter “Email” and “Password” when prompted.
-14. Select your Cloud Foundry **Org** which you have noted down in step 11. 
-15. Select the space name which you have noted down in step 12. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
 
 ### Expose HTML5 Applications in Launchpad
 
 In order that your HTML5 applications are visible to the Launchpad application, you have to currently add some information to the manifest.json file manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Launchpad. For more information, check [Expose HTML5 Applications in Launchpad](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
 
 
-1. Switch to the browser window with **Business Application Studio** and open the Workspace containing your HTML5 project.
+1. Switch to the browser window with **SAP Business Application Studio** and open the Workspace containing your HTML5 project.
 2. Expand your HTML5 project and open the manifest.json file which is under the folder BP -> webapp -> manifest.json 
 3. Open the manifest.json and add the following source code inside the **sap.app** section. Do not forget to add a **,** to this **sap.app** section before you add the code below.
 
@@ -74,13 +51,12 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 ### Create a Launchpad Site
 
 1. Login to your SAP BTP account. 
-2. Goto your subaccount and click on Subscriptions. 
-3. Search for **Launchpad** and click on **Go to Application**. If you are not subcribed, first **Subscribe** to Launchpad and then open the application. 
-
+2. Click **Services** and choose **Instances and Subscriptions**. 
+3. Select the tab **Subscriptions**, look for **Launchpad**, click the three dots **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Launchpad** service. 
 
    ![Open Biz App Studio](./images/openLaunchpad.png)
    
-4. Enter your SAP BTP email and password to login to the Launchpad Application which opens in a separate browser tab.
+4. Enter your SAP BTP email and password or your custom Identity Provider credentials to login to the Launchpad Application which opens in a separate browser tab.
 
 5. Click on *Create Site* to create a company Launchpad site.
    

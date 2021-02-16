@@ -14,36 +14,12 @@ In this section, we would describe steps to build and deploy your cloud applicat
 
 ### Open Business Application Studio and login to your SAP BTP Cloud Foundry subaccount
 
-1. Login to your SAP BTP account. 
-2. Goto your subaccount and click on Subscriptions. 
-3. Search for **SAP Business Application Studio** and click on **Go to Application**. 
-
-   ![Open Biz App Studio](./images/openBizAppStudio.png)
-   
-4. You would be prompted with a login screen of the custom Identity Provider what you have configured.
-5. Login to the Application using your custom Identity Provider credentials.
-6. If your workspace is stopped, 'Start' it and then Open your previously created 'dev' workspace.
+1. Let us open the service **Business Application Studio** by following the steps described in [Open SAP Business Application Studio](../develop/README.md#open-sap-business-application-studio).
+2. If your workspace is stopped, click **Start** to start your dev space and click the name of your dev space to open your workspace.
 
    ![Start Workspace](./images/startWorkspace.png)
-   
-7. Check if you are logged in to your SAP BTP subaccount from **SAP Business Application Studio**.
-8. Login to ypur Cloud Foundry account: In the tabs, click on View-> Select **Find Command**.
-9. Search for **CF Login**.
-10. Select for **CF: Login on to Cloud Foundry**.
 
-    ![Login to CF](./images/loginToCF.png) 
-    
-11. Enter CF API endpoint or take the default suggested API endpoint. You can find the API endpoint of your region by switching into your SAP BTP subaccount browser window and copy the API Endpoint. Also write down the 'Org Name' into a text editor of your choice which is needed for the next step.  
-
-    ![copy Cloud Data](./images/copyCloudData.png)
-    
-12. Choose 'Spaces' and write down the space name to a text editor of your choice. 
-
-    ![copy Space Name](./images/copySpaceName.png)
-     
-13. Enter **Email** and **Password** when prompted.
-14. Select your Cloud Foundry **Org** which you have noted down in step 11. 
-15. Select the space name which you have noted down in step 12. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
+3. Login to Cloud Foundry following the steps described in [Login to CF](../develop/README.md#login-to-cloud-foundry-in-sap-business-application-studio).
 
 
 ### Add scopes and role templates to your HTML5 application

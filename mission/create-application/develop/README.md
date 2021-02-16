@@ -15,7 +15,7 @@ In this section, we would describe steps to develop a cloud application using SA
 
 1. Login to your SAP BTP account cockpit. 
 2. Goto your Subaccount and click **Services** and choose **Instances and Subscriptions**. 
-3. Select the tab **Subscriptions**, in the line with **SAP Business Application Studio**, click the three dots **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Business Application Studio**.
+3. Select the tab **Subscriptions**, look for **SAP Business Application Studio**, click the three dots **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Business Application Studio**.
 
    ![Open Biz App Studio](./images/openBizAppStudio.png)
    
