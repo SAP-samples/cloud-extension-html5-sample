@@ -141,7 +141,7 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Ident
 
    ![Role Mapping](./images/CustIDP_RoleMapping4a.png)   
 
-16. To test the configuration open the SAP Business Application Studio in Subscriptions and see if your are able to login with your custom IDP. (If you have already a open session restart your browser).
+16. To test the configuration open the service **SAP Business Application Studio** by clicking **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions** and click **...**, choose **Go to Application**. Now login to **SAP Business Application Studio** by choosing the Custom Identity Provider and login with your custom IDP user.(If you have already a open session restart your browser).
 
 
 ### References

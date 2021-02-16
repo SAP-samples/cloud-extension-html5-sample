@@ -130,9 +130,10 @@ In your new subaccount check the following
 
      ![Check account](./images/developerRole.png)
      
-6. Go back to the Overview of your subaccount.
+6. Go back to the Overview of your BTP subaccount.
 
-7. Select the "Subscriptions" menu. You should see that the following services have been subscribed
+7. Click **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions**, You should see that the following services have been subscribed:
+
     * SAP Business Application Studio
     * Launchpad
     * Continuous Integration & Delivery Service (optional)

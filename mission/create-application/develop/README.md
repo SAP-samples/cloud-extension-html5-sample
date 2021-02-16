@@ -11,41 +11,49 @@ In this section, we would describe steps to develop a cloud application using SA
 ## Step-by-Step
 
 
-### Setup SAP Business Application Studio with Dev workspace
+### Open SAP Business Application Studio 
 
-1. Login to your SAP BTP account. 
+1. Login to your SAP BTP account cockpit. 
 2. Goto your Subaccount and click **Services** and choose **Instances and Subscriptions**. 
-3. Select the tab **Subscriptions**, in the line with **SAP Business Application Studio**, click the **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Business Application Studio**.
+3. Select the tab **Subscriptions**, in the line with **SAP Business Application Studio**, click the three dots **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Business Application Studio**.
 
    ![Open Biz App Studio](./images/openBizAppStudio.png)
    
-4. You would be prompted with a login screen of the custom Identity Provider what you have configured.
-5. Login to the Application using your custom Identity Provider credentials.
-6. Click on **Create Dev Space**.
-7. Enter the name of the space and Choose **SAP Fiori** and click **Create Dev Space**.
+4. You would be prompted with a login screen of either default Identity Provider or custom Identity Provider depending on what you have configured.
+5. Login to the Application using your default/custom Identity Provider credentials.
+
+### Create a Dev workspace
+
+1. Click on **Create Dev Space**.
+2. Enter the name of the space and Choose **SAP Fiori** and click **Create Dev Space**.
 
    ![Create DevSpace](./images/CreateDevSpace.png)
   
-8. Once the devspace is created, open the dev space which you created now.
-9. In the next step, we will login to Cloud Foundry in **Business Application Studio**, so let us copy the needed parameters in a text editor of your choice. 
-10. Switch to the SAP BTP tab and click on **Overview** of the subaccount. Copy the **API Endpoint** and **Org Name** into a text editor of your choice. 
+3. Once the devspace is created, open the dev space which you created now.
+
+
+### Login to Cloud Foundry in SAP Business Application Studio 
+
+1. You have opened **SAP Business Application Studio** and created and opened a Dev workspace.
+2. In the next step, we will login to Cloud Foundry in **SAP Business Application Studio**, so let us copy the needed parameters in a text editor of your choice. 
+3. Switch to the SAP BTP tab and click on **Overview** of the subaccount. Copy the **API Endpoint** and **Org Name** into a text editor of your choice. 
 
     ![copy Cloud Data](./images/copyCloudData.png)
 
-11. Choose **Spaces** and write down the space name as well to a text editor of your choice. 
+4. Choose **Spaces** and write down the space name as well to a text editor of your choice. 
 
     ![copy Space Name](./images/copySpaceName.png)
- 
-12. In the tabs, click on View-> Select **Find Command**.
-13. Search for **CF Login** and select **CF: Login on to Cloud Foundry**.
+
+5. Switch to the tab where you have opened **SAP Business Application Studio**. In the tabs, click on View-> Select **Find Command**.
+6. Search for **CF Login** and select **CF: Login on to Cloud Foundry**.
 
     ![Login to CF](./images/loginToCF.png)
     
-14. Enter CF API endpoint which you copied in step 10 or take the default suggested API endpoint.     
-15. Enter your SAP BTP account **Email** and **Password** when prompted.
-16. Select your Cloud Foundry **Org** which you have noted down in step 10. 
-17. Select the space name which you have noted down in step 11. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
-18. Now we have successfully created a workspace and pointed to our desired SAP BTP **Org** and **Space**.
+7. Enter CF API endpoint which you copied in step 3 or take the default suggested API endpoint.     
+8. Enter your SAP BTP account **Email** and **Password** when prompted.
+9. Select your Cloud Foundry **Org** which you have noted down in step 3. 
+10. Select the space name which you have noted down in step 4. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
+11. Now we have successfully created a workspace and pointed to our desired SAP BTP **Org** and **Space**.
 
 ### Develop the application from project template
 

@@ -14,7 +14,8 @@ In this section, we would describe steps to test the cloud application which was
 
 ### Open Business Application Studio and login to Cloud Foundry
 
-1. Login to your SAP BTP account. 
+1. Let us open the service **Business Application Studio** by following the steps described in [Open Business Application Studio](../develop/README.md).
+2. Login to your SAP BTP account cockpit. 
 2. Goto your subaccount and click on **Subscriptions**. 
 3. Search for **SAP Business Application Studio** and click on **Go to Application**. 
 
