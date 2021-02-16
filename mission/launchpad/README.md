@@ -12,12 +12,12 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 
 ### Open Business Application Studio and login to Cloud Foundry
 
-1. Let us open the service **Business Application Studio** by following the steps described in [Open SAP Business Application Studio](../develop/README.md#open-sap-business-application-studio).
+1. Let us open the service **Business Application Studio** by following the steps described in [Open SAP Business Application Studio](../create-application/develop/README.md#open-sap-business-application-studio).
 2. If your workspace is stopped, click **Start** to start your dev space and click the name of your dev space to open your workspace.
 
    ![Start Workspace](./images/startWorkspace.png)
 
-3. Login to Cloud Foundry following the steps described in [Login to CF](../develop/README.md#login-to-cloud-foundry-in-sap-business-application-studio).
+3. Login to Cloud Foundry following the steps described in [Login to CF](../create-application/develop/README.md#login-to-cloud-foundry-in-sap-business-application-studio).
 
 
 ### Expose HTML5 Applications in Launchpad
