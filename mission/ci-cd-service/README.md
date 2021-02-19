@@ -17,11 +17,11 @@ In this section, we describe steps how to configure and run predefined continuou
 This step describes how to create a Github repository in which you can store the source code of your project. You need to have a user in the public GitHub to execute the steps below.
 
 1. Open your github home page.
-2. Click on *New* in the 'Repository' tab to create a new repository.
+2. Click on *New* in the **Repository** tab to create a new repository.
 
    ![Create Github Repo](./images/newRepository.png)
    
-3. Enter the name of the repository. For example, ‘extendUI’. Do not check the checkbox 'Intialize this repository with a README'.
+3. Enter the name of the repository. For example, **extendUI**. Do not check the checkbox **Intialize this repository with a README**.
 4. Click on create repository.
 
     ![Create Github Repo](./images/createGitRepo.png)
@@ -54,7 +54,7 @@ This step describes how to create a Github repository in which you can store the
    git config --global user.email "you@example.com"
    git config --global user.name "Your Name"
    ```
-8. Now we are initializing a Git repository which can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. To use  other Git commands, you need an initialized repository, so this is usually the first command you'll run in a new project. Let us run the following commands:
+8. Now we are initializing a Git repository which can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. To use  other Git commands, you need an initialized repository, so this is usually the first command you**ll run in a new project. Let us run the following commands:
 
 	```
     git init
@@ -63,7 +63,7 @@ This step describes how to create a Github repository in which you can store the
     ```
    ![Git Commit](./images/commitProject.png)
     
-9. Now take the copied Git Repository URL which you created and copied in step 5 of 'Creating GitHub Repository' and add this URL pointing as the remote repository.
+9. Now take the copied Git Repository URL which you created and copied in step 5 of **Creating GitHub Repository** and add this URL pointing as the remote repository.
 
    ```
    git remote add origin <copied Git repository url.git>
@@ -97,7 +97,7 @@ This step describes how to create a Github repository in which you can store the
 
      ![Git Commit](./images/gitCredentials.png)
 
-6. In the Credentials tab, choose '+' (Create Credentials) to configure credentials of a SAP BTP user, who has the appropriate permissions. The user must have the Space Developer role and also be a member of the specified Cloud Foundry organization and space. 
+6. In the Credentials tab, choose **+** (Create Credentials) to configure credentials of a SAP BTP user, who has the appropriate permissions. The user must have the Space Developer role and also be a member of the specified Cloud Foundry organization and space. 
 We recommend using a technical user. However, you can use also use your cloud credentials. 
   - Enter a name for the cloud credentials, ex: cloud-credentials
   - Type: Choose **Basic Authentication**
@@ -132,17 +132,17 @@ We recommend using a technical user. However, you can use also use your cloud cr
     ![add Web Hook](./images/addWebHook.png)
 
 
-12. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the API Endpoint, Org Name into a text editor of your choice.  
+12. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the **API Endpoint** and **Org Name** into a text editor of your choice.  
 
     ![copy Cloud Data](./images/copyCloudData.png)
     
-13. Choose 'Spaces' and copy the space name to a text editor of your choice. 
+13. Choose **Spaces** and copy the space name to a text editor of your choice. 
 
     ![copy Space Name](./images/copySpaceName.png)
 
-14. Go back to the SAP Continous Integration and Delivery service. Choose the 'Jobs' tab and ‘+’ icon to create a new job.
+14. Go back to the SAP Continous Integration and Delivery service. Choose the **Jobs** tab and **+** icon to create a new job.
 
-15. In the next screen, enter the following inputs :
+15. In the **Create Job** screen, enter the following inputs :
     
     - In the **Job Name** field enter a name for example, **cloud-extension-html5-mission**
     - In the **Repository** field choose the repository you have created in step 9. 
@@ -186,10 +186,10 @@ We recommend using a technical user. However, you can use also use your cloud cr
       
 ### Test automatic triggering of CI/CD job
 
-You've configured a webhook between GitHub and the SAP Continuous Integration and Delivery service . Now, whenever you push changes to your GitHub repository, a webhook push event is sent to the service and triggers a build of the connected job.
+You**ve configured a webhook between GitHub and the SAP Continuous Integration and Delivery service . Now, whenever you push changes to your GitHub repository, a webhook push event is sent to the service and triggers a build of the connected job.
 
 1. To test automatic triggering of the build job, let us change a file and push the changes to the Git repository.
-2. Switch to the 'Business Application Studio' and open the workspace in which the project is created. 
+2. Switch to the **Business Application Studio** and open the workspace in which the project is created. 
 3. Change the index.html file by editing the title. 
 
    ```

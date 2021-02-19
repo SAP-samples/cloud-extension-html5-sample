@@ -50,7 +50,7 @@ Before running the booster please check for which regions and infrastructures th
    
     ![Booster Overview](./images/booster2.png)
 
-3.  Review the Components that will be installed with the Booster - click Start
+3.  Choose the **Components** tab and review the Components that will be installed with the Booster - choose **Start**
     
     ![Booster Overview](./images/booster33.png)
  
@@ -64,7 +64,7 @@ Before running the booster please check for which regions and infrastructures th
 
     If you do not entitlement for the Continous Integration & Delivery service it will not appear in the list. For accounts with the consumption-based model you can delete it, if you don't want to use it as it is an optional service.
 
-    For the runtime of the HTML5 application you can either use the Portal and Launchpad service - so only one of them is needed. In this mission we use the Launchpad service as we don't need the additional functionalities of the SAP Portal service. Therefore we remove the Portal service but you could also keep it and remove the Launchpad instead.   
+    For the runtime of the HTML5 application you can either use the Portal and Launchpad service - so only one of them is needed. In this mission we use the Launchpad service as we don't need the additional functionalities of the SAP Portal service. Therefore we remove the Portal service but you could also keep it and remove the Launchpad instead - don't keep both.   
     
     ![Booster Overview](./images/booster5a.png)
 
@@ -137,10 +137,13 @@ In your new subaccount check the following
     * SAP Business Application Studio
     * Launchpad
     * Continuous Integration & Delivery Service (optional)
+  
+   Click on "Go to Application" to see if you're able to access the subscriptions.
 
-     ![Check account](./images/check-booster3.png)
 
-8. Click on "Go to Application" to see if you're able to access the subscriptions.
+     ![Check account](./images/openBizAppStudio.png)
+
+
 
 
 ## Summary
