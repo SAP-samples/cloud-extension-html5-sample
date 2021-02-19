@@ -156,8 +156,8 @@ We recommend using a technical user. However, you can use also use your cloud cr
 16. In the **Stages** section do the following:
    - In the **Configuration Mode** field choose **Job Editor**
    - Choose **ON** for the **State** field in the **Build** section
-   - In the Malware Scan section choose **ON** for the **State** field. This setting checks your
-   -  Also in the **Deploy** section set the **State** field to **ON**.
+   - In the Malware Scan section choose **ON** for the **State** field. This will force a check for malicious software in your build package. 
+   - Also in the **Deploy** section set the **State** field to **ON**.
    - In the **API Entpoint** and **Org Name** fields set the values from step 12.
    - In the **Space** field set the value form step 14.
    - In the **Credential** field select the credentials for your SAP BTP account that you have created in step 7.
