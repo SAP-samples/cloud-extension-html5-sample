@@ -12,7 +12,7 @@ Depending on your global account, you might see the default identity provider, w
 
 ## Step-by-Step
 
-Use your SAP Cloud Platform Identity Authentication service tenant as an identity provider or a proxy to your own identity provider hosting your business users. This method avoids the upload and download of SAML meta data by using Open ID Connect (OIDC) to establish trust.
+Use your SAP Identity Authentication service tenant as an identity provider or a proxy to your own identity provider hosting your business users. This method avoids the upload and download of SAML meta data by using Open ID Connect (OIDC) to establish trust.
 
 ### Register SAP BTP subaccount in the Custom Identity Provider
 
