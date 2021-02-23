@@ -35,7 +35,7 @@ This step describes how to create a Github repository in which you can store the
 ### Generating OAuth Token
 
 1. As the public Git hub announced deprecation of Basic Authentication, we have described steps to login with the Access tokens to the Git.
-2. Refer to the public Git Hub link and create a [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+2. Refer to the public GitHub link and create a [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 3. You can use these Access tokens when you want to use Git commands instead of giving Git password.
 
 ### Add Git repository to HTML5 project
@@ -63,16 +63,16 @@ This step describes how to create a Github repository in which you can store the
     ```
    ![Git Commit](./images/commitProject.png)
     
-9. Now take the copied Git Repository URL which you created and copied in step 5 of **Creating GitHub Repository** and add this URL pointing as the remote repository.
+9. Now take the copied GitHub Repository URL which you created and copied in step 5 of **Creating GitHub Repository** and add this URL pointing as the remote repository.
 
    ```
    git remote add origin <copied Git repository url.git>
    ```
     
-10. Let us push the commit with project contents to this Git Repository.
+10. Let us push the commit with project contents to the default branch of your GitHub Repository. Please check in your GitHub repository if your default branch is master or main.  
     
    ```
-   git push -u origin master
+   git push -u origin main
    ```
     
 11. When prompted, enter your Git Username and Password (or Token).
@@ -201,10 +201,10 @@ You**ve configured a webhook between GitHub and the SAP Continuous Integration a
 
    ![commit Changes](./images/commitChanges.png)
    
-5. Let us push the commit by switching to the **Terminal** window like before and enter the following command, then enter your Git Username and Git Access Token.
+5. Let us push the commit by switching to the **Terminal** window like before. Enter the following command and push to your default branch (master or main), then enter your GitHub user name and GitHub access token. 
 
    ```
-   git push -u origin master
+   git push -u origin main
    ```
 
    ![push Commit](./images/pushCommit.png)
