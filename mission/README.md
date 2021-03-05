@@ -7,6 +7,7 @@ The main focus of this mission is to show the full end-to-end setup for a SAP S/
 * Setup of the SAP BTP account and development environment
 * End-to-End Connection setup with Principal Propagation (SSO)
 * DevOps - using SAP Continuous Integration & Delivery and monitoring
+* Integration of the HTML5 application in a central Launchpad
 
 We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the different SAP Launchpads environments
 
@@ -15,9 +16,9 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 
 These are the step-by-step guidelines for running the mission. It is divided in two workstreams:
 
-## Landscape Setup
+## Landscape setup
 
-Setup of landscape consists of preparing the API in the S/4 On-Premise system and exposing the backend OData service using SAP Cloud Connector. There are also step instructions to setup the Trust between Cloud Connector and SAP S/4 HANA System
+Setup of landscape consists of preparing the API in the S/4 on-premise system and exposing the backend OData service using SAP Cloud Connector. There are also step instructions to setup the trust between SAP Cloud Connector and SAP S/4 HANA system
 
 * [Setup of S/4HANA on-premise System](./s4h-setup/README.md)
 * [Setup of SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
@@ -26,14 +27,14 @@ Setup of landscape consists of preparing the API in the S/4 On-Premise system an
 * [Setup SAP Identity and Authentication Service (optional)](./custom-idp/README.md)
 
 
-## Implementation of a Simple UI Application
+## Implementation of a simple UI application
 
-Once we have setup the landscape, we can now develop, test and run a Simple UI Application. In this section, we will show you the steps to implement a Simple UI application using the SAP BTP Managed HTML5 Repository. This is used as a PoC to see if and how the whole landscape setup is working.
+Once we have setup the landscape, we can now develop, test and run a simple UI application. In this section, we will show you the steps to implement the simple UI application using the SAP BTP managed HTML5 repository. This is a kind of PoC to see if and how the whole landscape setup is working.
 
-* [Develop a Simple UI Application](./create-application/develop/README.md)
-* [Test the Simple UI Application](./create-application/test/README.md)
-* [Build and Deploy the Application to your SAP BTP Cloud Foundry Account](./create-application/buildDeploy/README.md)
+* [Develop a simple UI application](./create-application/develop/README.md)
+* [Test the simple UI application](./create-application/test/README.md)
+* [Build and deploy the application to your SAP BTP Cloud Foundry account](./create-application/buildDeploy/README.md)
 * [Integrate the Continous Integration & Continous Delivery Service](./ci-cd-service/README.md)
 * [Publishing your application to a SAP Launchpad site](./launchpad/README.md)
   
-![Solution Diagram](./images/solution_diagram.png)
+![Solution diagram](./images/solution_diagram.png)
