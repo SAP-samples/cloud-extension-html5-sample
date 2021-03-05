@@ -18,7 +18,7 @@ These are the step-by-step guidelines for running the mission. It is divided in 
 
 ## Landscape setup
 
-Setup of landscape consists of preparing the API in the S/4 on-premise system and exposing the backend OData service using SAP Cloud Connector. There are also step instructions to setup the trust between SAP Cloud Connector and SAP S/4 HANA system
+The setup of the landscape consists of preparing the API in the S/4 on-premise system and exposing the backend oData service using SAP Cloud Connector. There are also step-by-step instructions to setup the trust between SAP Cloud Connector and SAP S/4 HANA system.
 
 * [Setup of S/4HANA on-premise System](./s4h-setup/README.md)
 * [Setup of SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
@@ -29,7 +29,7 @@ Setup of landscape consists of preparing the API in the S/4 on-premise system an
 
 ## Implementation of a simple UI application
 
-Once we have setup the landscape, we can now develop, test and run a simple UI application. In this section, we will show you the steps to implement the simple UI application using the SAP BTP managed HTML5 repository. This is a kind of PoC to see if and how the whole landscape setup is working.
+Once we have setup the landscape, we can now develop, test and run a simple UI application. We will show the steps to implement the simple UI application using the SAP BTP managed HTML5 repository. This is a kind of PoC to see if and how the whole landscape setup is working.
 
 * [Develop a simple UI application](./create-application/develop/README.md)
 * [Test the simple UI application](./create-application/test/README.md)
