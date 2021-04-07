@@ -165,7 +165,7 @@ We recommend using a technical user. However, you can use also use your cloud cr
 
    ![create CICD Job](./images/cicdjob2.png)
     
-17. Open your GitHub repository and choose **Settings** --> **Hooks** --> **Add webhook**.
+17. Open your GitHub repository and choose **Settings** --> **Webhooks** --> **Add webhook**.
 
     ![add Web Hook](./images/addWebHook.png)
     
