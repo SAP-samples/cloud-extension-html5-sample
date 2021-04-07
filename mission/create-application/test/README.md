@@ -24,70 +24,77 @@ In this section, we would describe steps to test the cloud application which was
 
 ### Test the HTML5 application
    
-1. Now let us run and preview the HTML5 application. Click on **Run configuration** icon from left pane and click on **+** to add a new Run configuration.
+1. Now let us run and preview the HTML5 application. Click on **Run configuration** icon from left pane and check if you have pre-created test configuration by the project creation wizard.
+2. If yes, then click the green play icon near **Start sapui5** to open the the preview application. You can also skip the following steps and directly see the preview application as shown in step 21.
+
+   ![startApp](./images/startApp.png)
+
+3. If you do not have a pre-created **Run Configuration**, click on **+** to add a new Run configuration.
 
    ![Run Config](./images/RunConfig.png)
    
-2. Choose the application that was created.
+4. Choose the application that was created.
 
    ![Select Project](./images/RunConfig2.png)
 
-3. Choose Runnable File: index.html.
+5. Choose Runnable File: index.html.
 
    ![Select RunnableFile](./images/RunConfig3.png)
    
-4. Choose UI5 version : latest
+6. Choose UI5 version : latest
 
     ![Select UI5 Version](./images/RunConfig4.png)
     
-5. Enter a name or leave the default to finish creating a Run configuration.
+7. Enter a name or leave the default to finish creating a Run configuration.
 
     ![Enter Name](./images/RunConfig5.png)
-6. Expand the created Run Configuration. Now we need to map a destination for Data source and a XSUAA instance to see the preview application with data.
-7. Click on Datasource (Destination) - Click on the green icon next to it.
+8. Expand the created Run Configuration. Now we need to map a destination for Data source and a XSUAA instance to see the preview application with data.
+9. Click on Datasource (Destination) - Click on the green icon next to it.
 
     ![Destination config](./images/DestinationRunConfig.png)
     
-8. Choose the Destination which was created in the SAP BTP.
+10. Choose the Destination which was created in the SAP BTP.
 
      ![Destination config2](./images/DestinationRunConfig2.png)
      
-9. Go to View > Find Command.
-10. Search for **Service Instance** and choose **CF: Create new Service Instance**
+11. Go to View > Find Command.
+12. Search for **Service Instance** and choose **CF: Create new Service Instance**
 
     ![UAA config](./images/UaaRunConfig.png)
     
-11. Enter name : bpuaa
+13. Enter name : bpuaa
 
     ![UAA name](./images/UaaRunConfig4.png)
     
-12. Choose service : xsuaa
+14. Choose service : xsuaa
 
     ![UAA select](./images/UaaRunConfig2.png)
     
-13. Choose plan: application
+15. Choose plan: application
 
     ![UAA plan](./images/UaaRunConfig3.png)
-14. Enter a custom xsappname or use the default. Now the XSUAA service instance is created.
+16. Enter a custom xsappname or use the default. Now the XSUAA service instance is created.
 
     ![UAA custom name](./images/UaaRunConfig5.png)
-15. Click on green icon near uaa in the Run configuration and select the created XSUAA instance **bpuaa** in Step 16.
+17. Click on green icon near uaa in the Run configuration and select the created XSUAA instance **bpuaa** in Step 16.
 
     ![Bind Destination](./images/UaaRunConfig6.png)
     
-16. Click on the play icon to run and preview the test application.
+18. Click on the play icon to run and preview the test application.
 
     ![Test App](./images/TestApp.png)
    
-17. Click on **Expose and Open** in the popup that appears.
+19. Click on **Expose and Open** in the popup that appears.
 
     ![Test App2](./images/TestApp2.png)
    
-18. Give optional name and press **Enter**.
+20. Give optional name and press **Enter**.
 
     ![Test App3](./images/TestApp3.png)
    
-19. In a new browser window, the Preview Mode of the application is opened. The preview application shows the Business Partners which are fetched from the backend system configured in the SCP Destination.
+21. In a new browser window, the Preview Mode of the application is opened. The preview application shows the Business Partners which are fetched from the backend system configured in the SCP Destination.
+
+    ![runApp](./images/runApp.png)
 
 ### Result
 Now you have how to test the simple UI application in *SAP Business Application Studio* and also preview the data from your SAP backend system.

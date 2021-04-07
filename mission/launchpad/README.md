@@ -22,12 +22,14 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 
 ### Expose HTML5 Applications in Launchpad
 
-In order that your HTML5 applications are visible to the Launchpad application, you have to currently add some information to the manifest.json file manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Launchpad. For more information, check [Expose HTML5 Applications in Launchpad](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
+In order that your HTML5 applications are visible to the Launchpad application, you have to currently add some information to the manifest.json file. This information is added automatically by the [Create Project from Template wizard](https://github.com/SAP-samples/cloud-extension-html5-sample/tree/mission/mission/create-application/develop#develop-the-application-from-project-template) if you have chosen **Yes** to add Fiori Launchpad Configuration. You can also add the code snippet in step 3 manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Launchpad. 
+
+For more information, check [Expose HTML5 Applications in Launchpad](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
 
 
 1. Switch to the browser window with **SAP Business Application Studio** and open the Workspace containing your HTML5 project.
 2. Expand your HTML5 project and open the manifest.json file which is under the folder BP -> webapp -> manifest.json 
-3. Open the manifest.json and add the following source code inside the **sap.app** section. Do not forget to add a **,** to this **sap.app** section before you add the code below.
+3. Open the manifest.json and check if the following source code inside the **sap.app** section, it is added automatically from the Project creation wizard. If you dont have this code snippet, add the following manually. Do not forget to add a **,** to this **sap.app** section before you add the code below.
 
    ```
    "crossNavigation": {
@@ -78,45 +80,45 @@ In order that your HTML5 applications are visible to the Launchpad application, 
 
    ![refresh Content](./images/refreshContent.png)
    
-2. In *Content Manager*, click on *Content Explorer* tab and click on *HTML5 Apps* to see the list of HTML5 applications to be added to the Launchpad site.
+3. In *Content Manager*, click on *Content Explorer* tab and click on *HTML5 Apps* to see the list of HTML5 applications to be added to the Launchpad site.
 
     ![open Content Explorer](./images/openContentExplorer.png)
     
-3. Select your HTML5 application which you see in the list and click on *Add to Content*. 
+4. Select your HTML5 application which you see in the list and click on *Add to Content*. 
 
    ![add App to Content](./images/addApptoContent.png)
    
-4. Click on *My Content* tab and click on *New* and click on *Group* to create a new group.
+5. Click on *My Content* tab and click on *New* and click on *Group* to create a new group.
 
    ![create Group1](./images/createGroup1.png)
    
-5. Enter a group name, for example: **BusinessPartnersgroup** and a valid description.
+6. Enter a group name, for example: **BusinessPartnersgroup** and a valid description.
 
    ![create Group2](./images/createGroup2.png)
    
-6. Now in the *Assignments* section, search for *BusinessPartner* and add the listed HTML5 app by clicking **+** to the new group. Click **Save** to save the changes.
+7. Now in the *Assignments* section, search for *S4 HANA* and add the listed HTML5 app by clicking **+** to the new group. Click **Save** to save the changes.
 
     ![add App to Group](./images/addApptoGroup.png)
 
-7. Check the assigned App to the newly created group and click **<** to go the previous screen.
+8. Check the assigned App to the newly created group and click **<** to go the previous screen.
 
    ![goto Content Manager](./images/gotoContentManager.png)
    
-8. Click on *Everyone* role to assign our HTML5 Application for testing purposes. You can create your company specific roles and assign the HTML5 applications accordingly.
+9. Click on *Everyone* role to assign our HTML5 Application for testing purposes. You can create your company specific roles and assign the HTML5 applications accordingly.
 
    ![edit Everyone Role1](./images/editEveryoneRole1.png)
    
-9. Click **Edit** to edit the *Everyone* role.
+10. Click **Edit** to edit the *Everyone* role.
 
-   ![edit Everyone Role2](./images/editEveryoneRole2.png)
+    ![edit Everyone Role2](./images/editEveryoneRole2.png)
    
-10. In the *Assignments* section, search for *BusinessPartner* and add the listed HTML5 app by clicking **+**. Click **Save** to save the changes.
+11. In the *Assignments* section, search for *BusinessPartner* and add the listed HTML5 app by clicking **+**. Click **Save** to save the changes.
 
-   ![edit Everyone Role2](./images/editEveryoneRole3.png)
+    ![edit Everyone Role2](./images/editEveryoneRole3.png)
    
-11. Check the assigned App to the *Everyone* role and click the Globe icon to go the *Site Directory*.
+12. Check the assigned App to the *Everyone* role and click the Globe icon to go the *Site Directory*.
 
-   ![goto Content Manager](./images/gotoSiteDirectory.png)
+    ![goto Content Manager](./images/gotoSiteDirectory.png)
    
 
 

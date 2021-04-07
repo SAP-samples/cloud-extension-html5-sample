@@ -61,55 +61,90 @@ In this section, we would describe steps to develop a cloud application using SA
 
    ![Create Project](./images/createProject.png)
     
-2. In the New Project Wizard, Select **SAP Fiori Freestyle Project (Deprecated)**. Click **Start**
+2. In the New Project Wizard, Select **SAP Fiori Application**. Click **Start**
 
    ![Choose Template](./images/ChooseTemplate.png)
 
-3. Select Target Running Environment as **Cloud Foundry**.
-4. Select Template as **SAP Fiori Master Detail Application**. Click **Next**.
-
-   ![Choose Template](./images/ChooseTemplate2.png)
+3. In the **Floorplan Selection**, choose the following:
+   - For the field, **Application Type**, choose **SAPUI5 freestyle** from the drop-down,
+   - Select floorplan as **SAP Fiori Master Detail Application**,
+   - Click **Next**.
    
-5. Enter Project Name as s4-extendui. Click **Next**.
+     ![Choose Template2](./images/ChooseTemplate2.png)
+   
+4. In the **Data Source and Service Selection**, choose:
+   - For the field **Data Source**, choose **Connect to an SAP System** from the drop-down,
+   - For the field **System**, choose the destination which you created for connecting to your on-premise system, in our case choose **bupa**
+
+     ![Choose Template3](./images/ChooseTemplate3.png)
+   
+   - In the drop-down for the field **Service**, search **business** and select **ZAPI_BUSINESS_PARTNER (1) - OData V2**
+   - Choose **Next**
+  
+     ![Choose Template4](./images/ChooseTemplate4.png)
+      
+   
+5. In the **Entity Selection** screen, 
+   
+    - Select drop-down **Object Collection** to **A_BusinessPartner**.
+    - Select drop-down **Object collection key** to **BusinessPartner**.
+    - Select drop-down **Object ID** to **BusinessPartnerFullName**.
+    - Select drop-down **Object Number** to **None**.
+    - Select drop-down **Object Unit of Measure** to **BusinessPartnerCategory**.
+    - Select drop-Down **Line Item Collection** to **to_BusinessPartnerAddress**.
+    - Select drop-down **Line Item Collection Key** to **AddressID**.
+    - Select drop-down **Line Item ID** to **FullName**.
+    - Select drop-down **Line Item Number** to **None**.
+    - Select drop-down **Line Item Unit of Measure** to **Country**.
+    - Choose **Next**
+
+      ![Object Collection](./images/ObjectCollection.png)
+      
+6. In the **Project Attributes** screen:
+   - For field **Module Name**, enter a meaningful name, for example **sapui5**
+   - For field **Application Title**, enter **S4HANA UI Extension**
+   - For field **Application Namespace**, choose **sap.btp**
+   - Leave the defaults for the **Project folder path**, your project will be created in a folder with the module name you have specified.
+   - Select **Yes** for **Add Deployment Configuration**
+   - Optionally, select **Yes** if you want to add Fiori Launchpad Configuration, you can then add your application to a company launchpad site.
+   - Choose **Next**
+ 
+     ![projectAttributes](./images/projectAttributes.png)
+   
+7. In the **Deployment Configuration** screen:
+   - Choose **Cloud Foundry** as Target
+   - **Destination Name** is prefilled as **bupa**
+   - Choose **Yes** for **Add application to managed application router?**
+   - Choose **Finish** to finish the project creation or choose **Next** if you have opted to add Fiori Launchpad Configuration in step 6.
+
+     ![deployment Configuration](./images/deploymentConfiguration.png)
+     
+8. In the **Fiori Launchpad Configuration** screen:
+   - Enter **BusinessPartners** for **Semantic object**
+   - Enter **display** for **Action**
+   - Enter **Business Partners** for **Title**
+   - Enter **List of Business Partners** for **Sub-Title**
+   - Choose **Finish** to finish the project creation.
+
+     ![fioriLaunchpadConfig](./images/fioriLaunchpadConfig.png)
+     
+9. Once the project is generated, choose **File**, **Open Workspace** from the menu and select the created project **sapui5**. Choose **Open** to Open Workspace.
+
+   ![Open Workspace](./images/OpenWorkspace.png)
+   
+10. Open the file **webapp/manifest.json** in the generated project and search for **sap.cloud**, replace the value of **service** as **"basic.service"**.
+
+    ![editManifestJson](./images/editManifestJson.png)
+     
+11. Open the file **mta.yaml** and search for **sap-btp-sapui5_html_repo_host**, replace the value of **ServiceInstanceName** as **sap-btp-sapui5-html5-repo-host**.
+
+    ![editMta1](./images/editMta1.png)
     
-   ![Enter Project](./images/EnterProjName.png)
+12. In the same file **mta.yaml**, search for **sap-btp-sapui5-html5-repo-host**, replace the value of **service-name** as  **sap-btp-sapui5-html5-repo-host**.
 
-6. Choose **Managed Approuter** as HTML5 Application runtime.
-7. Enter **bpServiceManaged** as the unique name for the business solution of your project. Click **Next**.
+    ![editMta2](./images/editMta2.png)
 
-    ![Create with Managed](./images/CreateWithServiceManaged.png)
-    
-8. Enter **BP** as html5 module. Click **Next**. 
 
-    ![Enter Project](./images/Html5Module.png)
-9. Enter Title **BusinessPartners**.
-10. Select Standalone App (Optimized for individual development). Click **Next**.
-
-    ![Select AppTitle](./images/SelectAppTitle.png)
-    
-11. Select the system as **My SAP Systems**
-12. For the field **Select source** select the earlier created destination pointing to your SAP backend system, which we named **bupa**. Click **Next**.
-
-    ![Consume Service](./images/ConsumeService.png)
-    
-13. For the different fields of **Object Collection** :
-     - Select drop-down Object Collection to **A_BusinessPartner**.
-     - Select drop-down Object Collection ID to **BusinessPartner**.
-     - Select drop-down Object Title to **BusinessPartnerFullName**.
-     - Select drop-down Object Numeric Attribute to **Language**.
-     - Select drop-down Object Unit of Measure to **BusinessPartnerCategory**.
-     - Select drop-Down Line Item Collection to **to_BusinessPartnerAddress**.
-     - Select drop-down Line Item Collection ID to **AddressID**.
-     - Select drop-down Line Item Title to **CityName**.
-     - Select drop-down Line Item Numeric Attribute to **CompanyPostalCode**.
-     - Select drop-down Line Item Unit of Measure to **Country**.
-     - Click **Next** and **Finish** to finish the project creation.
-
-    ![Object Collection](./images/ObjectCollection.png)
-    
-14. Once the project is created, Click on the button **Open in New Workspace** in the popup.
-
-    ![Object Collection](./images/OpenWorkspace.png)
     
 ### Optional Step: Adding Internationalization to your project
 
