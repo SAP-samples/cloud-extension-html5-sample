@@ -111,7 +111,7 @@ We recommend using a technical user. However, you can use also use your cloud cr
    * In the **Name** field set the name for the repository for example: cloud-extension-html5-mission
    * In the **Clone URL** set the clone URL of your GitHub repository
    * In the **Credentials** field choose the credentials for your GitHub repository which you created in step 6  - it is necessary for private GitHub repositories.
-   * In the **Type** field chosse GitHub   
+   * In the **Type** field choose GitHub   
    * In the **Weebhook Credential** field choose **\<GENERATE\>**
    * Keep the **State** field on
    * **Add** the repository  
