@@ -118,15 +118,15 @@ In your new subaccount check the following
 
      ![Check account](./images/check-booster4.png)
 
-3. Security - Select "Role Collection" in the Security section. You can see all the role collections for the different services that are created by the Booster. There are two specific collection called **Extension_UX_Administrator** and **Extension_UX_Developer** . Those are the master collections either for Administrators or Developers and contains all the necessary roles which are needed to access the services to build and deploy a HTML5 extension application. If you want to add additional users later, you have to assign those role collection to them. Click on the role *Extension_UX_Administrator*.
+3. Security - Select "Role Collection" in the Security section. You can see all the role collections for the different services that are created by the Booster. There are two specific collection called **Extension_UX_Administrator** and **Extension_UX_Developer** . Those are the master collections either for Administrators or Developers and contains all the necessary roles which are needed to access the services to build and deploy a HTML5 extension application. If you want to add additional users later, you have to assign those role collection to them. Click on the role **Extension_UX_Administrator**: 
    
      ![Check account](./images/check-booster2.png)
 
-4. You can check that all necessary roles already assigned for the Administrator users to access *Business Application Studio*, *Launchpad* and *Continous Integration & Delivery service*. 
+4. You can check that all necessary roles already assigned for the Administrator users to access **Business Application Studio**, **Launchpad** and **Continous Integration & Delivery service**. By pressing the **Edit** buttton you can add additional roles and user to to this role collection. 
 
      ![Check account](./images/adminRole.png)
      
-5. Now click on *Extension_UX_Deverloper* in the previous acreen to see the assigned roles for developer. If you have addtional developers later, then add the developers in this screen by clicking the 'Edit' button and selecting the 'Identity Provider'.
+5. Now select the *Extension_UX_Deverloper* in the previous acreen to see the assigned roles for a developer. If you have addtional developers later, then add the developers in this screen by choosing the **Edit** button and selecting the **Identity Provider**.
 
      ![Check account](./images/developerRole.png)
      
