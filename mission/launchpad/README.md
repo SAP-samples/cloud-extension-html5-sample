@@ -29,7 +29,7 @@ For more information, check [Expose HTML5 Applications in Launchpad](https://hel
 
 1. Switch to the browser window with **SAP Business Application Studio** and open the Workspace containing your HTML5 project.
 2. Expand your HTML5 project and open the manifest.json file which is under the folder BP -> webapp -> manifest.json 
-3. Open the manifest.json and check if the following source code inside the **sap.app** section, it is added automatically from the Project creation wizard. If you dont have this code snippet, add the following manually. Do not forget to add a **,** to this **sap.app** section before you add the code below.
+3. Open the manifest.json and check if the following source code snippet inside the **sap.app** section is already added automatically from the Project creation wizard. If you don't have this code snippet, add the following snippet manually. Do not forget to add a **,** to this **sap.app** section before you add the code below.
 
    ```
    "crossNavigation": {
