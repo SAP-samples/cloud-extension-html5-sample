@@ -131,20 +131,21 @@ With this step the on-premise setup is finished.
    ![destination](./images/scp-destination.png)
 
 3. Setup Destination - enter the following values
-    * "Name" - e.g. bupa  --> this destination is later used at the sample application 
-    * "Type" - select HTTP
-    * "URL" - URL of the Business Partner API that we have exposed in the SAP Cloud Connector =  https://\<virtual host\>:\<virtual port\>/sap/opu/odata/sap/API_BUSINESS_PARTNER
-    * Proxy Type: "OnPremise"
-    * Authentication: "Principal Propagation"
-    * Location ID: Optional field, you can use this field if you connect more than one cloud connectors to your account. See [Destination Configuration Help page](https://help.sap.com/viewer/6d3eac5a9e3144a7b43932a1078c7628/Cloud/en-US/0a2e5a45d5494ec08318ead2019d54db.html).
+    * **Name**:  bupa  --> this destination is later used at the sample application 
+    * **Type**:  select HTTP
+    * **URL**:  URL of the virtual host that we have exposed in the SAP Cloud Connector =  https://\<virtual host\>:\<virtual port\>
+  
+    * **Proxy Type**: OnPremise
+    * **Authentication**: Principal Propagation
+    * **Location ID**: optional field, you have use this field if you connect more than one cloud connectors to your account. See [Destination Configuration Help page](https://help.sap.com/viewer/6d3eac5a9e3144a7b43932a1078c7628/Cloud/en-US/0a2e5a45d5494ec08318ead2019d54db.html).
      
     Add the following properties by clicking on the "New Property" button:
 
-    * Name: "HTML5.DynamicDestination" - value: "true"
-    * Name: "SAP-Client" - value: "the SAP-Client of your SAP S/4HANA system"
-    * Name: "WebIDEEnabled" - value: "true"
-    * Name: "WebIDEAdditionalData" - value: "full_url"
-    * Name: "WebIDEUsage" - value: "odata_abap"
+    * Name: **HTML5.DynamicDestination** - value: **true**
+    * Name: **SAP-Client** - value: **the SAP-Client of your SAP S/4HANA system**
+    * Name: **WebIDEEnabled** - value: **true**
+    * Name: **WebIDEAdditionalData** - value: **full_url**
+    * Name: **WebIDEUsage** - value: **odata_abap**
     
 
    ![destination](./images/scp-destination2.png)
