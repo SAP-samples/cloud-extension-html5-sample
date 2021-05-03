@@ -93,7 +93,7 @@
     ![add resource](./images/add-resource.png)
 
 8. Add Resource
-   1. Enter the URL path to the Business Partner API: /sap/opu/odata/sap/API_BUSINESS_PARTNER
+   1. Enter the URL root path to the S/4HANA APIs: /sap/opu/odata/
    2. AccessPolicy: set "Path and all sub-paths"
    3. Enter a description
    4. Press Save
@@ -145,7 +145,7 @@ With this step the on-premise setup is finished.
     * Name: "SAP-Client" - value: "the SAP-Client of your SAP S/4HANA system"
     * Name: "WebIDEEnabled" - value: "true"
     * Name: "WebIDEAdditionalData" - value: "full_url"
-    * Name: "WebIDEUsage" - value: "odata_gen"
+    * Name: "WebIDEUsage" - value: "odata_abap"
     
 
    ![destination](./images/scp-destination2.png)
