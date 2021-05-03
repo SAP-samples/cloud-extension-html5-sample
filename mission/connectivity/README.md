@@ -99,8 +99,7 @@
    4. Press Save
    
    ![add resource](./images/CCAddResource2.png)
-
-   ***Hint:** You can either add for each oData service a resource or you set the URL path just to /sap/opu/odata/sap then all activated oData services are exposed. For security reasons and to keep a better control for the usage of the oData services the first approach should be preferred.* 
+   
 
 9.  Synchronize your settings with your SAP BTP account
     1.  Select the "Principal Propagation" tabulator
