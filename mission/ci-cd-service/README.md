@@ -126,11 +126,7 @@ We recommend using a technical user. However, you can use also use your cloud cr
 10. The **Webhook Creation** pop-up appears. It provides you with the data you need to define a webhook in GitHub. Copy the **Payload URL** and the **Secret** into a text editor of your choice.
    
      ![copy payload URL](./images/repository3.png)
-    
-11. Open your GitHub repository and choose **Settings** --> **Hooks** --> **Add webhook**.
-
-    ![add Web Hook](./images/addWebHook.png)
-
+   
 
 12. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the **API Endpoint** and **Org Name** into a text editor of your choice.  
 
@@ -165,21 +161,21 @@ We recommend using a technical user. However, you can use also use your cloud cr
 
    ![create CICD Job](./images/cicdjob2.png)
     
-17. Open your GitHub repository and choose **Settings** --> **Webhooks** --> **Add webhook**.
+16. Open your GitHub repository and choose **Settings** --> **Webhooks** --> **Add webhook**.
 
     ![add Web Hook](./images/addWebHook.png)
     
-18. For the **Payload URL** and **Secret**, copy and paste the payload URL and secret from step 10.
+17. For the **Payload URL** and **Secret**, copy and paste the payload URL and secret from step 10.
 
     ![add Web Hook](./images/addWebHook1.png)
     
-19. For **Content Type**, select **application/json** and configure the job to be triggered for every **Push** event and choose **Add Webhook**. Now, any new push request to this repository triggers the CI/CD pipeline you have created.
+18. For **Content Type**, select **application/json** and configure the job to be triggered for every **Push** event and choose **Add Webhook**. Now, any new push request to this repository triggers the CI/CD pipeline you have created.
 
-20. To trigger the pipeline manually, select the CI/CD job you have created and choose the **Trigger build** icon as shown below. 
+19. To trigger the pipeline manually, select the CI/CD job you have created and choose the **Trigger build** icon as shown below. 
 
     ![manual trigger Job](./images/triggerbuild.png)
     
-21. You can see the successful log results of **Build** and **Deploy**. To view the full log file, click on the respective tile.
+20. You can see the successful log results of **Build** and **Deploy**. To view the full log file, click on the respective tile.
 	
     ![Build Deploy Results](./images/buildresult.png)   
 
