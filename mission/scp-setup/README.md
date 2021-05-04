@@ -59,16 +59,10 @@ Before running the booster please check for which regions and infrastructures th
     ![Check Prerequisites](./images/booster4.png)
  
 5.  Setup Subaccount and check/assign Entitlements: 
-    Here you set the necessary quota for running HTML5 applications on your subaccount.
-    For running this mission, below mentioned quota of the services are the minimum requirements, for building additional applications in your subaccount you have to increase the quota accordingly.
-
-    If you do not entitlement for the Continous Integration & Delivery service it will not appear in the list. For accounts with the consumption-based model you can delete it, if you don't want to use it as it is an optional service.
-
-    For the runtime of the HTML5 application you can either use the Portal and Launchpad service - so only one of them is needed. In this mission we use the Launchpad service as we don't need the additional functionalities of the SAP Portal service. Therefore we remove the Portal service but you could also keep it and remove the Launchpad instead - don't keep both.   
+    
+    If you do not have set an entitlement for the **Continous Integration & Delivery** service it will not appear in the list. For accounts with the consumption-based model you can delete it, if you don't want to use it. It is optional for this mission.
     
     ![Booster Overview](./images/booster5a.png)
-
- 
    
 6.  Setup Subaccount credentials 
     1.  Set Subaccount name
@@ -83,10 +77,10 @@ Before running the booster please check for which regions and infrastructures th
 
 
 
-7.  Add Users - in this section we can add additional users as administrators and developers for the subaccount. The user who is using the Booster is added automatically as **Administrator** and also added as a Security Admin.
-    1. Select your user origin 
-    2. Add administrator
-    3. Add developer
+7.  Add Users - in this section we can add additional users as administrators and developers for the subaccount. The user who is using the Booster is added automatically as **Administrator** and also added as a Security Admin. 
+    1. Select your user origin - that's your standard Identity & Authentication service  
+    2. Add administrators
+    3. Add developers
     4. Press Next.
 
     ![Booster Overview](./images/booster6.png)
@@ -140,20 +134,14 @@ In your new subaccount check the following
   
    Click on "Go to Application" to see if you're able to access the subscriptions.
 
-
      ![Check account](./images/openBizAppStudio.png)
-
-
-
 
 ## Summary
 
 This Booster has automated a couple of steps for setting up a SAP BTP subaccount for building and running HTML5 applications. This includes the following setup steps, which could also be done manually:
 
 * [Setup of SAP BTP Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/302b47b11e1749c3aa9478f4123fc216.html)
-* [Setup SAP Business Application Studio](https://help.sap.com/viewer/c8f199cdcb7b48f2adc1bb3ec44e4dc4/Trial/en-US/19611ddbe82f4bf2b493283e0ed602e5.html)
+* [Setup SAP Business Application Studio](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/6331319fd9ea4f0ea5331e21df329539.html)
 * [Setup Launchpad](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html)
 * [Setup SAP Continous Integration and Delivery](https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/719acaf61e4b4bf0a496483155c52570.html)
-* [HTML5 Applications](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/3db887a26f6e44bd929f4ccdb9e7f5d7.html)
-* [Setup SAP Cloud Portal - optional](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html)
 
