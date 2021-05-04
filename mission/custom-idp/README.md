@@ -145,4 +145,4 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Ident
 
 
 ### References
-Check the [official SAP Help documentation](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2d088cedeaf24038acb3533be8092fe4.html).
+Check the [official SAP Help documentation](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7c6aa87459764b179aeccadccd4f91f3.html).
