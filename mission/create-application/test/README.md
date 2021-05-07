@@ -37,62 +37,25 @@ In this section, we would describe steps to test the cloud application which was
 
    ![Select Project](./images/RunConfig2.png)
 
-5. Choose Runnable File: index.html.
-
-   ![Select RunnableFile](./images/RunConfig3.png)
    
-6. Choose UI5 version : latest
+5. Choose UI5 version : latest
 
     ![Select UI5 Version](./images/RunConfig4.png)
     
-7. Enter a name or leave the default to finish creating a Run configuration.
+6. Choose **Connect to the SAP System** and then choosing the destination created, in our case, select **bupa**.
 
     ![Enter Name](./images/RunConfig5.png)
-8. Expand the created Run Configuration. Now we need to map a destination for Data source and a XSUAA instance to see the preview application with data.
-9. Click on Datasource (Destination) - Click on the green icon next to it.
-
-    ![Destination config](./images/DestinationRunConfig.png)
+   
     
-10. Choose the Destination which was created in the SAP BTP.
-
-     ![Destination config2](./images/DestinationRunConfig2.png)
-     
-11. Go to View > Find Command.
-12. Search for **Service Instance** and choose **CF: Create new Service Instance**
-
-    ![UAA config](./images/UaaRunConfig.png)
-    
-13. Enter name : bpuaa
-
-    ![UAA name](./images/UaaRunConfig4.png)
-    
-14. Choose service : xsuaa
-
-    ![UAA select](./images/UaaRunConfig2.png)
-    
-15. Choose plan: application
-
-    ![UAA plan](./images/UaaRunConfig3.png)
-16. Enter a custom xsappname or use the default. Now the XSUAA service instance is created.
-
-    ![UAA custom name](./images/UaaRunConfig5.png)
-17. Click on green icon near uaa in the Run configuration and select the created XSUAA instance **bpuaa** in Step 16.
-
-    ![Bind Destination](./images/UaaRunConfig6.png)
-    
-18. Click on the play icon to run and preview the test application.
+7. Once the test configuration is created, Click on the play icon to run and preview the test application.
 
     ![Test App](./images/TestApp.png)
    
-19. Click on **Expose and Open** in the popup that appears.
+8. Click **Open** in the popup that appears.
 
     ![Test App2](./images/TestApp2.png)
    
-20. Give optional name and press **Enter**.
-
-    ![Test App3](./images/TestApp3.png)
-   
-21. In a new browser window, the Preview Mode of the application is opened. The preview application shows the Business Partners which are fetched from the backend system configured in the SCP Destination.
+10. In a new browser window, the Preview Mode of the application is opened. The preview application shows the Business Partners which are fetched from the backend system configured in the SCP Destination.
 
     ![runApp](./images/runApp.png)
 
