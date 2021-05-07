@@ -48,11 +48,16 @@ For more information, check [Expose HTML5 Applications in Launchpad](https://hel
             }
         }
    ```
-4.  You have to now build and deploy the application with these changes, refer to [Build, Deploy and Run HTML5 Application on SAP BTP](../create-application/buildDeploy/README.md).
+4. In order that data of the extension application is displayed correctly in the SAP Launchpad site, check also the value of **sap.cloud** in webapp/manifest.json file.
+
+   ![check manifest](./images/checkmanifest.png)
+
+5.  You have to now build and deploy the application with these changes, refer to [Build, Deploy and Run HTML5 Application on SAP BTP](../create-application/buildDeploy/README.md).
 
 ### Create a Launchpad Site
 
-1. Login to your SAP BTP account. 
+1. Login to your SAP BTP account.
+2. Check if your user has access to open Launchpad application, check and assign the role collection **Launchpad_admin** to your user following [Assign Role for SAP Launchpad](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html). Your user would have automatically got the necessary roles if you have [created a BTP account using the boosters](../scp-setup/README.md).
 2. Click **Services** and choose **Instances and Subscriptions**. 
 3. Select the tab **Subscriptions**, look for **Launchpad**, click the three dots **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Launchpad** service. 
 
