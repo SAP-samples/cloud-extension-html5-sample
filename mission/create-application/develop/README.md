@@ -132,18 +132,6 @@ In this section, we would describe steps to develop a cloud application using SA
 
    ![Open Workspace](./images/OpenWorkspace.png)
    
-10. Open the file **webapp/manifest.json** in the generated project and search for **sap.cloud**, replace the value of **service** as **"basic.service"**.
-
-    ![editManifestJson](./images/editManifestJson.png)
-     
-11. Open the file **mta.yaml** and search for **sap-btp-sapui5_html_repo_host**, replace the value of **ServiceInstanceName** as **sap-btp-sapui5-html5-repo-host**.
-
-    ![editMta1](./images/editMta1.png)
-    
-12. In the same file **mta.yaml**, search for **sap-btp-sapui5-html5-repo-host**, replace the value of **service-name** as  **sap-btp-sapui5-html5-repo-host**.
-
-    ![editMta2](./images/editMta2.png)
-
 
     
 ### Optional Step: Adding Internationalization to your project
@@ -155,4 +143,4 @@ In this section, we would describe steps to develop a cloud application using SA
 5. You will see the customized column headers once we test the application in the next step. 
 
 ### Result
-You have now configured a development workspace and created a HTML5 Application successfully.
+You have now configured a development workspace and created a HTML5 Application successfully. Next step we will test and then build and deploy the application.
