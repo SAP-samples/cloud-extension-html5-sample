@@ -93,13 +93,7 @@ In this section, we would describe steps to build and deploy your cloud applicat
 3. You can see the progress of the deployment in a progress task window **Task: Deploy MTA Archive**.
    
    ![deploy Mta Progress](./images/deployMtaProgress.png)
-     
-4. In order to see the URL of the deployed HTML5 application via command line, switch to the Terminal tab which you opened in previous build step 10 and run the commnd cf html5-list -d -u to see the url of the deployed application.
-   
-   ![Get App Url](./images/getAppUrl.png)
-   
-5. Copy the URL of the HTML5 application.
-6. To see the list of other Cloud Foundry commands, see the [Cloud Foundry HTML5 Apps Client Help](https://github.com/SAP/cf-html5-apps-repo-cli-plugin)
+
 
 ### Assigning role collection to the user
 
@@ -134,4 +128,4 @@ You have successfully now built and deployed your HTML5 application to SAP BTP w
 
 ### Related Links
 
-[Cloud Foundry HTML5 Apps Client Help](https://github.com/SAP/cf-html5-apps-repo-cli-plugin)
+Check the [Cloud Foundry HTML5 Apps Client Help](https://github.com/SAP/cf-html5-apps-repo-cli-plugin) for command line access to APIs exposed by the HTML5 Application Repository service. You can use these commands in SAP Business Application Studio in a Terminal. 
