@@ -114,7 +114,7 @@ In the previous step, we have added a Role Collection **BPViewerRC** in **xs-sec
 ### Accessing the deployed application
 
    
-1. To open your deployed HTML5 application, switch to the SAP BTP subaccount page and choose **HTML5 Applications**. Click on the application link to open the application. You have also noted this application link in the  earlier step in SAP Business Application Studio with command **cf html5-list -d -u**.
+1. To open your deployed HTML5 application, switch to the SAP BTP subaccount page and choose **HTML5 Applications**. Click on the application link to open the application. 
   
    ![Open Running App](./images/openHTML5App.png)
      
