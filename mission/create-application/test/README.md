@@ -25,7 +25,7 @@ In this section, we would describe steps to test the cloud application which was
 ### Test the HTML5 application
    
 1. Now let us run and preview the HTML5 application. Click on **Run configuration** icon from left pane and check if you have pre-created test configuration by the project creation wizard.
-2. If yes, then click the green play icon near **Start sapui5** to open the the preview application. You can also skip the following steps and directly see the preview application as shown in step 9.
+2. If yes, then click the green play icon near **Start sapui5** to open the the preview application. You can then skip the following steps and directly see the preview application as shown in step 9.
 
    ![startApp](./images/startApp.png)
 
