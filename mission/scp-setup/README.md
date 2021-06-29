@@ -36,6 +36,8 @@ Before running the booster please check for which regions and infrastructures th
 
 ## Step-by-step
 
+> The Booster for HTML5 application development is not available for trial accounts, if you're using a SAP BTP trial account please go to [section C for the manual setup](#manualSetup).
+
 ### A: Run the Booster
 
 1. Start the Booster
@@ -136,12 +138,32 @@ In your new subaccount check the following
 
      ![Check account](./images/openBizAppStudio.png)
 
-## Summary
+## C: Manual Setup of Services and Authorization
+<a id="manualSetup"></a>
+For running this mission on a SAP BTP trial account you have to enable the services and manage your authorizations by some manual steps: 
 
-This Booster has automated a couple of steps for setting up a SAP BTP subaccount for building and running HTML5 applications. This includes the following setup steps, which could also be done manually:
 
-* [Setup of SAP BTP Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/302b47b11e1749c3aa9478f4123fc216.html)
+[Setup of SAP BTP Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/302b47b11e1749c3aa9478f4123fc216.html) gives you a general overview of a SAP BTP Cloud Foundry account.
+
+For this mission we have to activate the following services:
+  
 * [Setup SAP Business Application Studio](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/6331319fd9ea4f0ea5331e21df329539.html)
+  
+    * Subscribe to SAP Business Application Studio
+    * Manage Authorization and Rules
+  
+
 * [Setup Launchpad](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html)
+
+    * Intital Setup - Accessing the SAP Launchpad service
+
 * [Setup SAP Continous Integration and Delivery](https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/719acaf61e4b4bf0a496483155c52570.html)
+  
+    * Enabling the service
+    * Assigning Roles and Permissions
+
+
+
+
+
 
