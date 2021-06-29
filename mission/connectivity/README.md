@@ -165,7 +165,7 @@ Here are some hints when you face later errors by calling a backend service with
 
    ![Troubleshooting](./images/toubleshooting1.png)
 
-2. If the OData service is not accessible the connection with principal propagation might not be correct. St up a destination with basic authentication and see if you can now access the service. Use the credentials of the S/4HANA user you have created in the SAP S/4HANA setup. If this works use again the principal propagation destination and check with the following steps if you your principal is propagated correct.
+2. If the OData service is not accessible the connection with principal propagation might not be correct. Set up a destination with basic authentication and see if you can now access the service. Use the credentials of the S/4HANA user you have created in the SAP S/4HANA setup. If this works use again the principal propagation destination and check with the following steps the propagation of the principal.
 
    ![Troubleshooting](./images/basicauthentication.png)
 
