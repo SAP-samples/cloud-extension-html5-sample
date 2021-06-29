@@ -158,37 +158,43 @@ With this step the on-premise setup is finished.
 
 
 ### **C: Troubleshooting**
+<a id="troubleshooting"></a>
 Here are some hints when you face later errors by calling a backend service with Principal Propagation:  
 
 1. Ensure that you are using the latest version latest version of SAP Cloud Connector and Java VM 
 
    ![Troubleshooting](./images/toubleshooting1.png)
 
-2. Set the trace log level in SAP Cloud Connector. Enable TLS Trace.
+2. If the OData service is not accessible the connection with principal propagation might not be correct. St up a destination with basic authentication and see if you can now access the service. Use the credentials of the S/4HANA user you have created in the SAP S/4HANA setup. If this works use again the principal propagation destination and check with the following steps if you your principal is propagated correct.
+
+   ![Troubleshooting](./images/basicauthentication.png)
+
+
+3. Set the trace log level in SAP Cloud Connector. Enable TLS Trace.
 
    ![Troubleshooting](./images/toubleshooting2.png)
 
-3. In SAP S/4HANA syste call SAP Transaction Codes: “SMICM” or “SM50” - go to View Log - set Trace Level to : 2
+4. In SAP S/4HANA syste call SAP Transaction Codes: “SMICM” or “SM50” - go to View Log - set Trace Level to : 2
    
    **Hint:** Reset the log level back to the default values when done
 
    ![Troubleshooting](./images/toubleshooting3.png)
 
 
-4. Then again start a request from the SAP Cloud Platform application.
-5. If Principal Propagation is not working check in Cloud Connector ljs_trace.log the x.509 short live certificate
+5. Then again start a request from the SAP Cloud Platform application.
+6. If Principal Propagation is not working check in Cloud Connector ljs_trace.log the x.509 short live certificate
 
    ![Troubleshooting](./images/toubleshooting4.png)
 
-6. Check Trusted Authorities in ljs_trace.log 
+7. Check Trusted Authorities in ljs_trace.log 
 
    ![Troubleshooting](./images/toubleshooting5.png)
 
-7. Check the short live certificate sent to the backend
+8. Check the short live certificate sent to the backend
 
    ![Troubleshooting](./images/toubleshooting7.png)
 
-8. In the SAP S/4HANA system check if the forwarded short live certificate is accepted in the backend
+9.  In the SAP S/4HANA system check if the forwarded short live certificate is accepted in the backend
 
    ![Troubleshooting](./images/toubleshooting6.png)
 

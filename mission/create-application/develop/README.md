@@ -82,7 +82,8 @@ In this section, we would describe steps to develop a cloud application using SA
    - Choose **Next**
   
      ![Choose Template4](./images/ChooseTemplate4.png)
-      
+
+   >If you get an error or you are been asked for credentials then your principal progation setup seems not to be correct or your principal is wrong - check the [troubleshooting section](../../connectivity/README.md#troubleshooting) in the tutorial for the connection setup.   
    
 5. In the **Entity Selection** screen, 
    
