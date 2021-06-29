@@ -22,7 +22,7 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 
 ### Expose HTML5 Applications in Launchpad
 
-In order that your HTML5 applications are visible to the Launchpad application, you have to currently add some information to the manifest.json file. This information is added automatically by the [Create Project from Template wizard](https://github.com/SAP-samples/cloud-extension-html5-sample/tree/mission/mission/create-application/develop#develop-the-application-from-project-template) if you have chosen **Yes** to add Fiori Launchpad Configuration. You can also add the code snippet in step 3 manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Launchpad. 
+In order that your HTML5 applications are visible to the Launchpad application, you have currently to add some information to the manifest.json file. This information is added automatically by the [Create Project from Template wizard](https://github.com/SAP-samples/cloud-extension-html5-sample/tree/mission/mission/create-application/develop#develop-the-application-from-project-template) if you have chosen **Yes** to add Fiori Launchpad Configuration. You can also add the code snippet in step 3 manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Launchpad. 
 
 For more information, check [Expose HTML5 Applications in Launchpad](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
 
