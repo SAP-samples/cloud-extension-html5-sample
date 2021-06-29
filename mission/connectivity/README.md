@@ -174,7 +174,7 @@ Here are some hints when you face later errors by calling a backend service with
 
    ![Troubleshooting](./images/toubleshooting2.png)
 
-4. In SAP S/4HANA syste call SAP Transaction Codes: “SMICM” or “SM50” - go to View Log - set Trace Level to : 2
+4. In SAP S/4HANA system call SAP Transaction Codes: “SMICM” or “SM50” - go to View Log - set Trace Level to : 2
    
    **Hint:** Reset the log level back to the default values when done
 
