@@ -126,10 +126,12 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 
 8. Add icm/trusted_reverse_proxy_0 parameter
    1. Enter parameter name as **icm/trusted_reverse_proxy_0**
-   2. Enter parameter value as **SUBJECT="CN=\<your CN\>, L=\<your city\>, O=\<your company\>, C=\<your country\>", ISSUER="CN=REFAPPS, L=\<your city\>, O=\<your company\>, C=\<your country\>"**. The values must be the same as from the certificate we have created in SAP Cloud Connector on step 3.
+   2. Enter parameter value as **SUBJECT="CN=\<your CN\>, L=\<your city\>, O=\<your company\>, C=\<your country\>", ISSUER="CN=REFAPPS, L=\<your city\>, O=\<your company\>, C=\<your country\>"**. The values must be the same as from the certificate we have created in SAP Cloud Connector on step 3. 
    3. Click on **Copy** and then **Back**
 
    ![STRUST](./images/S4PrincipalPropagation5.png)
+   
+   4. Make sure that there is a blankspace between Subject and Issuer as in screenshot above.
 9. Save the Profile
     1. In the next screen too, click on **Copy** and then **Back**. Click on **Save** button    
     2. Click on **No** (if asked for error check)
