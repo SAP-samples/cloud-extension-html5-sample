@@ -28,7 +28,7 @@ In this section, we would describe steps to build and deploy your cloud applicat
 
    ![Open Explorer](./images/openExplorer.png)
    
-2. Add the scope in the xs-app.json file. Go to the xs-app.json add the line in the **routes** section as shown below: **scope**: **$XSAPPNAME.BPViewer**. Add a **,** to the previous line. The block looks like below after adding the line.
+2. Add the scope in the xs-app.json file. Go to the xs-app.json add this one line in the **routes** section as shown below: **scope**: **$XSAPPNAME.BPViewer**. Add a **,** to the previous line. The block looks like below after adding the line.
 
    ```
    {
@@ -39,6 +39,9 @@ In this section, we would describe steps to build and deploy your cloud applicat
      "scope": "$XSAPPNAME.BPViewer"
     }
     ```
+    
+   ![Add Scopes](./images/scopesxs-app.png)
+    
  
 3. Open xs-security.json and replace the code as shown below inside scope, role templates and role collections.
 
