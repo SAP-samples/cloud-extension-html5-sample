@@ -144,13 +144,13 @@ With this step the on-premise setup is finished.
     * Name: **HTML5.DynamicDestination** - value: **true**
     * Name: **SAP-Client** - value: **the SAP-Client of your SAP S/4HANA system**
     * Name: **WebIDEEnabled** - value: **true**
-    * Name: **WebIDEAdditionalData** - value: **full_url**
+    * Name: **WebIDESystem** - value: **System ID of your SAP S/4HANA system**
     * Name: **WebIDEUsage** - value: **odata_abap**
     
 
-   ![destination](./images/scp-destination2.png)
+   ![destination](./images/scp-destination3a.png)
 
-4. Click on Save and the click on "Check Connection"
+4. Choose **Save** and the select **Check Connection**
       
    ![check connection](./images/scp-destination3.png)
 
