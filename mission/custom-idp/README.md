@@ -27,19 +27,19 @@ You can manage trust configurations for a global account only if you have create
    ![Download XML](./images/CustIDP-SAML.png)
    
 4. Now, open your company's Identity and Authentication Tenant (SAP IAS) and login to the same.
-5. Click on **Application & Resources** > Application from left pane.
-6. Click on **+ Add** add application button.
+5. Select **Application & Resources** > Application from left pane.
+6. Choose **Create**.
    
    ![Add App](./images/CustIDP-addApp.png)
    
-7. Enter Name. For eg., **ExtendUI_IDP**
-8. Click on Save button.
+7. Enter Name. For eg., **ExtendUI_IDP** and choose **SAP BTP solution** as **Application Type**
+8. Select **Save**.
 
    ![Save App](./images/CustIDP-saveApp.png)
-9. Click on **SAML 2.0 Configuration** under Trust Tab.
+9. Choose **SAML 2.0 Configuration** under Trust Tab.
    
    ![Configure SAML](./images/CustIDP-configureSAML.png)
-10. Click on **Browse** button for Metadata file upload. Choose the metadata xml file downloaded from previous step number 3.
+10. Seletct **Browse** for Metadata file upload. Choose the metadata xml file downloaded from previous step number 3.
 
    ![Save SAML](./images/CustIDP-saveSAML.png)   
 11. Click on Save button.

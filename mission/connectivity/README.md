@@ -24,7 +24,7 @@
 
 3. Create a new Connector to your SAP BTP subaccount. 
    1. Login to the SAP Cloud Connector and select the Connector entry
-   2. Click on "+ Add Subaccount"
+   2. Select **+ Add Subaccount**
    
    ![Create new Subaccount](./images/CCCreateSubaccount.png)
 
@@ -41,12 +41,12 @@
    ![Add Subaccount](./images/addSubAccount.png) 
 
 5. Cloud to on-premise Setup
-   1. In the added Subaccount, select the "Cloud to On-Premise" tabulator.
-   2. In the "Mapping Virtual to Internal System" section click on the button "+"
+   1. In the added Subaccount, select the **Cloud to On-Premise** tabulator.
+   2. In the **Mapping Virtual to Internal System** section click on the button **+**
    
    ![Add System](./images/CCAddResource.png)
 
-6. In the screens of the "Add System" Wizzard enter the following:
+6. In the screens of the **Add System** Wizzard enter the following:
     
     1. Select ABAP - next
    
@@ -73,7 +73,7 @@
     ![add system](./images/add-system5.png) 
 
 
-    6. For the Host in Request Header select "Use Virtual Host" - next
+    6. For the Host in Request Header select **Use Virtual Host** - next
    
     ![add system](./images/add-system6.png) 
 
@@ -83,7 +83,7 @@
     ![add system](./images/add-system7.png) 
 
 
-    8. In the Summary check "Check Internal Host" - click on Finish
+    8. In the Summary check **Check Internal Host** - click on Finish
 
     ![add system](./images/add-system8.png) 
 
@@ -94,7 +94,7 @@
 
 8. Add Resource
    1. Enter the URL root path to the S/4HANA APIs: /sap/opu/odata/
-   2. AccessPolicy: set "Path and all sub-paths"
+   2. AccessPolicy: set **Path and all sub-paths**
    3. Enter a description
    4. Press Save
    
@@ -102,13 +102,13 @@
    
 
 9.  Synchronize your settings with your SAP BTP account
-    1.  Select the "Principal Propagation" tabulator
+    1.  Select the **Principal Propagation** tabulator
     2.  Click on Synchronize
 
     ![synchronize](./images/cc-synchronize.png)
 
 10. Check the availability of the internal system 
-    1. In the Access Control tabulator click on "Check availability of internal host"
+    1. In the Access Control tabulator click on **Check availability of internal host**
     2. Status should be green
     3. Check Result should turn to Reachable 
    
@@ -126,7 +126,7 @@ With this step the on-premise setup is finished.
 1. Login to your SAP BTP subaccount 
 2. Create a new Destination
    1. Open the Connectivity entry and select Destination
-   2. Click on "New Destination" 
+   2. Choose **New Destination** 
 
    ![destination](./images/scp-destination.png)
 
@@ -139,7 +139,7 @@ With this step the on-premise setup is finished.
     * **Authentication**: Principal Propagation
     * **Location ID**: optional field, you have use this field if you connect more than one cloud connectors to your account. See [Destination Configuration Help page](https://help.sap.com/viewer/6d3eac5a9e3144a7b43932a1078c7628/Cloud/en-US/0a2e5a45d5494ec08318ead2019d54db.html).
      
-    Add the following properties by clicking on the "New Property" button:
+    Add the following properties by clicking on the **New Property** button:
 
     * Name: **HTML5.DynamicDestination** - value: **true**
     * Name: **SAP-Client** - value: **the SAP-Client of your SAP S/4HANA system**
@@ -174,7 +174,7 @@ Here are some hints when you face later errors by calling a backend service with
 
    ![Troubleshooting](./images/toubleshooting2.png)
 
-4. In SAP S/4HANA system call SAP Transaction Codes: “SMICM” or “SM50” - go to View Log - set Trace Level to : 2
+4. In SAP S/4HANA system call SAP Transaction Codes: **SMICM** or **SM50** - go to View Log - set Trace Level to : 2
    
    **Hint:** Reset the log level back to the default values when done
 
