@@ -73,7 +73,7 @@ In this section, we would describe steps to develop a cloud application using SA
      ![Choose Template2](./images/ChooseTemplate2.png)
    
 4. In the **Data Source and Service Selection**, choose:
-   - For the field **Data Source**, choose **Connect to an SAP System** from the drop-down,
+   - For the field **Data Source**, choose **Connect to a System** from the drop-down,
    - For the field **System**, choose the destination which you created for connecting to your on-premise system, in our case choose **bupa**
 
      ![Choose Template3](./images/ChooseTemplate3.png)
