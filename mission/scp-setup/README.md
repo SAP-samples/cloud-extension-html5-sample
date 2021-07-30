@@ -65,6 +65,10 @@ Before running the booster please check for which regions and infrastructures th
     If you do not have set an entitlement for the **Continous Integration & Delivery** service it will not appear in the list. For accounts with the consumption-based model you can delete it, if you don't want to use it. It is optional for this mission.
     
     ![Booster Overview](./images/booster5a.png)
+    
+    Set the Cloud Foundry Runtime to atleast 1 for Subscription Based Accounts :
+    
+    ![Booster Overview](./images/cfquota.png)
    
 6.  Setup Subaccount credentials 
     1.  Set Subaccount name
@@ -118,7 +122,7 @@ In your new subaccount check the following
    
      ![Check account](./images/check-booster2.png)
 
-4. You can check that all necessary roles already assigned for the Administrator users to access **Business Application Studio**, **Launchpad** and **Continous Integration & Delivery service**. By pressing the **Edit** buttton you can add additional roles and user to to this role collection. 
+4. You can check that all necessary roles already assigned for the Administrator users to access **Business Application Studio**, **Launchpad** and **Continous Integration & Delivery service**. By pressing the **Edit** button you can add additional roles and user to to this role collection. 
 
      ![Check account](./images/adminRole.png)
      
