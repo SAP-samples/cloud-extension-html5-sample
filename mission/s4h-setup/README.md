@@ -188,3 +188,5 @@ This completes this mission section.
 You have activated an API in the S/4 on-premise system and created a user with the necessary roles for CRUD operations of Business Partner data and to access the API_BUSINESS_PARTNER_SRV oData service.
 
 ***Hint:** the simplest way for adding additional users with the same roles is just to copy this user profile in the SU01 transaction*
+
+[see also SAP Help: Activate and Maintain Services](https://help.sap.com/viewer/68bf513362174d54b58cddec28794093/202009.002/en-US/bb2bfe50645c741ae10000000a423f68.html)
