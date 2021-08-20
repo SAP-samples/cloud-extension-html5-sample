@@ -61,7 +61,7 @@
     ![add system](./images/add-system3.png) 
 
 
-    4. Enter a virtual host name and port. - next
+    4. Enter a virtual host name and port. This will then later used as URL in the destination at your SAP BTP subaccount. - next
    
      ***Hint:** For security reasons it's recommended that the virtual host and port differ from the host and port of the on-premise system*
 
