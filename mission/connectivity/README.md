@@ -150,7 +150,7 @@ With this step the on-premise setup is finished.
 
    ![destination](./images/scp-destination3a.png)
 
-4. Choose **Save** and the select **Check Connection**
+4. Choose **Save** and then select **Check Connection**
       
    ![check connection](./images/scp-destination3.png)
 
