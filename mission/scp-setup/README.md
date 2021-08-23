@@ -101,7 +101,7 @@ Before running the booster please check for which regions and infrastructures th
     ![Booster Overview](./images/booster8.png)
 
 
-10. When the Booster has executed successfully you will get a success window. - Click on **Navigate to Subaccount" to enter the newly created subaccount.
+10. When the Booster has executed successfully you will get a success window. Select **Navigate to Subaccount** to enter the newly created subaccount.
 
     ![Booster Overview](./images/booster9.png)
 
