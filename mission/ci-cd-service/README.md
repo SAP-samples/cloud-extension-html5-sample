@@ -128,20 +128,20 @@ We recommend using a technical user. However, you can use also use your cloud cr
      ![copy payload URL](./images/repository3.png)
    
 
-12. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the **API Endpoint** and **Org Name** into a text editor of your choice.  
+11. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the **API Endpoint** and **Org Name** into a text editor of your choice.  
 
     ![copy Cloud Data](./images/copyCloudData.png)
     
-13. Choose **Spaces** and copy the space name to a text editor of your choice. 
+12. Choose **Spaces** and copy the space name to a text editor of your choice. 
 
     ![copy Space Name](./images/copySpaceName.png)
 
-14. Go back to the SAP Continous Integration and Delivery service. Choose the **Jobs** tab and **+** icon to create a new job.
+13. Go back to the SAP Continous Integration and Delivery service. Choose the **Jobs** tab and **+** icon to create a new job.
 
-15. In the **Create Job** screen, enter the following inputs :
+14. In the **Create Job** screen, enter the following inputs :
     
     - In the **Job Name** field enter a name for example, **cloud-extension-html5-mission**
-    - In the **Repository** field choose the repository you have created in step 9. 
+    - In the **Repository** field choose the repository you have created in step 8. 
     - In the **Branch** field enter the branch of your GitHub repository for example **master**
     - As **Pipeline** choose **SAP Fiori in the Cloud Foundry environment** 
     - In the **Version** field choose the latest or leave the default
@@ -149,14 +149,14 @@ We recommend using a technical user. However, you can use also use your cloud cr
     
     ![create CICD Job](./images/cicdjob1.png)
     
-16. In the **Stages** section do the following:
+15. In the **Stages** section do the following:
    - In the **Configuration Mode** field choose **Job Editor**
    - Choose **ON** for the **State** field in the **Build** section
    - In the Malware Scan section choose **ON** for the **State** field. This will force a check for malicious software in your build package. 
    - Also in the **Deploy** section set the **State** field to **ON**.
-   - In the **API Entpoint** and **Org Name** fields set the values from step 12.
-   - In the **Space** field set the value form step 14.
-   - In the **Credential** field select the credentials for your SAP BTP account that you have created in step 7.
+   - In the **API Entpoint** and **Org Name** fields set the values from step 11.
+   - In the **Space** field set the value form step 12.
+   - In the **Credential** field select the credentials for your SAP BTP account that you have created in step 6.
    - Choose **Create** to save your settings
 
    ![create CICD Job](./images/cicdjob2.png)
