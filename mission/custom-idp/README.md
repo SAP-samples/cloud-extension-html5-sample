@@ -64,27 +64,27 @@ You can manage trust configurations for a global account only if you have create
    ![User Groups](./images/CustIDP-addGroups.png)
 
 17. Create a Extension Developer group. 
-    * Click on "+ Add"
+    * Select **Create**
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
     * Enter a description
-    * Press save
+    * Press **Save**
 
    ![User Groups](./images/CustIDP-addGroups2.png)
 
 
-18.  Create a Extension Administrator group.     
-     * Click on "+ Add"
+18.  Create a Extension Administrator group. Same steps as before.     
+     * Select **Create**
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
-     * Press save
+     * Press **Save**
   
 19. Map the group to a user which should have the UX extension developer role. 
     * Open User Management
-    * Select your user  
+    * Select the user  
     * Click on User Groups
-    * Click on "Assign Groups"
+    * Press **Assign Groups**
    
    ![User Groups](./images/CustIDP-assertGroup.png)
 
@@ -119,13 +119,14 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Ident
    ![Configure Trust](./images/CustIDP-configurenewTrust1.png)
    
 8. Click on **Save**.
-9. Now let us disable the default SAP Identity Provider. Click on Edit button of SAP ID Service.
-10. Change Status to Inactive.
+9. Now let us disable the defaultIdentity Provider. Choose the edit symbol at the **Default identity provider**.
+10. Uncheck **Available for User Logon** 
+11. Select save.
 
     ![Disable DefaultIDP](./images/CustIDP-disableDefaultIDP.png)
-11. Click on Save button.
 
-12. In the Security Menu select 'Role Collections' and then click on the Extension_UX_Administrator collection.
+
+12. In the Security Menu select **Role Collections** and then select the Extension_UX_Administrator collection.
    
    ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
 

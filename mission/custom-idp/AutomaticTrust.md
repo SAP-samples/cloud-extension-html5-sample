@@ -70,21 +70,21 @@ Establishing the trust between your company's IDP could be done in an automatic 
    ![User Groups](./images/CustIDP-addGroups.png)
 
 17. Create a Extension Developer group. 
-    * Click on **+ Add**
+    * Select **Create**
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
     * Enter a description
-    * Press save
+    * Press **Save**
 
    ![User Groups](./images/CustIDP-addGroups2.png)
 
 
-18.  Create a Extension Administrator group.     
-     * Click on **+ Add**
+18. Create a Extension Administrator group. Same steps as before.     
+     * Select **Create**
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
-     * Press save
+     * Press **Save**
   
 19. Map the group to a user which should have the UX extension developer role. 
     * Open User Management
