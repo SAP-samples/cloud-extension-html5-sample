@@ -153,13 +153,14 @@ We recommend using a technical user. However, you can use also use your cloud cr
    - In the **Configuration Mode** field choose **Job Editor**
    - Choose **ON** for the **State** field in the **Build** section
    - In the Malware Scan section choose **ON** for the **State** field. This will force a check for malicious software in your build package. 
-   - Also in the **Deploy** section set the **State** field to **ON**.
+   - Also in the **Release** section set the **Deploy to Cloud Foundry Production Space** field to **ON**.
    - In the **API Entpoint** and **Org Name** fields set the values from step 11.
    - In the **Space** field set the value form step 12.
    - In the **Credential** field select the credentials for your SAP BTP account that you have created in step 6.
-   - Choose **Create** to save your settings
+   - Choose **Save** 
 
    ![create CICD Job](./images/cicdjob2.png)
+   ![create CICD Job](./images/cicdjob2a.png)
     
 16. Open your GitHub repository and choose **Settings** --> **Webhooks** --> **Add webhook**.
 
