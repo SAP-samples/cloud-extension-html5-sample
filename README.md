@@ -10,7 +10,7 @@ Depending on your backend application setup, you either configure the destinatio
 For more information, please refer to the documentation on [SAP Help Portal](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/c1b9d6facfc942e3bca664ae06387e9b.html).
 
 ## Build Custom SAP Fiori User Experience
-The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Cloud Platform Neo Environment to the Multi-Cloud environment.
+The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Business Technology Platform Neo Environment to the Multi-Cloud environment.
 
 
 ## Prerequisites
