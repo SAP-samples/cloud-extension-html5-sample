@@ -114,7 +114,7 @@ In your new subaccount check the following
    
      ![Check account](./images/check-booster1.png)
 
-2. Security - Open the Security section and select Administrators. Again you should see the adminstrator users assigned with the "User & Role Administrator" role. 
+2. Security - Open the Security section and select **Users**. Again you should see all the users who have access to this sub-account. Click on your user and check the role collections assigned to you.  
 
      ![Check account](./images/check-booster4.png)
 
