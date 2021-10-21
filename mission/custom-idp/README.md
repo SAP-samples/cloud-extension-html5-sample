@@ -68,7 +68,7 @@ You can manage trust configurations for a global account only if you have create
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
     * Enter a description
-    * Press **Save**
+    * Press **Create**
 
    ![User Groups](./images/CustIDP-addGroups2.png)
 
