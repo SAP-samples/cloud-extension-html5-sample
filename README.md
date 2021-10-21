@@ -1,16 +1,16 @@
 # Managed HTML5 Application Sample
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-extension-html5-sample)](https://api.reuse.software/info/github.com/SAP-samples/cloud-extension-html5-sample)
 
-SAP Cloud Platform enables you to access and run HTML5 Applications in a cloud environment without the need to maintain your own runtime infrastructure.
+SAP Business Technology Platform enables you to access and run HTML5 Applications in a cloud environment without the need to maintain your own runtime infrastructure.
 
 HTML5 Applications consist of static content that runs on a browser. You can develop your applications - either in SAP Business Application Studio, or in your own IDE (integrated development environment) - and deploy them to the HTML5 Application Repository.
 
-Depending on your backend application setup, you either configure the destinations during development, or define them after deploying the application. Finally, to consume the applications, you can create a site in SAP Cloud Platform Portal, build the URL, and define custom domains.
+Depending on your backend application setup, you either configure the destinations during development, or define them after deploying the application. Finally, to consume the applications, you can create a site in SAP Cloud Portal Service, build the URL, and define custom domains.
 
 For more information, please refer to the documentation on [SAP Help Portal](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/c1b9d6facfc942e3bca664ae06387e9b.html).
 
 ## Build Custom SAP Fiori User Experience
-The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Cloud Platform Neo Environment to the Multi-Cloud environment.
+The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Business Technology Platform Neo Environment to the Multi-Cloud environment.
 
 
 ## Prerequisites
