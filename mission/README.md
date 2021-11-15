@@ -22,7 +22,7 @@ The setup of the landscape consists of preparing the API in the S/4 on-premise s
 
 * [Setup of S/4HANA on-premise System](./s4h-setup/README.md)
 * [Setup of SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
-* [Setup of SAP Business Technology Platform Account using Boosters](./scp-setup/README.md)
+* [Setup of SAP Business Technology Platform Account](./scp-setup/README.md)
 * [End-to-End Connectivity Setup](./connectivity/README.md)
 * [Setup SAP Identity and Authentication Service (optional)](./custom-idp/README.md)
 

@@ -12,6 +12,10 @@ For running the HTML5 mission you will need the following services in your SAP B
 
 The entitlement differs for the pricing option of your account:
 
+**Free Tier option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account** or **SAP Business Technology Platform Trial**
+
+You need to manually setup the subaccount and assign role collections to users, follow the instructions in [Setup of a SAP Business Technology Platform subccount manually](../freetier/README.md).
+
 **Consumption-based SAP BTP Account:** 
 No entitlement necessary. Be sure that you have enough credits to run the services.
 
@@ -142,29 +146,7 @@ In your new subaccount check the following
 
      ![Check account](./images/openBizAppStudio.png)
 
-## C: Manual Setup of Services and Authorization
-<a id="manualSetup"></a>
-For running this mission on a SAP BTP trial account you have to enable the services and manage your authorizations by some manual steps: 
 
-
-[Setup of SAP BTP Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/302b47b11e1749c3aa9478f4123fc216.html) gives you a general overview of a SAP BTP Cloud Foundry account.
-
-For this mission we have to activate the following services:
-  
-* [Setup SAP Business Application Studio](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/6331319fd9ea4f0ea5331e21df329539.html)
-  
-    * Subscribe to SAP Business Application Studio
-    * Manage Authorization and Rules
-  
-
-* [Setup Launchpad](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html)
-
-    * Intital Setup - Accessing the SAP Launchpad service
-
-* [Setup SAP Continous Integration and Delivery](https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/719acaf61e4b4bf0a496483155c52570.html)
-  
-    * Enabling the service
-    * Assigning Roles and Permissions
 
 
 
