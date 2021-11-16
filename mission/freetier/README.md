@@ -72,6 +72,35 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
 
    ![createSpace](./images/createSpace.png)
 
+### Add Entitlements for the necessary Services
+
+> If you are using a trial account you have to skip this section
+1. In the SAP BTP subaccount overview page select **Entitlements** and the choose **Configure Entitlements**
+   
+   ![add Entitlements](./images/entitlement1.png)
+2. Select **Add Service Plans**
+   
+   ![add Entitlements](./images/entitlement2.png)
+
+3. Search for **SAP Business Application Studio** and select the **free (Application)** plan
+   
+   ![add Entitlements](./images/entitlement3.png) 
+
+4. Search for **Launchpad Service** and select the **free (Application)** plan
+   
+   ![add Entitlements](./images/entitlement4.png) 
+
+5. Search for **Continous Integration & Delivery** and select the **free (Application)** plan
+   
+   ![add Entitlements](./images/entitlement5.png)
+
+6. Add the 3 Service Plans
+   
+   ![add Entitlements](./images/entitlement6.png)
+
+7. In the **Entitlements** overview page choose **Save** 
+   
+   ![add Entitlements](./images/entitlement7.png)
 
 ### Subscribe to neccessary Services
 
@@ -79,7 +108,7 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
    
    ![subscribe01](./images/subscribe01.png)
    
-2. Select **SAP Business Application Studio** and choose **free** Plan and choose **Create**.
+2. Select **SAP Business Application Studio** and choose **free** Plan and choose **Create**. If you are using the SAP BTP trial account choose the **standard** or **default** plan. 
 
    ![subscribe02](./images/subscribe02.png)
 
@@ -97,10 +126,20 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
 
      ![Checkrole](./images/assignRole01.png)
 
+
+
+
 3. Kindly check and assign relevant roles to access  **Business Application Studio**, **Launchpad** and optiinally **Continous Integration & Delivery service** and also assign roles to manage Cloud Connector, Destinations, Subaccount Administrator. Repeat the steps to assign more team members relevant role collections.
 
      ![assign Role 02](./images/assignRole02.png)
-     
+   
+**List of necessary role collections** |
+-------------------------------------------
+Business_Application_Studio_Administrator |
+Business_Application_Studio_Developer |
+CICD Service Administrator |
+Launchpad_Admin |
+Subaccount Service Administrator|
      
 4. Let us check if you have access to the Subscribed applications. Go back to the Overview of your BTP subaccount.
 
