@@ -133,13 +133,14 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
 
      ![assign Role 02](./images/assignRole02.png)
    
-**List of necessary role collections** |
--------------------------------------------
-Business_Application_Studio_Administrator |
-Business_Application_Studio_Developer |
-CICD Service Administrator |
-Launchpad_Admin |
-Subaccount Service Administrator|
+
+    | List of necessary role collections | 
+    |-------------------------------------------|
+    | Business_Application_Studio_Administrator | 
+    | Business_Application_Studio_Developer | 
+    | CICD Service Administrator | 
+    | Launchpad_Admin | 
+    | Subaccount Service Administrator| 
      
 4. Let us check if you have access to the Subscribed applications. Go back to the Overview of your BTP subaccount.
 
