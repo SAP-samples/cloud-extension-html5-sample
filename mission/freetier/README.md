@@ -44,7 +44,10 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
 ### Create subaccount and enable Cloud Foundry
 
    
-1. Login to your global SAP BTP account or your SAP BTP Trial account.
+1. Login to your global SAP BTP account or your SAP BTP Trial account. 
+
+   > If you are using a SAP BTP Trial Account, subaccount and a development space are already created, so you can skip step 2,3 and step 7.
+   
 2. Choose **Create** and select **Subaccount** to create a SAP BTP sub-account.
    
    ![create subaccount1](./images/createsubaccount1.png)
@@ -74,7 +77,8 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
 
 ### Add Entitlements for the necessary Services
 
-> If you are using a trial account you have to skip this section
+> If you are using a trial account you have to skip this section.
+
 1. In the SAP BTP subaccount overview page select **Entitlements** and the choose **Configure Entitlements**
    
    ![add Entitlements](./images/entitlement1.png)
