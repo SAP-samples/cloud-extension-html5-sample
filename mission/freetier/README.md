@@ -108,7 +108,7 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
    
    ![subscribe01](./images/subscribe01.png)
    
-2. Select **SAP Business Application Studio** and choose **free** Plan and choose **Create**. If you are using the SAP BTP trial account choose the **standard** or **default** plan. 
+2. Select **SAP Business Application Studio** and choose **free** Plan and choose **Create**. If you are using the SAP BTP trial account choose the **standard** or **trial** plan. 
 
    ![subscribe02](./images/subscribe02.png)
 
