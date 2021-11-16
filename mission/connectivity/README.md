@@ -1,6 +1,6 @@
 # Setup End-to-end Connection
 ## Introduction
- In this section we setup the end-to-end communication between the SAP S/4HANA on-premise system and the SAP Cloud Platform account. To establish it we have to define an account in SAP Cloud Connector and configure the connection to each system. Then we define a destination on SAP Cloud Platform to use this connection setting.
+ In this section we setup the end-to-end communication between the SAP S/4HANA on-premise system and the SAP BTP account. To establish it we have to define an account in SAP Cloud Connector and configure the connection to each system. Then we define a destination on SAP Cloud Platform to use this connection setting.
 
 **Personas:** In this section the SAP S/4HANA admininstrator and the SAP Cloud administrator have to work together.
 
@@ -8,7 +8,7 @@
 
 ## Step-by-Step
 
-### **A: Configure End-to-end Connection in SAP Cloud Connector**
+### **A: Configure End-to-end Connection in Cloud Connector**
 
 
 1. Get the connection information of your SAP BTP subaccount
@@ -18,12 +18,12 @@
    
    ![Get Subaccount](./images/subaccount.png) 
 
-2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user you can create a new user with the technical roles for the SAP Cloud Connector. You find more details here:
+2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user you can create a new user with the technical roles for the  Cloud Connector. You find more details here:
    
    [Communication User](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/daca64dacc6148fcb5c70ed86082ef91.html) 
 
 3. Create a new Connector to your SAP BTP subaccount. 
-   1. Login to the SAP Cloud Connector and select the Connector entry
+   1. Login to the Cloud Connector and select the Connector entry
    2. Select **+ Add Subaccount**
    
    ![Create new Subaccount](./images/CCCreateSubaccount.png)
@@ -35,7 +35,7 @@
    4. *Subaccount User:* Name of the connection user - for testing you could use your SAP BTP account user, else you first have to create a specific connection user at your SAP BTP account.
    5. *Password:* Password of the connection user
    6. *Description:* Enter a meaningful description 
-   7. *Location ID*: Optional field: If you plan to connect more than one cloud connector to a subaccount, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy). 
+   7. *Location ID*: Optional field: If you plan to connect more than one Cloud Connector to a subaccount, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy). 
    8. Click on Save
 
    ![Add Subaccount](./images/addSubAccount.png) 
@@ -133,7 +133,7 @@ With this step the on-premise setup is finished.
 3. Setup Destination - enter the following values
     * **Name**:  bupa  --> this destination is later used at the sample application 
     * **Type**:  select HTTP
-    * **URL**:  URL of the virtual host that we have exposed in the SAP Cloud Connector =  https://\<virtual host\>:\<virtual port\>
+    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector =  https://\<virtual host\>:\<virtual port\>
   
     * **Proxy Type**: OnPremise
     * **Authentication**: Principal Propagation
@@ -163,7 +163,7 @@ With this step the on-premise setup is finished.
 <a id="troubleshooting"></a>
 Here are some hints when you face later errors by calling a backend service with Principal Propagation:  
 
-1. Ensure that you are using the latest version latest version of SAP Cloud Connector and Java VM 
+1. Ensure that you are using the latest version latest version of Cloud Connector and Java VM 
 
    ![Troubleshooting](./images/toubleshooting1.png)
 
@@ -172,7 +172,7 @@ Here are some hints when you face later errors by calling a backend service with
    ![Troubleshooting](./images/basicauthentication.png)
 
 
-3. Set the trace log level in SAP Cloud Connector. Enable TLS Trace.
+3. Set the trace log level in Cloud Connector. Enable TLS Trace.
 
    ![Troubleshooting](./images/toubleshooting2.png)
 
@@ -183,7 +183,7 @@ Here are some hints when you face later errors by calling a backend service with
    ![Troubleshooting](./images/toubleshooting3.png)
 
 
-5. Then again start a request from the SAP Cloud Platform application.
+5. Then again start a request from the SAP BTP application.
 6. If Principal Propagation is not working check in Cloud Connector ljs_trace.log the x.509 short live certificate
 
    ![Troubleshooting](./images/toubleshooting4.png)
@@ -202,8 +202,8 @@ Here are some hints when you face later errors by calling a backend service with
 
 Additional links:
 
-* [Blog: SAP Cloud Connector Troubleshooting](https://blogs.sap.com/2019/01/26/cloud-connector-guided-answers-and-troubleshooting/)
-* [SAP Cloud Connector: Guided Answers](https://ga.support.sap.com/dtp/viewer/index.html#/tree/2183/actions/27936)
+* [Blog: Cloud Connector Troubleshooting](https://blogs.sap.com/2019/01/26/cloud-connector-guided-answers-and-troubleshooting/)
+* [Cloud Connector: Guided Answers](https://ga.support.sap.com/dtp/viewer/index.html#/tree/2183/actions/27936)
 
 ## Summary
 We have established a secure connection between the SAP S/4HANA on-premise system and the SAP Business Technology Platform (SAP BTP) subaccount and we're now ready for building SAP S/4HANA extension on the SAP BTP.
