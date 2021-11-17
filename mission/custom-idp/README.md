@@ -119,30 +119,7 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Ident
    ![Configure Trust](./images/CustIDP-configurenewTrust1.png)
    
 8. Click on **Save**.
-9. Now let us disable the defaultIdentity Provider. Choose the edit symbol at the **Default identity provider**.
-10. Uncheck **Available for User Logon** 
-11. Select save.
-
-    ![Disable DefaultIDP](./images/CustIDP-disableDefaultIDP.png)
-
-
-12. In the Security Menu select **Role Collections** and then select the Extension_UX_Administrator collection.
-   
-   ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
-
-13. Click on Edit
-
-   ![Role Mapping](./images/CustIDP_RoleMapping2a.png)
-
-14. Select User Groups then enter the ExtensionAdministrator as name and select your 'Custom IAS' tenant as Identity Provider. Press Save.
-
-   ![Role Mapping](./images/CustIDP_RoleMapping3a.png)
-
-15. Repeat steps 13-14 by selecting the Extension_UX_Developer collection and map it to the ExtensionDeveloper user group.
-
-   ![Role Mapping](./images/CustIDP_RoleMapping4a.png)   
-
-16. To test the configuration open the service **SAP Business Application Studio** by clicking **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions** and click **...**, choose **Go to Application**. Now login to **SAP Business Application Studio** by choosing the Custom Identity Provider and login with your custom IDP user.(If you have already a open session restart your browser).
+9. Now assign the created Identity Provider groups with the role collections of your subaccount in SAP BTP by following the steps [Map IDP Groups with Role Collection](./AutomaticTrust.md).
 
 
 ### References

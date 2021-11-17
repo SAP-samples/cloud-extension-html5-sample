@@ -115,6 +115,19 @@ Establishing the trust between your company's IDP could be done in an automatic 
 6. In the Security Menu select 'Role Collections' and then click on the Extension_UX_Administrator collection.
    
    ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
+   
+   - If your sub account was created manually and not using boosters in case of a  SAP BTP Trial account or "free tier" option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account, then you will not have the role collections and have to manually create the role collections. 
+   - Select **Role Collections** and choose **+** and create a Role Collection with name **Extension_UX_Administrator** 
+
+     ![Role Collection01](./images/createRoleCollection.png)
+      
+   - Choose **Edit** and assign the following roles to this role collection and choose **Save**.
+
+     ![Role Collection01](./images/createRoleCollection02.png)
+     
+   - Create a new role collection with name **Extension_UX_Developer** and assign the following roles to this role collection and choose **Save**. 
+
+     ![Role Collection01](./images/createRoleCollection02.png)
 
 7. Click on Edit
 
@@ -128,7 +141,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
 
    ![Role Mapping](./images/CustIDP_RoleMapping4a.png)   
 
-10. To test the configuration open the SAP Business Application Studio in Subscriptions and see if your are able to login with your custom IDP. (If you have already a open session restart your browser).
+10. To test the configuration open the service **SAP Business Application Studio** by clicking **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions** and click **...**, choose **Go to Application**. Now login to **SAP Business Application Studio** by choosing the Custom Identity Provider and login with your custom IDP user.(If you have already a open session restart your browser).
 
 
 ### References
