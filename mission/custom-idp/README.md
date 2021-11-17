@@ -119,7 +119,7 @@ You have your company's SAML 2.0 identity provider, for example, SAP Cloud Ident
    ![Configure Trust](./images/CustIDP-configurenewTrust1.png)
    
 8. Click on **Save**.
-9. Now assign the created Identity Provider groups with the role collections of your subaccount in SAP BTP by following the steps [Map IDP Groups with Role Collection](./AutomaticTrust.md).
+9. Now assign the created Identity Provider groups with the role collections of your subaccount in SAP BTP by following the steps [Map IDP Groups with Role Collection](./AutomaticTrust.md#map-idp-groups-with-role-collection).
 
 
 ### References

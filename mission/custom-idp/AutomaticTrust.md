@@ -123,11 +123,11 @@ Establishing the trust between your company's IDP could be done in an automatic 
       
    - Choose **Edit** and assign the following roles to this role collection and choose **Save**.
 
-     ![Role Collection01](./images/createRoleCollection02.png)
+     ![Role Collection02](./images/createRoleCollection02.png)
      
    - Create a new role collection with name **Extension_UX_Developer** and assign the following roles to this role collection and choose **Save**. 
 
-     ![Role Collection01](./images/createRoleCollection02.png)
+     ![Role Collection03](./images/createRoleCollection03.png)
 
 7. Click on Edit
 
