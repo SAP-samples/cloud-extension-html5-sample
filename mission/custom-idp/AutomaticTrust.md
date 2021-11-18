@@ -117,17 +117,18 @@ Establishing the trust between your company's IDP could be done in an automatic 
    ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
    
    - If your sub account was created manually and not using boosters in case of a  SAP BTP Trial account or "free tier" option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account, then you will not have the role collections and have to manually create the role collections. 
-   - Select **Role Collections** and choose **+** and create a Role Collection with name **Extension_UX_Administrator** 
-
-     ![Role Collection01](./images/createRoleCollection.png)
       
-   - Choose **Edit** and assign the following roles to this role collection and choose **Save**.
+      a. Select **Role Collections** and choose **+** and create a Role Collection with name **Extension_UX_Administrator** 
 
-     ![Role Collection02](./images/createRoleCollection02.png)
+        ![Role Collection01](./images/createRoleCollection.png)
+      
+      b. Choose **Edit** and assign the following roles to this role collection and choose **Save**.
+
+        ![Role Collection02](./images/createRoleCollection02.png)
      
-   - Create a new role collection with name **Extension_UX_Developer** and assign the following roles to this role collection and choose **Save**. 
+      c. Create a new role collection with name **Extension_UX_Developer** and assign the following roles to this role collection and choose **Save**. 
 
-     ![Role Collection03](./images/createRoleCollection03.png)
+        ![Role Collection03](./images/createRoleCollection03.png)
 
 7. Click on Edit
 
