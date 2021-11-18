@@ -12,18 +12,20 @@ For running the HTML5 mission you will need the following services in your SAP B
 
 The entitlement differs for the pricing option of your account:
 
-**Free Tier option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account** or **SAP Business Technology Platform Trial**
+- **Free Tier option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account** or **SAP Business Technology Platform Trial**
 
-You need to manually setup the subaccount and assign role collections to users, follow the instructions in [Setup of a SAP Business Technology Platform subccount manually](../freetier/README.md).
+  You need to manually setup the subaccount and assign role collections to users, follow the instructions in [Setup of a SAP Business Technology Platform subccount manually](../freetier/README.md).
 
-**Consumption-based SAP BTP Account:** 
+- **Consumption-based Pay-As-You-Go SAP BTP Account:** 
 No entitlement necessary. Be sure that you have enough credits to run the services.
 
-**Subscription-based SAP BTP Account:** 
+- **Subscription-based SAP BTP Account:** 
 You have to create entitlements for the services above - [see also Entitlements and Quotas](https://help.sap.com/viewer/df50977d8bfa4c9a8a063ddb37113c43/Cloud/en-US/38ecf59cdda64150a102cfaa62d5faab.html#loio363f0f68f9704830ac65c87a2562559b).
 
 
-[Check the costs with the SAP BTP Estimator Tool](https://www.sap.com/products/cloud-platform/pricing/estimator-tool.html)
+[Check the costs with the SAP BTP Estimator Tool](https://www.sap.com/products/cloud-platform/pricing/estimator-tool.html) for your Subscription based or CPEA based accounts if you do not use the 'free' service plans for BTP services. 
+
+Check the [Enterprise Accounts and Commercial Models](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/171511cc425c4e079d0684936486eee6.html) and [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html).
 
 
 **Booster:**
