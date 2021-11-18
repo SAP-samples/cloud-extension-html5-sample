@@ -131,7 +131,7 @@ With this step the on-premise setup is finished.
 3. Setup Destination - enter the following values
     * **Name**:  bupa  --> this destination is later used at the sample application. 
     * **Type**:  select HTTP
-    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector in Section A. =  https://\<virtual host\>:\<virtual port\>, in our case, https://s4h:500/
+    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector in Section A. =  https://\<virtual host\>:\<virtual port\>, in our case, https://s4h:443/
   
     * **Proxy Type**: OnPremise
     * **Authentication**: Principal Propagation. You can also use 'Basic Authentication' with your backend user and password to test for demo purposes.
