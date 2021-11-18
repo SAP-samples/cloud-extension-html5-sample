@@ -131,10 +131,10 @@ With this step the on-premise setup is finished.
 3. Setup Destination - enter the following values
     * **Name**:  bupa  --> this destination is later used at the sample application. 
     * **Type**:  select HTTP
-    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector in Section A. =  https://\<virtual host\>:\<virtual port\>
+    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector in Section A. =  https://\<virtual host\>:\<virtual port\>, in our case, https://s4h:500/
   
     * **Proxy Type**: OnPremise
-    * **Authentication**: Principal Propagation
+    * **Authentication**: Principal Propagation. You can also use 'Basic Authentication' with your backend user and password to test for demo purposes.
     * **Location ID**: optional field, you have use this field if you connect more than one cloud connectors to your account. See [Destination Configuration Help page](https://help.sap.com/viewer/6d3eac5a9e3144a7b43932a1078c7628/Cloud/en-US/0a2e5a45d5494ec08318ead2019d54db.html).
      
     Add the following properties by clicking on the **New Property** button:
