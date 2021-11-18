@@ -12,15 +12,13 @@
 
 
 1. Get the connection information of your SAP BTP subaccount
-   1. Logon to your SAP BTP subaccount. From the overview page we need the following environment info.
-   2. Subaccount ID
+   1. Logon to your SAP BTP subaccount. From the overview page, we need the following environment information.
+   2. Subaccount ID.
    3. API Endpoint 
    
    ![Get Subaccount](./images/subaccount.png) 
 
-2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user you can create a new user with the technical roles for the  Cloud Connector. You find more details here:
-   
-   [Communication User](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/daca64dacc6148fcb5c70ed86082ef91.html) 
+2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user, you can create a new user with the technical roles for the  Cloud Connector. You find more details here: [Communication User](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/daca64dacc6148fcb5c70ed86082ef91.html).
 
 3. Create a new Connector to your SAP BTP subaccount. 
    1. Login to the Cloud Connector and select the Connector entry
@@ -61,7 +59,7 @@
     ![add system](./images/add-system3.png) 
 
 
-    4. Enter a virtual host name and port. This will then later used as URL in the destination at your SAP BTP subaccount. - next
+    4. Enter a virtual host name and port, for example: **bupa**. This will then later used as URL in the destination at your SAP BTP subaccount, choose **Next**.
    
      ***Hint:** For security reasons it's recommended that the virtual host and port differ from the host and port of the on-premise system*
 
@@ -93,7 +91,7 @@
     ![add resource](./images/add-resource.png)
 
 8. Add Resource
-   1. Enter the URL root path to the S/4HANA APIs: /sap/opu/odata/
+   1. Enter the URL root path to the S/4HANA APIs: / , for productive usage, kindly expose only the relevant path from your backend system, for example: /sap/opu/odata.
    2. AccessPolicy: set **Path and all sub-paths**
    3. Enter a description
    4. Press Save
@@ -131,7 +129,7 @@ With this step the on-premise setup is finished.
    ![destination](./images/scp-destination.png)
 
 3. Setup Destination - enter the following values
-    * **Name**:  bupa  --> this destination is later used at the sample application 
+    * **Name**:  bupa  --> this destination is later used at the sample application. Make sure that you use the same virtual host which you configured in Section A in Cloud connector.
     * **Type**:  select HTTP
     * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector =  https://\<virtual host\>:\<virtual port\>
   

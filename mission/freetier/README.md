@@ -54,7 +54,7 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
 
 3. Enter a **Display Name**, **Subdomain** and select your suitable **Region** and choose **Create** to create your sub-account. 
 
-   > Kindly check if the region you select contains the necessary services needed for this mission[see SAP BTP Regions and Service Portfolio ](https://help.sap.com/doc/aa1ccd10da6c4337aa737df2ead1855b/Cloud/en-US/3b642f68227b4b1398d2ce1a5351389a.html).
+   > Kindly check if the region you select contains the necessary services needed for this mission, [see SAP BTP Regions and Service Portfolio ](https://help.sap.com/doc/aa1ccd10da6c4337aa737df2ead1855b/Cloud/en-US/3b642f68227b4b1398d2ce1a5351389a.html).
    
    ![create subaccount2](./images/createsubaccount2.png)
 
@@ -126,7 +126,7 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
    
      ![Check account](./images/checkMembers.png)
 
-2. Let us now assign relevant role collections to your user. Select **Security** - Open the Security section and select **Users**. Again you should see all the users who have access to this sub-account. Click on your user and select **Assign role Collection** to assign relevant roles to access SAP Business Application Studio and SAP Launchpad service. Also you need roles for accessing **Continous Integration and Delivery service.
+2. Let us now assign relevant role collections to your user. Select **Security** - Open the Security section and select **Users**. Again you should see all the users who have access to this sub-account. Click on your user and select **Assign role Collection** to assign relevant roles to access SAP Business Application Studio and SAP Launchpad service. Also you need roles for accessing **Continous Integration and Delivery service**.
 
      ![Checkrole](./images/assignRole01.png)
 
