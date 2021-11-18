@@ -91,7 +91,7 @@
     ![add resource](./images/add-resource.png)
 
 8. Add Resource
-   1. Enter the URL root path to the S/4HANA APIs: / , for productive usage, kindly expose only the relevant path from your backend system, for example: /sap/opu/odata.
+   1. Enter the URL root path to the S/4HANA APIs: **/** . Here we are exposing the root URL exposing all paths but for productive usage, kindly expose only the relevant path from your backend system, for example: /sap/opu/odata.
    2. AccessPolicy: set **Path and all sub-paths**
    3. Enter a description
    4. Press Save
