@@ -91,7 +91,7 @@
     ![add resource](./images/add-resource.png)
 
 8. Add Resource
-   1. Enter the URL root path to the S/4HANA APIs: **/** . Here we are exposing the root URL exposing all paths but for productive usage, kindly expose only the relevant path from your backend system, for example: /sap/opu/odata.
+   1. Enter the URL root path to the S/4HANA APIs: **/** . Here we are exposing for demo purposes, the root URL exposing all paths but for productive usage, kindly expose only the relevant path from your backend system.
    2. AccessPolicy: set **Path and all sub-paths**
    3. Enter a description
    4. Press Save
@@ -129,9 +129,9 @@ With this step the on-premise setup is finished.
    ![destination](./images/scp-destination.png)
 
 3. Setup Destination - enter the following values
-    * **Name**:  bupa  --> this destination is later used at the sample application. Make sure that you use the same virtual host which you configured in Section A in Cloud connector.
+    * **Name**:  bupa  --> this destination is later used at the sample application. 
     * **Type**:  select HTTP
-    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector =  https://\<virtual host\>:\<virtual port\>
+    * **URL**:  URL of the virtual host that we have exposed in the Cloud Connector in Section A. =  https://\<virtual host\>:\<virtual port\>
   
     * **Proxy Type**: OnPremise
     * **Authentication**: Principal Propagation
