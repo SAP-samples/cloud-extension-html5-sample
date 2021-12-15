@@ -117,7 +117,7 @@ For more information, check [Expose HTML5 Applications in Launchpad](https://hel
 
     ![edit Everyone Role2](./images/editEveryoneRole2.png)
    
-11. In the *Assignments* section, search for **S4HANA* and add the listed HTML5 app by clicking **+**. Click **Save** to save the changes.
+11. In the *Assignments* section, search for **S4HANA** and add the listed HTML5 app by clicking **+**. Click **Save** to save the changes.
 
     ![edit Everyone Role2](./images/editEveryoneRole3.png)
    
