@@ -120,7 +120,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation3.png)
 
 7. Add a new Parameter in Profile 'DEFAULT' 
-   1. Click on Parameter icon
+   1. Select the **Create Parameter** icon
     
    ![STRUST](./images/S4PrincipalPropagation4.png)
 
