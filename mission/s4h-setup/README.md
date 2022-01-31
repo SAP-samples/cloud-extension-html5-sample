@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this section we learn how to activate an API oData service in a SAP S/4HANA on-premise system, create a user and assign the necessary roles and authorization objects.
+In this section we learn how to activate an API OData service in a SAP S/4HANA on-premise system, create a user and assign the necessary roles and authorization objects.
 
 **Persona:** S/4HANA Administrator
 
@@ -10,7 +10,7 @@ In this section we learn how to activate an API oData service in a SAP S/4HANA o
 
 ***Hint:** The following screenshots are done with SAP GUI 7.50 - by using SAP GUI 7.60 the usage could differ e.g tick button instead of a continue button etc.*
 
-### Activate oData Service
+### Activate OData Service
 1. Logon S/4HANA system using SAP GUI with your adminstrator user.
 2. Call transaction /n/IWFND/MAINT_SERVICE.
 3. Click on **Add Service**
@@ -92,8 +92,8 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
 
 
 
-####  **B: Create Authorization Object for oData service**
-In this section we generate a custom authorization object which is necessary to give the user access to the Gateway and to the Business Partner oData service.
+####  **B: Create Authorization Object for OData service**
+In this section we generate a custom authorization object which is necessary to give the user access to the Gateway and to the Business Partner OData service.
 
 1. Call Transaction PFCG
    1. Enter a new Role name 
@@ -173,7 +173,7 @@ To see if the setup was done correctly call the Business Partner API with the ne
     
     Hint: If you use a CAL system, kindly check and use the relevant IP address instead of the default system host name as the host name has to be resolvable by the browser.
 
-* Enter the credentials of the user we have created. You should then see the structure of the BusinessPartner oData service.
+* Enter the credentials of the user we have created. You should then see the structure of the BusinessPartner OData service.
 
     ![Test Bupa](./images/test-bupa2.png)
 
@@ -185,7 +185,7 @@ This completes this mission section.
 
 ## Summary
 
-You have activated an API in the S/4 on-premise system and created a user with the necessary roles for CRUD operations of Business Partner data and to access the API_BUSINESS_PARTNER_SRV oData service.
+You have activated an API in the S/4 on-premise system and created a user with the necessary roles for CRUD operations of Business Partner data and to access the API_BUSINESS_PARTNER_SRV OData service.
 
 ***Hint:** the simplest way for adding additional users with the same roles is just to copy this user profile in the SU01 transaction*
 

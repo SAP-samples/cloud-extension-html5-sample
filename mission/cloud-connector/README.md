@@ -2,7 +2,13 @@
 
 ## Introduction
 
-In this section we setup the SAP Cloud Connector and create the certificate for secure connection with Principal Propagation to the SAP S/4HANA system by establishing a trusted relationship between them.
+The Cloud Connector is the tool to establish a secure connection between your SAP S/4HANA system and SAP BTP.
+
+This section contains the following steps:  
+* Install the Cloud Connector
+* Configure certificates for Cloud Connector.
+* Set up trust between Cloud Connector and the SAP S/4HANA system
+* Configure your SAP S/4HANA system for Principal Propagation.
 
 **Persona:** SAP S/4HANA Administrator
 
@@ -162,4 +168,5 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 ## Summary
 We have installed the SAP Cloud Connector, established a trust between SAP cloud connector and the SAP S/4HANA system and created a certification rule for handling principal propagation. 
 
-[See also SAP Note 2610956 for more details](https://launchpad.support.sap.com/#/notes/2610956)
+* [See also SAP Note 2610956 for more details](https://launchpad.support.sap.com/#/notes/2610956)
+* [SAP Help: Configuring Principal Propagation to an ABAP system](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/6705cc350ef44628a42473b3eb72efd8.html)
