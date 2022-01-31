@@ -3,12 +3,13 @@
 
 ## Introduction
 
-In this section, we would describe steps to build and deploy your cloud application which was already created using SAP Business Application Studio.
+This section contains the following steps:
+* Set up the HTML5 application to run on your SAP BTP account
+* Build and deploy the application
+* Map users to roles
+* Run the HTML5 application in your account
 
 **Persona:** UX Developer
-
-**Abbreviation:** SAP Business Technology Platform = SAP BTP
-
 
 ## Step-by-Step
 

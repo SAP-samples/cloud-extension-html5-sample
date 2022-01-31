@@ -2,11 +2,11 @@
 
 ## Introduction
 
-In this section, we would describe steps to develop a cloud application using SAP Business Application Studio.
+SAP Business Application Studio comes out of the box with predefined set of development environments – Dev-Spaces (virtual machine on the cloud where you can develop, build, test and run using pre-installed runtimes and tools) tailored for developing SAP business scenarios.
+
+Create a simple UI extension application in SAP Business Application Studio using existing project templates in order to consume the Business Partner OData service. This application will run as a stand-alone application without a SAP Lauchpad.
 
 **Persona:** UX Developer
-
-**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 ## Step-by-Step
 
