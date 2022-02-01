@@ -13,6 +13,18 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 
 [Mission in SAP BTP Discovery Center](https://discovery-center.cloud.sap/missiondetail/3239/3325)
 
+## Discover
+
+* [The Mission Story](./discover/MissionStory.md)
+* [Learn the Basics of SAP BTP](./discover/BTP.md)
+* [Learn about SAP S/4HANA](./discover/S4H.md)
+* [Learn about SAP Connectivity Service](./discover/Connectivity.md)
+* [Learn about HTML5 Applications](./discover/HTML5.md)
+* [Learn about SAP Business Applicaiton Studio](./discover/BAS.md)
+* [Learn about SAP Cloud Identity Services](./discover/IAS.md)
+* [Learn about DevOps and SAP Continous Integration and Delivery](./discover/CICD.md)
+* [Learn about SAP Launchpad Service and SAP Work Zone](./discover/Launchpad.md)
+* [Learn about Observability on SAP BTP](./discover/Observability.md)
 
 These are the step-by-step guidelines for running the mission. It is divided in two workstreams:
 
