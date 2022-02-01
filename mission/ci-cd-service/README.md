@@ -1,4 +1,4 @@
-# Creating a CI/CD pipeline for your cloud application
+# Creating a CI/CD Pipeline for your Cloud Application
 
 ## Introduction
 
