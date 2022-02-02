@@ -1,7 +1,5 @@
 # Mission: Setup for SAP S/4HANA side-by-side UI Extensions on SAP Business Technology Platform
 
-**Abbreviation:** SAP Business Technology Platform = SAP BTP
-
 The main focus of this mission is to show the full end-to-end setup for a SAP S/4HANA on-premise extension on SAP BTP (Cloud Foundry) this includes the following steps:
 * Setup of the S/4HANA on-premise system
 * Setup of the SAP BTP account and development environment
