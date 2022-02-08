@@ -104,17 +104,20 @@ This section contains the following steps:
 In the previous step, we have added a Role Collection **BPViewerRC** in **xs-security.json** file. So only users who are assigned to this role can view the application. 
 
 
-1. In the SAP BTP subaccount Overview page, click on Security> Trust Configuration.
-2. Click on your company Identity Provider which has the users who will login to the application. 
-3. Click on **Role Collection Assignment** and Enter your email id and click on **Show Assignments**. This User/Email has to be already configured to your identity provider.
-
-   ![Deploy App](./images/checkRoleColl.png)
+1. In the SAP BTP subaccount Overview page, choose  Security> Role Collections. Select **BPViewerRC**.
    
-4. Click on **Assign Role Collection**.
-5. Select **BPViewerRC** and click on **Assign Role Collection**. (Same as in previous step).
+   ![Role Collection](./images/roleCollection.png)
+
+2. In the Role Collection overview select **Edit**
+   
+   ![Deploy App](./images/rcOverview.png)
+   
+3. At the **Users** section choose **+** and enter your user **ID** which is your mail address, select your **Identity Provider** and enter again your mail address. 
 
    ![Assign Role Coll](./images/assignRoleColl.png)
-   
+
+4. **Save** your changes.
+
 ### Accessing the deployed application
 
    
