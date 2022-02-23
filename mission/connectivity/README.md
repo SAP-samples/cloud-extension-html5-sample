@@ -143,7 +143,7 @@ With this step the on-premise setup is finished.
     * Name: **SAP-Client** - value: **the SAP-Client of your SAP S/4HANA system**
     * Name: **WebIDEEnabled** - value: **true**
     * Name: **WebIDESystem** - value: **System ID of your SAP S/4HANA system**
-    * Name: **WebIDEUsage** - value: **odata_abap**
+    * Name: **WebIDEUsage** - value: **odata\_abap**
     
 
    ![destination](./images/scp-destination3a.png)

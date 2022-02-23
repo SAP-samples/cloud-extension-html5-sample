@@ -100,7 +100,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation1.png)
 
 3. Upload Certificate
-   1. Under the tab 'File', choose the file path of **sys_Cert.DER** file which you have download from the SAP Cloud Connector System certificate step 3.
+   1. Under the tab 'File', choose the file path of **sys\_Cert.DER** file which you have download from the SAP Cloud Connector System certificate step 3.
    2. Click **Ok** and confirm
    3. Click on **Add to Certificate List** button
    4. Click on **Save** button
@@ -108,7 +108,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation1a.png)
 4. Create Certification Rule - call transaction /nCERTRULE
    1. Click on **Display/Change** icon to Edit mode.
-   2. Click on **Import certificate** icon next to Subject textbox. Choose the **scc_sample_cert.DER** file which you have downloaded from SAP Cloud Connector Principal propagation tab in step 5. 
+   2. Click on **Import certificate** icon next to Subject textbox. Choose the **scc\_sample\_cert.DER** file which you have downloaded from SAP Cloud Connector Principal propagation tab in step 5. 
    3. Click on **Rule** button and confirm.   
    ![STRUST](./images/S4PrincipalPropagation2.png)
    
@@ -133,8 +133,8 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
     
    ![STRUST](./images/S4PrincipalPropagation4.png)
 
-8. Add icm/trusted_reverse_proxy_0 parameter
-   1. Enter parameter name as **icm/trusted_reverse_proxy_0**
+8. Add icm/trusted\_reverse\_proxy\_0 parameter
+   1. Enter parameter name as **icm/trusted\_reverse\_proxy\_0**
    2. Enter parameter value as **SUBJECT="CN=\<your CN\>, L=\<your city\>, O=\<your company\>, C=\<your country\>", ISSUER="CN=REFAPPS, L=\<your city\>, O=\<your company\>, C=\<your country\>"**. The values must be the same as from the certificate we have created in SAP Cloud Connector on step 3. Make sure that there is a blankspace between Subject and Issuer as in screenshot below.
    3. Click on **Copy** and then **Back**
 

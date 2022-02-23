@@ -78,7 +78,7 @@ Create a simple UI extension application in SAP Business Application Studio usin
 
      ![Choose Template3](./images/ChooseTemplate3.png)
    
-   - In the drop-down for the field **Service**, search **business** and select **ZAPI_BUSINESS_PARTNER (1) - OData V2**
+   - In the drop-down for the field **Service**, search **business** and select **ZAPI\_BUSINESS\_PARTNER (1) - OData V2**
    - Choose **Next**
   
      ![Choose Template4](./images/ChooseTemplate4.png)
@@ -87,12 +87,12 @@ Create a simple UI extension application in SAP Business Application Studio usin
    
 5. In the **Entity Selection** screen, 
    
-    - Select drop-down **Object Collection** to **A_BusinessPartner**.
+    - Select drop-down **Object Collection** to **A\_BusinessPartner**.
     - Select drop-down **Object collection key** to **BusinessPartner**.
     - Select drop-down **Object ID** to **BusinessPartnerFullName**.
     - Select drop-down **Object Number** to **None**.
     - Select drop-down **Object Unit of Measure** to **BusinessPartnerCategory**.
-    - Select drop-Down **Line Item Collection** to **to_BusinessPartnerAddress**.
+    - Select drop-Down **Line Item Collection** to **to\_BusinessPartnerAddress**.
     - Select drop-down **Line Item Collection Key** to **AddressID**.
     - Select drop-down **Line Item ID** to **FullName**.
     - Select drop-down **Line Item Number** to **None**.

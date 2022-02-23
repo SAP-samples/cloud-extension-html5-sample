@@ -112,13 +112,13 @@ Establishing the trust between your company's IDP could be done in an automatic 
     ![Disable DefaultIDP](./images/CustIDP-disableDefaultIDP.png)
 5.  Click on Save button.
 
-6. In the Security Menu select 'Role Collections' and then click on the Extension_UX_Administrator collection.
+6. In the Security Menu select 'Role Collections' and then choose the Extension\_UX\_Administrator collection.
    
    ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
    
    - If your sub account was created manually and not using boosters in case of a  SAP BTP Trial account or "free tier" option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account, then you will not have the role collections and have to manually create the role collections. 
       
-      a. Select **Role Collections** and choose **+** and create a Role Collection with name **Extension_UX_Administrator** 
+      a. Select **Role Collections** and choose **+** and create a Role Collection with name **Extension\_UX\_Administrator** 
 
         ![Role Collection01](./images/createRoleCollection.png)
       

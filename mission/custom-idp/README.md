@@ -35,7 +35,7 @@ You can manage trust configurations for a global account only if you have create
    
    ![Add App](./images/CustIDP-addApp.png)
    
-7. Enter Name. For eg., **ExtendUI_IDP** and choose **SAP BTP solution** as **Application Type**
+7. Enter Name. For eg., **ExtendUI\_IDP** and choose **SAP BTP solution** as **Application Type**
 8. Select **Save**.
 
    ![Save App](./images/CustIDP-saveApp.png)
