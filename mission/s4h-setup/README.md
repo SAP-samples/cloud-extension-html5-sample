@@ -12,19 +12,19 @@ In this section we learn how to activate an API OData service in a SAP S/4HANA o
 
 ### Activate OData Service
 1. Logon S/4HANA system using SAP GUI with your adminstrator user.
-2. Call transaction /n/IWFND/MAINT_SERVICE.
+2. Call transaction /n/IWFND/MAINT\_SERVICE.
 3. Click on **Add Service**
 
    ![Add Service](./images/add-service.png)
 4. In the Add Service screen enter the following values:
    1. System Alias = LOCAL
-   2. Technical Service Name = API_BU*
-   3. Press enter - you should see the API_BUSINESS_PARTNER in the list box.
+   2. Technical Service Name = API\_BU*
+   3. Press enter - you should see the API\_BUSINESS\_PARTNER in the list box.
    
    ![Add selected Service](./images/add-selected-service.png)
 
 
-5. Check the box of API_BUSINESS_PARTNER and click on **Add Selected Service**
+5. Check the box of API\_BUSINESS\_PARTNER and click on **Add Selected Service**
  
    ![Add selected Service](./images/add-selected-service2.png)
 
@@ -36,12 +36,12 @@ In this section we learn how to activate an API OData service in a SAP S/4HANA o
    
    ![Add service](./images/add-service2.png)
 
-**Result:** The API_BUSINESS_PARTNER is now activated and you can leave the transaction.
+**Result:** The API\_BUSINESS\_PARTNER is now activated and you can leave the transaction.
 
 ### Create User and assign Roles and Authorization Objects
 
 #### **A: Create User**
-In this section we will create a new user in the SAP S/4HANA system and assign the SAP_BR_BUPA_MASTER_SPECIALIST role to him.  
+In this section we will create a new user in the SAP S/4HANA system and assign the SAP\_BR\_BUPA\_MASTER\_SPECIALIST role to him.  
 
 1. Call Transaction SU01
    1. Enter a user ID
@@ -72,13 +72,13 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
    ![Add Role](./images/add-role.png)
 
 5. Find Role
-   1. In the Single Role field enter **SAP_BR_BUPA\*** 
+   1. In the Single Role field enter **SAP\_BR\_BUPA\*** 
    2. Click on Enter
    
     ![Search Role](./images/SAP-BR-BUPA.png)
 
 6. Role Selection:
-   1. Select the SAP_BR_BUPA_MASTER Specialist role
+   1. Select the SAP\_BR\_BUPA\_MASTER Specialist role
    2. Click on enter/copy.
    
        ***Hint:** This role is necessary to get access to the Business Partner data and the Business Partner Fiori application*
@@ -109,7 +109,7 @@ In this section we generate a custom authorization object which is necessary to 
    ![Authorization](./images/RoleAutha.png)
 
 3.  Choose Template
-    1.  Select the Template for Gateway users (/IWFND/RT_GW_USER)
+    1.  Select the Template for Gateway users (/IWFND/RT\_GW\_USER)
     2.  Click **Apply Template** and click on **Save**
 
     ![Apply Template](./images/choose_template.png)
@@ -135,7 +135,7 @@ In this section we generate a custom authorization object which is necessary to 
    ![Object Type](./images/tadir1.png)
 
 8. Object List 
-   1. Select the object ZAPI_BUSINESS_PARTNER_0001
+   1. Select the object ZAPI\_BUSINESS\_PARTNER\_0001
    2. Click on confirm button
 
    ![Object List](./images/object2.png)
@@ -161,12 +161,12 @@ In this section we generate a custom authorization object which is necessary to 
 
 ***Hint:** If the Authentication tabulator turns to red, select this tabulator and select again **Change Authorization Data** - click again on Generate (Shift+F5) - Click on Save*
 
-### Test the API_BUSINESS_PARTNER_SRV
+### Test the API\_BUSINESS\_PARTNER\_SRV
 
 To see if the setup was done correctly call the Business Partner API with the new user. 
 
-* Call Transaction /N/IWFND/MAINT_SERVICE
-    1. Double-click on ZAPI_BUSINESS_PARTNER
+* Call Transaction /N/IWFND/MAINT\_SERVICE
+    1. Double-click on ZAPI\_BUSINESS\_PARTNER
     2. Click on Call Browser
    
     ![Test Bupa](./images/test-bupa1.png)
@@ -177,7 +177,7 @@ To see if the setup was done correctly call the Business Partner API with the ne
 
     ![Test Bupa](./images/test-bupa2.png)
 
-*  Change the end ot the URL to ..../sap/API_BUSINESS_PARTNER/A_BusinessPartner/?$format=xml. You should now see a list of Business Partners.
+*  Change the end ot the URL to ..../sap/API\_BUSINESS\_PARTNER/A\_BusinessPartner/?$format=xml. You should now see a list of Business Partners.
 
 This completes this mission section.
 
@@ -185,7 +185,7 @@ This completes this mission section.
 
 ## Summary
 
-You have activated an API in the S/4 on-premise system and created a user with the necessary roles for CRUD operations of Business Partner data and to access the API_BUSINESS_PARTNER_SRV OData service.
+You have activated an API in the S/4 on-premise system and created a user with the necessary roles for CRUD operations of Business Partner data and to access the API\_BUSINESS\_PARTNER\_SRV OData service.
 
 ***Hint:** the simplest way for adding additional users with the same roles is just to copy this user profile in the SU01 transaction*
 
