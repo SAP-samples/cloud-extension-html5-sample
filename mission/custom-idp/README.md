@@ -66,7 +66,7 @@ You can manage trust configurations for a global account only if you have create
 
    ![User Groups](./images/CustIDP-addGroups.png)
 
-17. Create a Extension Developer group. 
+17. Create an Extension Developer group. 
     * Select **Create**
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
@@ -76,12 +76,12 @@ You can manage trust configurations for a global account only if you have create
    ![User Groups](./images/CustIDP-addGroups2.png)
 
 
-18.  Create a Extension Administrator group. Same steps as before.     
+18.  Create an Extension Administrator group. Same steps as before.     
      * Select **Create**
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
-     * Press **Save**
+     * Press **Create**
   
 19. Map the group to a user which should have the UX extension developer role. 
     * Open User Management
