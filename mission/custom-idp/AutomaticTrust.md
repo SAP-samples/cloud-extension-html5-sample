@@ -61,7 +61,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
     
    ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
-15. Click on Add and select the Groups attribute, set the assertion attribute to **Groups** with capital G. Click on save
+15. Choose **Add** and select the **Groups** attribute, set the assertion attribute to **Groups** with capital G. Click on save
  
    ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
 
@@ -130,11 +130,11 @@ Establishing the trust between your company's IDP could be done in an automatic 
 
         ![Role Collection03](./images/createRoleCollection03.png)
 
-7. Click on Edit
+7. Select Edit
 
    ![Role Mapping](./images/CustIDP_RoleMapping2a.png)
 
-8. Select User Groups then enter the ExtensionAdministrator as name and select your 'Custom iAS' tenant as Identity Provider. Press Save.
+8. Select User Groups then enter the ExtensionAdministrator as name and select your **Custom IAS tenant** as Identity Provider. Press Save.
 
    ![Role Mapping](./images/CustIDP_RoleMapping3a.png)
 
