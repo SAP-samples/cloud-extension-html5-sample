@@ -15,7 +15,7 @@ The entitlement differs for the pricing option of your account:
 
 - **Free Tier option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account** or **SAP Business Technology Platform Trial**
 
-You cannot use boosters to create a SAP BTP subaccount with 'free' service plans, you need to either use SAP btp-setup-automator or set up the subaccount manually and assign role collections to users, follow the instructions in [Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually](../freetier/README.md).
+  As the Boosters do not run in a SAP BTP Trial environment or in a "free tier" option along with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA), follow the instructions in [Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually](../freetier/README.md).
 
 - **Consumption-based Pay-As-You-Go SAP BTP Account:** 
 No entitlement necessary. Be sure that you have enough credits to run the services.
