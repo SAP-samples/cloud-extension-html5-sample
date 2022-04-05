@@ -1,4 +1,5 @@
-# Setup of a SAP Business Technology Platform subccount using Boosters
+# Setup of a SAP Business Technology Platform subccount
+
 ## Introduction
 
 **Abbreviation:** SAP Business Technology Platform = SAP BTP
@@ -14,7 +15,7 @@ The entitlement differs for the pricing option of your account:
 
 - **Free Tier option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account** or **SAP Business Technology Platform Trial**
 
-  You need to manually setup the subaccount and assign role collections to users, follow the instructions in [Setup of a SAP Business Technology Platform subccount manually](../freetier/README.md).
+You cannot use boosters to create a SAP BTP subaccount with 'free' service plans, you need to either use SAP btp-setup-automator or set up the subaccount manually and assign role collections to users, follow the instructions in [Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually](../freetier/README.md).
 
 - **Consumption-based Pay-As-You-Go SAP BTP Account:** 
 No entitlement necessary. Be sure that you have enough credits to run the services.
@@ -27,22 +28,19 @@ You have to create entitlements for the services above - [see also Entitlements 
 
 Check the [Enterprise Accounts and Commercial Models](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/171511cc425c4e079d0684936486eee6.html) and [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html).
 
+## Setup of a SAP BTP Subaccount
 
-**Booster:**
+You can setup a SAP BTP subaccount in different ways:
 
-The setup could be done for each service individually. To simplify the setup process, SAP has introduced Boosters. Boosters are a collection of wizards that provides functionalities for specific scenarios to automate and speed-up the installation and configuration process of a SAP BTP subaccount. This also includes the user management with the mapping of the respective administrator and developer roles.
-
-Before running the booster please check for which regions and infrastructures the services are available - [see SAP BTP Regions and Service Portfolio ](https://help.sap.com/doc/aa1ccd10da6c4337aa737df2ead1855b/Cloud/en-US/3b642f68227b4b1398d2ce1a5351389a.html) - unfortunately the booster is not able to check this in advance, so it will fail when you select a region where a service is not available.
-
-
-
+- [Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually](../freetier/README.md).
+- Using **boosters**: 
+  Boosters are a collection of wizards that provides functionalities for specific scenarios to automate and speed-up the installation and configuration process of a SAP BTP subaccount. This also includes the user management with the mapping of the respective administrator and developer roles.
+ 
 **Persona:** Cloud Administrator
 
+## Create subaccount using boosters
 
-
-## Step-by-step
-
-> The Booster for HTML5 application development is not available for trial accounts, if you're using a SAP BTP trial account please go to [section C for the manual setup](#manualSetup).
+> Before running the booster please check for which regions and infrastructures the services are available - [see SAP BTP Regions and Service Portfolio ](https://help.sap.com/doc/aa1ccd10da6c4337aa737df2ead1855b/Cloud/en-US/3b642f68227b4b1398d2ce1a5351389a.html) - unfortunately the booster is not able to check this in advance, so it will fail when you select a region where a service is not available.
 
 ### A: Run the Booster
 

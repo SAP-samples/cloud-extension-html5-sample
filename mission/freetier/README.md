@@ -1,4 +1,4 @@
-# Setup of a SAP Business Technology Platform subccount manually without using Boosters
+# Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually
 
 ## Introduction
 
@@ -39,9 +39,13 @@ To create and set up a trial account, see the [Get a Free Account on SAP BTP Tri
 
 
 
-## Step-by-step
+## Set up of a SAP BTP Subaccount
 
-### Create subaccount and enable Cloud Foundry
+### Create subaccount using btp-setup-automator
+
+You can automate the creation of sub-account using **btp-setup-automator**, which is an open source project to help developers setting-up their SAP BTP accounts, services and subscriptions quickly via various command line interfaces, see the [steps in btp-setup-automator](https://github.com/SAP-samples/btp-setup-automator/blob/main/usecases/released/discoverycenter/3239-customui/README.md) to setup a subaccount with above mentioned services with 'free' service plans.
+
+### Create subaccount manually in SAP BTP cockpit and enable Cloud Foundry
 
    
 1. Login to your global SAP BTP account or your SAP BTP Trial account. 
