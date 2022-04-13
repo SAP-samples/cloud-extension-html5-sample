@@ -112,7 +112,7 @@ We recommend using a technical user. However, you can use also use your cloud cr
    * In the **Clone URL** set the clone URL of your GitHub repository
    * In the **Credentials** field, choose the credentials for your GitHub repository which you created in step 6  - it is necessary for private GitHub repositories.
    * In the **Type** field choose GitHub   
-   * In the **Webhook Credential** field, choose the default option: **\<GENERATE\>**
+   * In the **Webhook Credential** field, choose the default option: \<GENERATE\>
    * Keep the **State** field as **ON**
    * **Add** the repository  
    
