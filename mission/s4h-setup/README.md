@@ -1,21 +1,24 @@
-# Setup of the SAP S/4HANA on-premise System
+# Set Up the SAP S/4HANA System
 
 ## Introduction
 
-In this section we learn how to activate an API OData service in a SAP S/4HANA on-premise system, create a user and assign the necessary roles and authorization objects.
+
+In this section we learn how to activate an API oData service in a SAP S/4HANA system, create a user and assign the necessary roles and authorization objects.
 
 **Persona:** S/4HANA Administrator
 
 ## Step-by-Step
 
-***Hint:** The following screenshots are done with SAP GUI 7.50 - by using SAP GUI 7.60 the usage could differ e.g tick button instead of a continue button etc.*
+***Hint:** The following screenshots are done with SAP GUI 7.50 - by using SAP GUI 7.60 the usage could differ, for example tick button instead of a continue button and so on.*
 
-### Activate OData Service
-1. Logon S/4HANA system using SAP GUI with your adminstrator user.
+
+### Activate oData Service
+1. Log on to the SAP S/4HANA system using SAP GUI with your adminstrator user.
 2. Call transaction /n/IWFND/MAINT\_SERVICE.
-3. Click on **Add Service**
+3. Choose **Add Service**
 
    ![Add Service](./images/add-service.png)
+   
 4. In the Add Service screen enter the following values:
    1. System Alias = LOCAL
    2. Technical Service Name = API\_BU*
@@ -31,8 +34,8 @@ In this section we learn how to activate an API OData service in a SAP S/4HANA o
 6. The **Add Service** screen opens
    1. Specify **Package Assignment** e.g. $TMP by clicking on Local Object
    2. Enable the checkbox for **Enable OAuth for Service**
-   3. Click on Continue to activate the changes
-   4. Click on Continue to confirm the message box
+   3. Choose Continue to activate the changes
+   4. Choose Continue to confirm the message box
    
    ![Add service](./images/add-service2.png)
 
@@ -45,7 +48,7 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
 
 1. Call Transaction SU01
    1. Enter a user ID
-   2. Click on Create
+   2. Choose Create
 
     ![Create User](./images/CreateUserS4.png)
  
@@ -72,21 +75,24 @@ In this section we will create a new user in the SAP S/4HANA system and assign t
    ![Add Role](./images/add-role.png)
 
 5. Find Role
+
    1. In the Single Role field enter **SAP\_BR\_BUPA\*** 
-   2. Click on Enter
+   2. Choose Enter
    
     ![Search Role](./images/SAP-BR-BUPA.png)
 
 6. Role Selection:
+
    1. Select the SAP\_BR\_BUPA\_MASTER Specialist role
-   2. Click on enter/copy.
+   2. Choose enter/copy.
+
    
        ***Hint:** This role is necessary to get access to the Business Partner data and the Business Partner Fiori application*
    
    ![add BUPA Master Specialist](./images/add-SAP-BR-BUPA.png)
 
 7. Maintain Users:
-   1. Click on Save
+   1. Choose Save
    
    ![Save User](./images/save-user.png) 
 
@@ -97,33 +103,35 @@ In this section we generate a custom authorization object which is necessary to 
 
 1. Call Transaction PFCG
    1. Enter a new Role name 
-   2. Click on Single Role
+   2. Choose Single Role
 
    ![PFCG](./images/role-maintainance1.png) 
 
 2. Set Authorizations
-   1. Click on Save
+   1. Choose Save
    2. Select the Authorization tabulator
-   3. Click the icon at **Change Authorization Data**
+   3. Choose the icon at **Change Authorization Data**
    
    ![Authorization](./images/RoleAutha.png)
 
 3.  Choose Template
+
     1.  Select the Template for Gateway users (/IWFND/RT\_GW\_USER)
-    2.  Click **Apply Template** and click on **Save**
+    2.  Choose **Apply Template** and choose **Save**
+
 
     ![Apply Template](./images/choose_template.png)
 
-4. Click on Status and then **Execute** to assign the Authorization
+4. Choose Status and then **Execute** to assign the Authorization
 
     ![Assign Authorization](./images/Assign-Authorization.png)
 
-5. Click on Generate (Shift+F5) 
+5. Choose Generate (Shift+F5) 
    ![Assign Authorization](./images/Assign-Authorization2.png)
 
 6. Menu
     1. Select the Menu tabulator
-    2. Click on Transaction and select **Authorization Default**
+    2. Choose Transaction and select **Authorization Default**
    
    ![Menu](./images/Authorization_default.png)
 
@@ -135,8 +143,9 @@ In this section we generate a custom authorization object which is necessary to 
    ![Object Type](./images/tadir1.png)
 
 8. Object List 
+
    1. Select the object ZAPI\_BUSINESS\_PARTNER\_0001
-   2. Click on confirm button
+   2. Choose **Confirm**
 
    ![Object List](./images/object2.png)
 
@@ -148,7 +157,7 @@ In this section we generate a custom authorization object which is necessary to 
     1.  Save the Authorization Object
     2.  Select the User tabulator
     3.  Enter or select the user ID you have created in section A
-    4.  Click on **User Comparision**
+    4.  Choose **User Comparision**
    
     ![User Comparsion](./images/user-comparison.png)
   
@@ -156,10 +165,10 @@ In this section we generate a custom authorization object which is necessary to 
     
     ![User Comparions](./images/complete-comparison.png)
 
-12. Click on Save and you have finished the setup of the user profile     
+12. Choose Save and you have finished the setup of the user profile     
 
 
-***Hint:** If the Authentication tabulator turns to red, select this tabulator and select again **Change Authorization Data** - click again on Generate (Shift+F5) - Click on Save*
+***Hint:** If the Authentication tabulator turns to red, select this tabulator and select again **Change Authorization Data** - click again on Generate (Shift+F5) - Choose **Save***
 
 ### Test the API\_BUSINESS\_PARTNER\_SRV
 
@@ -167,7 +176,8 @@ To see if the setup was done correctly call the Business Partner API with the ne
 
 * Call Transaction /N/IWFND/MAINT\_SERVICE
     1. Double-click on ZAPI\_BUSINESS\_PARTNER
-    2. Click on Call Browser
+    2. Choose **Call Browser**
+
    
     ![Test Bupa](./images/test-bupa1.png)
     
