@@ -1,4 +1,4 @@
-# Creating a CI/CD pipeline for your cloud application
+# Creating a CI/CD Pipeline for your Cloud Application
 
 ## Introduction
 
@@ -108,17 +108,17 @@ We recommend using a technical user. However, you can use also use your cloud cr
     
 7. Select the **Repositories** tab and then choose the **+** icon to create a new repository.
 8. In the **Add Repository** screen enter the following values:
-   * In the **Name** field set the name for the repository for example: cloud-extension-html5-mission
+   * In the **Name** field set the name for the repository for example: cloud-extension-html5-sample
    * In the **Clone URL** set the clone URL of your GitHub repository
-   * In the **Credentials** field choose the credentials for your GitHub repository which you created in step 6  - it is necessary for private GitHub repositories.
+   * In the **Credentials** field, choose the credentials for your GitHub repository which you created in step 6  - it is necessary for private GitHub repositories.
    * In the **Type** field choose GitHub   
-   * In the **Webhook Credential** field choose **\<GENERATE\>**
-   * Keep the **State** field on
+   * In the **Webhook Credential** field, choose the default option: **GENERATE**
+   * Keep the **State** field as **ON**
    * **Add** the repository  
    
    ![create repository](./images/repository1.png)
 
-9. Select the created repository. On the right top choose the ... and then choose **Webhook Data**.
+9. Select the created repository. On the right top choose the symbol '**...**' and then choose **Webhook Data**.
 
    ![create repository](./images/repository2.png)
 
@@ -157,7 +157,7 @@ We recommend using a technical user. However, you can use also use your cloud cr
    - In the **API Entpoint** and **Org Name** fields set the values from step 11.
    - In the **Space** field set the value form step 12.
    - In the **Credential** field select the credentials for your SAP BTP account that you have created in step 6.
-   - Choose **Save** 
+   - Choose **Create** 
 
    ![create CICD Job](./images/cicdjob2.png)
    ![create CICD Job](./images/cicdjob2a.png)

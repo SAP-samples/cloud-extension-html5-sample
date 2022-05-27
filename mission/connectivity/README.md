@@ -1,4 +1,4 @@
-# Setup End-to-end Connection
+# Set up End-to-end Connection
 ## Introduction
  In this section we setup the end-to-end communication between the SAP S/4HANA on-premise system and the SAP BTP account. To establish it we have to define an account in SAP Cloud Connector and configure the connection to each system. Then we define a destination on SAP Cloud Platform to use this connection setting.
 
@@ -143,7 +143,7 @@ With this step the on-premise setup is finished.
     * Name: **SAP-Client** - value: **the SAP-Client of your SAP S/4HANA system**
     * Name: **WebIDEEnabled** - value: **true**
     * Name: **WebIDESystem** - value: **System ID of your SAP S/4HANA system**
-    * Name: **WebIDEUsage** - value: **odata_abap**
+    * Name: **WebIDEUsage** - value: **odata\_abap**
     
 
    ![destination](./images/scp-destination3a.png)

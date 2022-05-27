@@ -61,7 +61,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
     
    ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
-15. Click on Add and select the Groups attribute, set the assertion attribute to **Groups** with capital G. Click on save
+15. Choose **Add** and select the **Groups** attribute, set the assertion attribute to **Groups** with capital G. Click on save
  
    ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
 
@@ -74,7 +74,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
     * Enter a description
-    * Press **Save**
+    * Press **Create**
 
    ![User Groups](./images/CustIDP-addGroups2.png)
 
@@ -84,7 +84,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
-     * Press **Save**
+     * Press **Create**
   
 19. Map the group to a user which should have the UX extension developer role. 
     * Open User Management
@@ -112,13 +112,13 @@ Establishing the trust between your company's IDP could be done in an automatic 
     ![Disable DefaultIDP](./images/CustIDP-disableDefaultIDP.png)
 5.  Click on Save button.
 
-6. In the Security Menu select 'Role Collections' and then click on the Extension_UX_Administrator collection.
+6. In the Security Menu select 'Role Collections' and then choose the Extension\_UX\_Administrator collection.
    
    ![Role Mapping](./images/CustIDP_RoleMapping1a.png)
    
    - If your sub account was created manually and not using boosters in case of a  SAP BTP Trial account or "free tier" option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account, then you will not have the role collections and have to manually create the role collections. 
       
-      a. Select **Role Collections** and choose **+** and create a Role Collection with name **Extension_UX_Administrator** 
+      a. Select **Role Collections** and choose **+** and create a Role Collection with name **Extension\_UX\_Administrator** 
 
         ![Role Collection01](./images/createRoleCollection.png)
       
@@ -130,11 +130,11 @@ Establishing the trust between your company's IDP could be done in an automatic 
 
         ![Role Collection03](./images/createRoleCollection03.png)
 
-7. Click on Edit
+7. Select Edit
 
    ![Role Mapping](./images/CustIDP_RoleMapping2a.png)
 
-8. Select User Groups then enter the ExtensionAdministrator as name and select your 'Custom iAS' tenant as Identity Provider. Press Save.
+8. Select User Groups then enter the ExtensionAdministrator as name and select your **Custom IAS tenant** as Identity Provider. Press Save.
 
    ![Role Mapping](./images/CustIDP_RoleMapping3a.png)
 

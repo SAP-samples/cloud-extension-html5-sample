@@ -38,24 +38,24 @@ In this section, we would describe steps to test the cloud application which was
    ![Select Project](./images/RunConfig2.png)
 
    
-5. Choose UI5 version : latest
+5. In the newly opened **Run Configurations** wizard, check the **Name** and **File Name** as **index.html**. 
 
-    ![Select UI5 Version](./images/RunConfig4.png)
+   ![Select UI5 Version](./images/RunConfig4.png)
     
-6. Choose **Connect to the SAP System** and then choosing the destination created, in our case, select **bupa**.
+   You can either select **Run with mock data** or run with actual data. Select the **Target Destination** as what you have configured in the SAP BTP Destinations, for example **bupa** and choose **Save**.  
 
-    ![Enter Name](./images/RunConfig5.png)
+   ![Enter Name](./images/RunConfig5.png)
    
     
-7. Once the test configuration is created, Click on the play icon to run and preview the test application.
+6. Once the test configuration is created, Click on the play icon to run and preview the test application.
 
     ![Test App](./images/TestApp.png)
    
-8. Click **Open** in the popup that appears.
+7. Click **Open** in the popup that appears.
 
     ![Test App2](./images/TestApp2.png)
    
-10. In a new browser window, the Preview Mode of the application is opened. The preview application shows the Business Partners which are fetched from the backend system configured in the SCP Destination.
+8. In a new browser window, the Preview Mode of the application is opened. The preview application shows the Business Partners which are fetched from the backend system configured in the SCP Destination.
 
     ![runApp](./images/runApp.png)
 

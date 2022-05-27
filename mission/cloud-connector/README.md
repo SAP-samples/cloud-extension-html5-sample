@@ -2,7 +2,13 @@
 
 ## Introduction
 
-In this section we setup the SAP Cloud Connector and create the certificate for secure connection with Principal Propagation to the SAP S/4HANA system by establishing a trusted relationship between them.
+The Cloud Connector is the tool to establish a secure connection between your SAP S/4HANA system and SAP BTP.
+
+This section contains the following steps:  
+* Install the Cloud Connector
+* Configure certificates for Cloud Connector.
+* Set up trust between Cloud Connector and the SAP S/4HANA system
+* Configure your SAP S/4HANA system for Principal Propagation.
 
 **Persona:** SAP S/4HANA Administrator
 
@@ -13,6 +19,9 @@ In this section we setup the SAP Cloud Connector and create the certificate for 
 For the installation of the SAP Cloud Connector please follow the steps in the SAP Help document - for this mission the Portable Scenario would be sufficient.
 
 [SAP Help: Cloud Connector Installation](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/57ae3d62f63440f7952e57bfcef948d3.html)
+
+**Hint:** You can skip the installation of Cloud connector, if you are using a SAP Cloud Appliance Library demo backend system. There is a Cloud Connector pre-installed and ready to be used. Check the **Welcome page** in your CAL system for the links, it usually runs in http://\<IP of your SAP CAL backend\>:8443/.
+
 
 ### **B: Certificate Setup** 
 To establish a secure connection between your SAP S/4HANA system and the cloud connector, a trusted relationship must be established. For a SSO communication with principal propagation an intermediate certificate is issued. In this guide, we will use custom certficates for this setup. For a productive usage, it is recommended to use a certificate signed by the trusted certificate authorization of your company.
@@ -91,7 +100,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation1.png)
 
 3. Upload Certificate
-   1. Under the tab 'File', choose the file path of **sys_Cert.DER** file which you have download from the SAP Cloud Connector System certificate step 3.
+   1. Under the tab 'File', choose the file path of **sys\_Cert.DER** file which you have download from the SAP Cloud Connector System certificate step 3.
    2. Click **Ok** and confirm
    3. Click on **Add to Certificate List** button
    4. Click on **Save** button
@@ -99,7 +108,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation1a.png)
 4. Create Certification Rule - call transaction /nCERTRULE
    1. Click on **Display/Change** icon to Edit mode.
-   2. Click on **Import certificate** icon next to Subject textbox. Choose the **scc_sample_cert.DER** file which you have downloaded from SAP Cloud Connector Principal propagation tab in step 5. 
+   2. Click on **Import certificate** icon next to Subject textbox. Choose the **scc\_sample\_cert.DER** file which you have downloaded from SAP Cloud Connector Principal propagation tab in step 5. 
    3. Click on **Rule** button and confirm.   
    ![STRUST](./images/S4PrincipalPropagation2.png)
    
@@ -120,12 +129,12 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation3.png)
 
 7. Add a new Parameter in Profile 'DEFAULT' 
-   1. Click on Parameter icon
+   1. Select the **Create Parameter** icon
     
    ![STRUST](./images/S4PrincipalPropagation4.png)
 
-8. Add icm/trusted_reverse_proxy_0 parameter
-   1. Enter parameter name as **icm/trusted_reverse_proxy_0**
+8. Add icm/trusted\_reverse\_proxy\_0 parameter
+   1. Enter parameter name as **icm/trusted\_reverse\_proxy\_0**
    2. Enter parameter value as **SUBJECT="CN=\<your CN\>, L=\<your city\>, O=\<your company\>, C=\<your country\>", ISSUER="CN=REFAPPS, L=\<your city\>, O=\<your company\>, C=\<your country\>"**. The values must be the same as from the certificate we have created in SAP Cloud Connector on step 3. Make sure that there is a blankspace between Subject and Issuer as in screenshot below.
    3. Click on **Copy** and then **Back**
 
@@ -159,4 +168,5 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 ## Summary
 We have installed the SAP Cloud Connector, established a trust between SAP cloud connector and the SAP S/4HANA system and created a certification rule for handling principal propagation. 
 
-[See also SAP Note 2610956 for more details](https://launchpad.support.sap.com/#/notes/2610956)
+* [See also SAP Note 2610956 for more details](https://launchpad.support.sap.com/#/notes/2610956)
+* [SAP Help: Configuring Principal Propagation to an ABAP system](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/6705cc350ef44628a42473b3eb72efd8.html)

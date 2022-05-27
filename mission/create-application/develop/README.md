@@ -2,11 +2,11 @@
 
 ## Introduction
 
-In this section, we would describe steps to develop a cloud application using SAP Business Application Studio.
+SAP Business Application Studio comes out of the box with predefined set of development environments – Dev-Spaces (virtual machine on the cloud where you can develop, build, test and run using pre-installed runtimes and tools) tailored for developing SAP business scenarios.
+
+Create a simple UI extension application in SAP Business Application Studio using existing project templates in order to consume the Business Partner OData service. This application will run as a stand-alone application without a SAP Lauchpad.
 
 **Persona:** UX Developer
-
-**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 ## Step-by-Step
 
@@ -67,7 +67,7 @@ In this section, we would describe steps to develop a cloud application using SA
 
 3. In the **Floorplan Selection**, choose the following:
    - For the field, **Application Type**, choose **SAPUI5 freestyle** from the drop-down,
-   - Select floorplan as **SAP Fiori Master Detail Application**,
+   - Select floorplan as **SAP Fiori List-Detail Application**,
    - Click **Next**.
    
      ![Choose Template2](./images/ChooseTemplate2.png)
@@ -78,7 +78,7 @@ In this section, we would describe steps to develop a cloud application using SA
 
      ![Choose Template3](./images/ChooseTemplate3.png)
    
-   - In the drop-down for the field **Service**, search **business** and select **ZAPI_BUSINESS_PARTNER (1) - OData V2**
+   - In the drop-down for the field **Service**, search **business** and select **ZAPI\_BUSINESS\_PARTNER (1) - OData V2**
    - Choose **Next**
   
      ![Choose Template4](./images/ChooseTemplate4.png)
@@ -87,12 +87,12 @@ In this section, we would describe steps to develop a cloud application using SA
    
 5. In the **Entity Selection** screen, 
    
-    - Select drop-down **Object Collection** to **A_BusinessPartner**.
+    - Select drop-down **Object Collection** to **A\_BusinessPartner**.
     - Select drop-down **Object collection key** to **BusinessPartner**.
     - Select drop-down **Object ID** to **BusinessPartnerFullName**.
     - Select drop-down **Object Number** to **None**.
     - Select drop-down **Object Unit of Measure** to **BusinessPartnerCategory**.
-    - Select drop-Down **Line Item Collection** to **to_BusinessPartnerAddress**.
+    - Select drop-Down **Line Item Collection** to **to\_BusinessPartnerAddress**.
     - Select drop-down **Line Item Collection Key** to **AddressID**.
     - Select drop-down **Line Item ID** to **FullName**.
     - Select drop-down **Line Item Number** to **None**.

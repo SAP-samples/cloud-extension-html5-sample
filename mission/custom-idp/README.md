@@ -7,13 +7,16 @@ In this section, we would configure a custom Identity Provider which has the use
 Depending on your global account, you might see the default identity provider, which is configured automatically. This cannot be deleted, it can only be enabled or disabled. 
 
 **Persona:** Cloud Administrator
-**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 ## Step-by-Step
 
 An SAML service provider interacts with an SAML 2.0 identity provider to authenticate users signing in by means of a single sign-on (SSO) mechanism. In this scenario, the SAP UAA service (User Account and Authentication Service) acts as a service provider representing a single subaccount. To establish trust between an identity provider and a subaccount, you must provide the SAML details for web-based authentication in the identity provider itself. Administrators must configure trust on both sides, in the subaccount of the service provider and in the SAML identity provider. Here we assume that the customer has purchased a tenant for SAP Cloud Identity Authentication service.
 
-***Hint:** For the automatic trust establishing with Open ID Connect see this [guide](./AutomaticTrust.md).*
+There are two ways to establish a trust between the IDP and your SAP BTP account:
+
+* Recommended option: **Automatic trust using Open ID Connect (OIDC)** --> [see this guide](./AutomaticTrust.md).
+
+* **Setup manual trust with SAML 2.0** --> see the following steps:
 
 ### Register SAP BTP subaccount in the Custom SAML 2.0 Identity Provider
 
@@ -32,7 +35,7 @@ You can manage trust configurations for a global account only if you have create
    
    ![Add App](./images/CustIDP-addApp.png)
    
-7. Enter Name. For eg., **ExtendUI_IDP** and choose **SAP BTP solution** as **Application Type**
+7. Enter Name. For eg., **ExtendUI\_IDP** and choose **SAP BTP solution** as **Application Type**
 8. Select **Save**.
 
    ![Save App](./images/CustIDP-saveApp.png)
@@ -63,7 +66,7 @@ You can manage trust configurations for a global account only if you have create
 
    ![User Groups](./images/CustIDP-addGroups.png)
 
-17. Create a Extension Developer group. 
+17. Create an Extension Developer group. 
     * Select **Create**
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
@@ -73,12 +76,12 @@ You can manage trust configurations for a global account only if you have create
    ![User Groups](./images/CustIDP-addGroups2.png)
 
 
-18.  Create a Extension Administrator group. Same steps as before.     
+18.  Create an Extension Administrator group. Same steps as before.     
      * Select **Create**
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
-     * Press **Save**
+     * Press **Create**
   
 19. Map the group to a user which should have the UX extension developer role. 
     * Open User Management
