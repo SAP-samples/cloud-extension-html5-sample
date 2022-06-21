@@ -132,7 +132,21 @@ Create a simple UI extension application in SAP Business Application Studio usin
 9. Once the project is generated, choose **File**, **Open Workspace** from the menu and select the created project **sapui5**. Choose **Open** to Open Workspace.
 
    ![Open Workspace](./images/OpenWorkspace.png)
-   
+
+
+10. Check in the generated code if the mapping to the Business Partner Adress is correct 
+    - Open the Details.view.xml. You find it in the webapp/view folder of the project.
+    - Search for id="lineItemsList" and set the items parameter to **to_BusinessPartnerAddress**
+    - Save the file.
+    
+    ```xml
+      ...
+      <Table
+         id="lineItemsList"
+         width="auto"
+         items="{to_BusinessPartnerAddress}"
+      ...
+    ```
 
     
 ### Optional Step: Adding Internationalization to your project
