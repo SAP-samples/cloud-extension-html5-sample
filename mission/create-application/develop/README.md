@@ -134,8 +134,8 @@ Create a simple UI extension application in SAP Business Application Studio usin
    ![Open Workspace](./images/OpenWorkspace.png)
 
 
-10. Check in the generated code if the mapping to the Business Partner Adress is correct 
-    - Open the Details.view.xml. You find it in the webapp/view folder of the project.
+10. Check in the generated code if the mapping to the Business Partner Address is correct. 
+    - Open **Details.view.xml**. You find the file in the webapp/view folder of the project.
     - Search for id="lineItemsList" and set the items parameter to **to_BusinessPartnerAddress**
     - Save the file.
     
