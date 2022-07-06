@@ -1,4 +1,4 @@
-# Developing a Cloud Application
+# Develope a Cloud Application
 
 ## Introduction
 
