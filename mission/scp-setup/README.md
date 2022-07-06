@@ -1,10 +1,8 @@
-# Setup of a SAP Business Technology Platform subccount
+# Setup of a SAP Business Technology Platform Subccount
 
 ## Introduction
 
-**Abbreviation:** SAP Business Technology Platform = SAP BTP
-
-For running the HTML5 mission you will need the following services in your SAP BTP account:
+For running the HTML5 mission you will need the following services in your SAP Business Technology (SAP BTP) account:
 
 * SAP Business Application Studio
 * SAP Launchpad or optional SAP Cloud Portal service  
@@ -15,48 +13,45 @@ The entitlement differs for the pricing option of your account:
 
 - **Free Tier option with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA) account** or **SAP Business Technology Platform Trial**
 
-  As the Boosters do not run in a SAP BTP Trial environment or in a "free tier" option along with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA), follow the instructions in [Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually](../freetier/README.md).
+As the Boosters do not run in a SAP BTP Trial environment or in a "free tier" option along with Pay-as-you-go (PAYG) or Cloud Platform Enterprise Agreement (CPEA), follow the instructions in [Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually](../freetier/README.md).
 
 - **Consumption-based Pay-As-You-Go SAP BTP Account:** 
 No entitlement necessary. Be sure that you have enough credits to run the services.
 
 - **Subscription-based SAP BTP Account:** 
-You have to create entitlements for the services above - [see also Entitlements and Quotas](https://help.sap.com/viewer/df50977d8bfa4c9a8a063ddb37113c43/Cloud/en-US/38ecf59cdda64150a102cfaa62d5faab.html#loio363f0f68f9704830ac65c87a2562559b).
+You have to create entitlements for the above mentioned services. See section [Entitlements and Quotas](https://help.sap.com/viewer/df50977d8bfa4c9a8a063ddb37113c43/Cloud/en-US/38ecf59cdda64150a102cfaa62d5faab.html#loio363f0f68f9704830ac65c87a2562559b) in SAP BTP documentation.
 
+[Check the costs with the SAP BTP Estimator Tool](https://www.sap.com/products/cloud-platform/pricing/estimator-tool.html) for your subscription based or CPEA based accounts if you do not use the 'free' service plans for SAP BTP services. 
 
-[Check the costs with the SAP BTP Estimator Tool](https://www.sap.com/products/cloud-platform/pricing/estimator-tool.html) for your Subscription based or CPEA based accounts if you do not use the 'free' service plans for BTP services. 
-
-Check the [Enterprise Accounts and Commercial Models](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/171511cc425c4e079d0684936486eee6.html) and [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html).
+See sections [Enterprise Accounts and Commercial Models](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/171511cc425c4e079d0684936486eee6.html) and [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html) for more details.
 
 ## Setup of a SAP BTP Subaccount
 
 You can setup a SAP BTP subaccount in different ways:
 
-- [Setup of a SAP Business Technology Platform subccount using btp-setup-automator or manually](../freetier/README.md).
-- Using **boosters**: 
-  Boosters are a collection of wizards that provides functionalities for specific scenarios to automate and speed-up the installation and configuration process of a SAP BTP subaccount. This also includes the user management with the mapping of the respective administrator and developer roles.
+- [Setup of a SAP BTP subccount using btp-setup-automator or manually](../freetier/README.md).
+- Using **boosters**: Boosters are a collection of wizards that provides functionalities for specific scenarios to automate and speed-up the installation and configuration process of a SAP BTP subaccount. This also includes the user management with the mapping of the respective administrator and developer roles.
  
 **Persona:** Cloud Administrator
 
-## Create subaccount using boosters
+## Create Subaccount Using Boosters
 
-> Before running the booster please check for which regions and infrastructures the services are available - [see SAP BTP Regions and Service Portfolio ](https://help.sap.com/doc/aa1ccd10da6c4337aa737df2ead1855b/Cloud/en-US/3b642f68227b4b1398d2ce1a5351389a.html) - unfortunately the booster is not able to check this in advance, so it will fail when you select a region where a service is not available.
+> Before running the booster, check for which regions and infrastructures the services are available. See section [SAP BTP Regions and Service Portfolio ](https://help.sap.com/doc/aa1ccd10da6c4337aa737df2ead1855b/Cloud/en-US/3b642f68227b4b1398d2ce1a5351389a.html) for more details. Unfortunately the booster is not able to check this in advance, so it will fail when you select a region where a service is not available.
 
 ### A: Run the Booster
 
-1. Start the Booster
-   1. Login to your global SAP BTP account.
-   2. Select Boosters in the account menu.
-   2. Select the Booster **Prepare an account for HTML5 application development**
+1. Start the Booster:
+   1. Log in to your global SAP BTP account.
+   2. Select **Boosters** in the account menu.
+   2. Select the Booster **Prepare an account for HTML5 application development**.
    
    ![Start Booster](./images/booster1.png)
-
 
 2.  Booster Overview
    
     ![Booster Overview](./images/booster2.png)
 
-3.  Choose the **Components** tab and review the Components that will be installed with the Booster - choose **Start**
+3.  Choose the **Components** tab and review the components that will be installed with the Booster and choose **Start**.
     
     ![Booster Overview](./images/booster33.png)
  
@@ -74,14 +69,14 @@ You can setup a SAP BTP subaccount in different ways:
     
     ![Booster Overview](./images/cfquota.png)
    
-6.  Setup Subaccount credentials 
+6.  Setup Subaccount credentials: 
     1.  Set Subaccount name
     2.  Select your preferred cloud provider
     3.  Select the region for the subaccount
     4.  Set the subaccount ID - you can keep the default
     5.  Set the subaccount org name - change it to a meaningful name
     6.  Set a space name - that's the space we will use for our mission project. In general it's recommended to have one space per project. You can later add further spaces for additional projects manually. 
-    7.  Press next
+    7.  Choose **Next**.
 
     ![Booster Overview](./images/booster5b.png)
 
@@ -91,11 +86,11 @@ You can setup a SAP BTP subaccount in different ways:
     1. Select your user origin - that's your standard Identity & Authentication service  
     2. Add administrators
     3. Add developers
-    4. Press Next.
+    4. Choose **Next**.
 
     ![Booster Overview](./images/booster6.png)
 
-8.  Review your configuration, if everything is correct press finish 
+8.  Review your configuration, if everything is correct choose **Finish**
     
     ![Booster Overview](./images/booster7.png)
  
@@ -105,16 +100,16 @@ You can setup a SAP BTP subaccount in different ways:
     ![Booster Overview](./images/booster8.png)
 
 
-10. When the Booster has executed successfully you will get a success window. Select **Navigate to Subaccount** to enter the newly created subaccount.
+10. When the Booster has executed successfully you will get a success window. Choose **Navigate to Subaccount** to enter the newly created subaccount.
 
     ![Booster Overview](./images/booster9.png)
 
 
 
 ### B: Check Subaccount
-In your new subaccount check the following
+In your new subaccount check the following:
 
-1. Members - Select Org Members in the Cloud Foundry submenu. in this list you will see all that all users you have added as administrator have the "Organization Manager" role. Users you have added as developer has no Organization Role.
+1. Members - Select **Org Members** in the Cloud Foundry submenu. In this list you will see all that all users you have added as administrator have the "Organization Manager" role. Users you have added as developer has no Organization Role.
    
      ![Check account](./images/check-booster1.png)
 
@@ -122,11 +117,11 @@ In your new subaccount check the following
 
      ![Check account](./images/check-booster4.png)
 
-3. Security - Select "Role Collection" in the Security section. You can see all the role collections for the different services that are created by the Booster. There are two specific collection called **Extension_UX_Administrator** and **Extension_UX_Developer** . Those are the master collections either for Administrators or Developers and contains all the necessary roles which are needed to access the services to build and deploy a HTML5 extension application. If you want to add additional users later, you have to assign those role collection to them. Click on the role **Extension_UX_Administrator**: 
+3. Security - Select "Role Collection" in the **Security** section. You can see all the role collections for the different services that are created by the Booster. There are two specific collection called **Extension_UX_Administrator** and **Extension_UX_Developer** . Those are the master collections either for Administrators or Developers and contains all the necessary roles which are needed to access the services to build and deploy a HTML5 extension application. If you want to add additional users later, you have to assign those role collection to them. Choose the role **Extension_UX_Administrator**: 
    
      ![Check account](./images/check-booster2.png)
 
-4. You can check that all necessary roles already assigned for the Administrator users to access **Business Application Studio**, **Launchpad** and **Continous Integration & Delivery service**. By pressing the **Edit** button you can add additional roles and user to to this role collection. 
+4. You can check that all necessary roles already assigned for the Administrator users to access **Business Application Studio**, **Launchpad** and **Continous Integration & Delivery service**. Choose **Edit** to add additional roles and user to to this role collection. 
 
      ![Check account](./images/adminRole.png)
      
@@ -136,13 +131,13 @@ In your new subaccount check the following
      
 6. Go back to the Overview of your BTP subaccount.
 
-7. Click **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions**, You should see that the following services have been subscribed:
+7. Choose **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions**, You should see that the following services have been subscribed:
 
     * SAP Business Application Studio
     * Launchpad
     * Continuous Integration & Delivery Service (optional)
   
-   Click on "Go to Application" to see if you're able to access the subscriptions.
+   Choose "Go to Application" to see if you're able to access the subscriptions.
 
      ![Check account](./images/openBizAppStudio.png)
 
