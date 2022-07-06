@@ -1,15 +1,15 @@
 # Mission: Setup for SAP S/4HANA side-by-side UI Extensions on SAP Business Technology Platform
 
 The main focus of this mission is to show the full end-to-end setup for a SAP S/4HANA on-premise extension on SAP BTP (Cloud Foundry) this includes the following steps:
-* Setup of the S/4HANA on-premise system
-* Setup of the SAP BTP account and development environment
-* End-to-End Connection setup with Principal Propagation (SSO)
+* Setup SAP S/4HANA on-premise system
+* Setup of AP BTP account and development environment
+* End-to-End connection setup with Principal Propagation (SSO)
 * DevOps - using SAP Continuous Integration & Delivery and monitoring
 * Integration of the HTML5 application in a central Launchpad
 
-We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the different SAP Launchpads environments
+We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the different SAP Launchpads environments.
 
-[Mission in SAP BTP Discovery Center](https://discovery-center.cloud.sap/missiondetail/3239/3325)
+[Mission in SAP Discovery Center](https://discovery-center.cloud.sap/missiondetail/3239/3325)
 
 ## Discover
 
@@ -18,7 +18,7 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 * [Learn about SAP S/4HANA](./discover/S4H.md)
 * [Learn about SAP Connectivity Service](./discover/Connectivity.md)
 * [Learn about HTML5 Applications](./discover/HTML5.md)
-* [Learn about SAP Business Applicaiton Studio](./discover/BAS.md)
+* [Learn about SAP Business Application Studio](./discover/BAS.md)
 * [Learn about SAP Cloud Identity Services](./discover/IAS.md)
 * [Learn about DevOps and SAP Continous Integration and Delivery](./discover/CICD.md)
 * [Learn about SAP Launchpad Service and SAP Work Zone](./discover/Launchpad.md)
@@ -26,11 +26,11 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 
 These are the step-by-step guidelines for running the mission. It is divided in two workstreams:
 
-## Landscape setup
+## Landscape Setup
 
-The setup of the landscape consists of preparing the API in the S/4 on-premise system and exposing the backend oData service using SAP Cloud Connector. There are also step-by-step instructions to setup the trust between SAP Cloud Connector and SAP S/4 HANA system.
+The setup of the landscape consists of preparing the API in the SAP S/4HANA on-premise system and exposing the backend oData service using SAP Cloud Connector. There are also step-by-step instructions to setup the trust between SAP Cloud Connector and SAP S/4HANA system.
 
-* [Set up the SAP S/4HANA system from the SAP Cloud Appliance Library](https://github.com/SAP-samples/cloud-extension-ecc-business-process/blob/mission/mission/cal-setup/CALS4H.md)
+* [Setup of SAP S/4HANA system from the SAP Cloud Appliance Library](https://github.com/SAP-samples/cloud-extension-ecc-business-process/blob/mission/mission/cal-setup/CALS4H.md)
 * [Setup of S/4HANA on-premise System](./s4h-setup/README.md)
 * [Setup of SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
 * [Setup of SAP Business Technology Platform Account](./scp-setup/README.md)
