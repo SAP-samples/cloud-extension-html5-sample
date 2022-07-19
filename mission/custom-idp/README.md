@@ -1,5 +1,5 @@
 
-# Configuring Custom Identity Provider
+# Configure Custom Identity Provider
 
 ## Introduction
 
