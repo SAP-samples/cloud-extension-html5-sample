@@ -1,52 +1,52 @@
 # Set Up End-to-End Connection
+
 ## Introduction
- In this section we setup the end-to-end communication between the SAP S/4HANA on-premise system and the SAP BTP account. To establish it we have to define an account in SAP Cloud Connector and configure the connection to each system. Then we define a destination on SAP Cloud Platform to use this connection setting.
+
+In this section we set up the end-to-end communication between the SAP S/4HANA on-premise system and the SAP Business Technology (SAP BTP) account. To establish it, we have to define an account in SAP Cloud Connector and configure the connection to each system. Then we define a destination on SAP BTP to use this connection setting.
 
 **Personas:** In this section the SAP S/4HANA admininstrator and the SAP Cloud administrator have to work together.
-
-**Abbreviation:** SAP Business Technology Platform = SAP BTP
 
 ## Step-by-Step
 
 ### **A: Configure End-to-end Connection in Cloud Connector**
 
 
-1. Get the connection information of your SAP BTP subaccount
-   1. Logon to your SAP BTP subaccount. From the overview page, we need the following environment information.
+1. Get the connection information of your SAP BTP subaccount:
+   1. Log on to your SAP BTP subaccount. From the overview page, we need the following environment information.
    2. Subaccount ID.
    3. API Endpoint 
    
    ![Get Subaccount](./images/subaccount.png) 
 
-2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user, you can create a new user with the technical roles for the  Cloud Connector. You find more details here: [Communication User](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/daca64dacc6148fcb5c70ed86082ef91.html).
+2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user, you can create a new user with the technical roles for the Cloud Connector. See [Communication User](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/daca64dacc6148fcb5c70ed86082ef91.html) for more details.
 
-3. Create a new Connector to your SAP BTP subaccount. 
-   1. Login to the Cloud Connector and select the Connector entry
+3. Create a new Connector to your SAP BTP subaccount: 
+   1. Log in to the Cloud Connector and select the **Connector** entry.
    2. Select **+ Add Subaccount**
    
    ![Create new Subaccount](./images/CCCreateSubaccount.png)
 
-4. Do the following
-   1. *Region:* Select the region of the API Endpoint of your Subaccount
-   2. *Subaccount:* Enter the ID of your Subaccount
-   3. *Display Name:* The name of this connection which is displayed in your SAP BTP subaccount
+4. Do the following:
+   1. *Region:* Select the region of the API Endpoint of your Subaccount.
+   2. *Subaccount:* Enter the ID of your Subaccount.
+   3. *Display Name:* The name of this connection which is displayed in your SAP BTP subaccount.
    4. *Subaccount User:* Name of the connection user - for testing you could use your SAP BTP account user, else you first have to create a specific connection user at your SAP BTP account.
    5. *Password:* Password of the connection user
-   6. *Description:* Enter a meaningful description 
-   7. *Location ID*: Optional field: If you plan to connect more than one Cloud Connector to a subaccount, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy). 
+   6. *Description:* Enter a meaningful description. 
+   7. *Location ID*: Optional field: If you plan to connect more than one Cloud Connector to a subaccount, then you can mention a Location ID. See [Cloud Connector Configuration Help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy) for more details. 
    8. Click on Save
 
    ![Add Subaccount](./images/addSubAccount.png) 
 
-5. Cloud to on-premise Setup
+5. Cloud to on-premise setup:
    1. In the added Subaccount, select the **Cloud to On-Premise** tabulator.
-   2. In the **Mapping Virtual to Internal System** section click on the button **+**
+   2. In the **Mapping Virtual to Internal System** section choose the **+** button.
    
    ![Add System](./images/CCAddResource.png)
 
 6. In the screens of the **Add System** Wizzard enter the following:
     
-    1. Select ABAP - next
+    1. Select **ABAP** and choose **Next**.
    
     ![add system](./images/add-system1.png) 
    
