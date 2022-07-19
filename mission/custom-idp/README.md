@@ -44,27 +44,27 @@ You can manage trust configurations for a global account only if you have create
    ![Configure SAML](./images/CustIDP-configureSAML.png)
 10. Seletct **Browse** for Metadata file upload. Choose the metadata xml file downloaded from previous step number 3.
 
-   ![Save SAML](./images/CustIDP-saveSAML.png)   
+    ![Save SAML](./images/CustIDP-saveSAML.png)   
 11. Click on Save button.
 12. Click on **Subject Name Identifier**
     
-   ![Subject NameID](./images/CustIDP-subjectNameID.png) 
+    ![Subject NameID](./images/CustIDP-subjectNameID.png) 
    
 13. Choose basic attribute as E-mail and Click on Save button.
    
-   ![Save Subject NameID](./images/CustIDP-subjectNameIDSave.png) 
+    ![Save Subject NameID](./images/CustIDP-subjectNameIDSave.png) 
 
 14. Select Assertion Attributes
     
-   ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
+    ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
 15. Click on Add and select the Groups attribute, set the assertion attribute to "Groups" with capital G. Click on save
  
-   ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
+    ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
 
 16. In the Home view select User Groups
 
-   ![User Groups](./images/CustIDP-addGroups.png)
+    ![User Groups](./images/CustIDP-addGroups.png)
 
 17. Create an Extension Developer group. 
     * Select **Create**
@@ -73,7 +73,7 @@ You can manage trust configurations for a global account only if you have create
     * Enter a description
     * Press **Create**
 
-   ![User Groups](./images/CustIDP-addGroups2.png)
+    ![User Groups](./images/CustIDP-addGroups2.png)
 
 
 18.  Create an Extension Administrator group. Same steps as before.     
@@ -89,11 +89,11 @@ You can manage trust configurations for a global account only if you have create
     * Click on User Groups
     * Press **Assign Groups**
    
-   ![User Groups](./images/CustIDP-assertGroup.png)
+    ![User Groups](./images/CustIDP-assertGroup.png)
 
 20. Check the ExtensionDeveloper group and click on save.
    
-   ![User Groups](./images/CustIDP-assertGroup2.png)
+    ![User Groups](./images/CustIDP-assertGroup2.png)
 
     Repeat the last 2 steps for all user that needs the extension developer privilege.
 
