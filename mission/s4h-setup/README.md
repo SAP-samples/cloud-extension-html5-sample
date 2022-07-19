@@ -1,4 +1,4 @@
-# Set up the SAP S/4HANA System
+# Set Up the SAP S/4HANA System
 
 In this section, you will learn how to activate an OData API service in a SAP S/4HANA system, create a user and assign the necessary roles and authorization objects.
 

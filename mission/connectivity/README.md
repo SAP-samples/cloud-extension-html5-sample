@@ -1,4 +1,4 @@
-# Set up End-to-end Connection
+# Set Up End-to-End Connection
 
 ## Introduction
 
