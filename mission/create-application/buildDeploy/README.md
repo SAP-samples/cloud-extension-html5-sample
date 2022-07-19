@@ -74,7 +74,7 @@ This section contains the following steps:
     
     ```
  
-4. After replacing, the `xs-security.json? file should look like this:
+4. After replacing, the `xs-security.json` file should look like this:
 
     ![Add ScopeRoleColl](./images/addScopeRoleColl.png)
     
