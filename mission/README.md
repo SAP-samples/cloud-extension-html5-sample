@@ -2,7 +2,7 @@
 
 The main focus of this mission is to show the full end-to-end setup for a SAP S/4HANA on-premise extension on SAP BTP (Cloud Foundry) this includes the following steps:
 * Setup SAP S/4HANA on-premise system
-* Setup of AP BTP account and development environment
+* Setup of SAP BTP account and development environment
 * End-to-End connection setup with Principal Propagation (SSO)
 * DevOps - using SAP Continuous Integration & Delivery and monitoring
 * Integration of the HTML5 application in a central Launchpad
