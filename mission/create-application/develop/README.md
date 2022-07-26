@@ -51,9 +51,14 @@ Create a simple UI extension application in SAP Business Application Studio usin
     
 7. Enter CF API endpoint which you copied in step 3 or take the default suggested API endpoint.     
 8. Enter your SAP BTP account **Email** and **Password** when prompted.
+
+   ![Login to CF](./images/login1.png)
+
 9. Select your Cloud Foundry **Org** which you have noted down in step 3. 
 10. Select the space name which you have noted down in step 4. Once you have selected the Org and Space, you would login to Cloud Foundry in SAP Business Application Studio.
 11. Now we have successfully created a workspace and pointed to our desired SAP BTP **Org** and **Space**.
+
+   ![Login to CF](./images/login2.png)
 
 ### Develop the Application from Project Template
 
