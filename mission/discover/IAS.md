@@ -1,4 +1,4 @@
-# Learn about SAP Cloud Identity Services - Identity Authentication
+# Learn About SAP Cloud Identity Services - Identity Authentication
 
 The Identity Authentication service provides you with controlled cloud-based access to business processes, applications, and data. It simplifies your user experience through authentication mechanisms, single sign-on, on-premise integration, and convenient self-service options.
 
