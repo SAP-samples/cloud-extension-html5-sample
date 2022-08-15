@@ -1,4 +1,4 @@
-# Learn about SAP Connectivity Service
+# Learn About SAP Connectivity Service
 
 The SAP Connectivity service allows SAP BTP applications to securely access remote services that run on the cloud or on-premise. This service:
 

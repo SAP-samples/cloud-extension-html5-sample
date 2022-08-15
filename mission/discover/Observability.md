@@ -1,4 +1,4 @@
-# Learn about Observability on SAP BTP
+# Learn About Observability on SAP BTP
 
 The SAP Application Logging service for SAP BTP on the SAP BTP, Cloud Foundry environment lets you stream logs of bound applications to a central application logging stack. The SAP Application Logging service on Cloud Foundry uses Elastic Stack to store and visualize your application log data.
 
