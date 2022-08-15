@@ -1,4 +1,4 @@
-# Learn about SAP Launchpad Service and SAP Work Zone
+# Learn About SAP Launchpad Service and SAP Work Zone
 
 The SAP Launchpad service lets you build digital experience portals for employees, customers, and partners. You can streamline access to business data so that your employees can execute their daily business tasks securely, from any device.
 
