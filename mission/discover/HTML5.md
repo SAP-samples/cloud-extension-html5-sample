@@ -1,4 +1,4 @@
-# Learn about HTML5 Applications
+# Learn About HTML5 Applications
 
 SAP BTP enables you to access and run HTML5 applications in a cloud environment without the need to maintain your own runtime infrastructure.
 
