@@ -7,7 +7,7 @@ You need to be an SAP S/4HANA administrator to be able to follow the steps.
 ***Hint:** The following screenshots are done with SAP GUI 7.50 - by using SAP GUI 7.60 the usage could differ, for example tick button instead of a continue button and so on.*
 
 ## Activate the OData Service
-1. Log in to the SAP S/4HANA system using SAP GUI with your adminstrator user.
+1. Log in to the SAP S/4HANA system using SAP GUI with your administrator user.
 2. Call the /n/IWFND/MAINT\_SERVICE transaction.
 3. Choose **Add Service**.
 
