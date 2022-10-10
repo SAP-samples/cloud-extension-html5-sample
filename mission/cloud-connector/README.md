@@ -1,4 +1,4 @@
-# Set up SAP Cloud Connector and establish a Trust to the SAP S/4HANA System
+# Set Up SAP Cloud Connector and establish a Trust to the SAP S/4HANA System
 
 ## Introduction
 
