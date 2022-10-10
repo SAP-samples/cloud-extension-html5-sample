@@ -31,11 +31,11 @@ These are the step-by-step guidelines for running the mission. It is divided in 
 The setup of the landscape consists of preparing the API in the SAP S/4HANA on-premise system and exposing the backend oData service using SAP Cloud Connector. There are also step-by-step instructions to setup the trust between SAP Cloud Connector and SAP S/4HANA system.
 
 * [Setup of SAP S/4HANA system from the SAP Cloud Appliance Library](https://github.com/SAP-samples/cloud-extension-ecc-business-process/blob/mission/mission/cal-setup/CALS4H.md)
-* [Set UP the SAP S/4HANA on-premise System](./s4h-setup/README.md)
-* [Set UP SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
-* [Setup of SAP Business Technology Platform Account](./scp-setup/README.md)
+* [Set Up the SAP S/4HANA on-premise System](./s4h-setup/README.md)
+* [Set Up SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
+* [Set Up the SAP Business Technology Platform Account](./scp-setup/README.md)
 * [End-to-End Connectivity Setup](./connectivity/README.md)
-* [Setup SAP Identity and Authentication Service (optional)](./custom-idp/README.md)
+* [Set Up SAP Identity and Authentication Service (optional)](./custom-idp/README.md)
 
 
 ## Implementation of a simple UI application
