@@ -162,9 +162,9 @@ In this section, we generate a custom authorization object which is necessary to
 
 ### Test the API\_BUSINESS\_PARTNER\_SRV
 
-To see if the setup was done correctly call the Business Partner API with the new user. 
+To see if the setup was done correctly, let us test the Business Partner API with the new user. 
 
-* Call Transaction /N/IWFND/MAINT\_SERVICE
+* Call Transaction /N/IWFND/MAINT\_SERVICE with your admin user.
     1. Double-click on ZAPI\_BUSINESS\_PARTNER
     2. Choose **Call Browser**
 
@@ -173,7 +173,7 @@ To see if the setup was done correctly call the Business Partner API with the ne
     
     Hint: If you use a CAL system, kindly check and use the relevant IP address instead of the default system host name as the host name has to be resolvable by the browser.
 
-* Enter the credentials of the user we have created. You should then see the structure of the BusinessPartner OData service.
+* Enter the credentials of the new user which you have created. You should then see the structure of the BusinessPartner OData service.
 
     ![Test Bupa](./images/test-bupa2.png)
 
