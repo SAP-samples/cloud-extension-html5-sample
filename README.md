@@ -52,7 +52,7 @@ Once we have setup the landscape, we can now develop, test and run a simple UI a
 ![Solution diagram](./doc/img/solution_diagram.png)
 
 
-![Link to Reference Application](.)
+[Reference Application](./RefApp.md)
 
 ## Known Issues
 
