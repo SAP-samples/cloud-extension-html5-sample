@@ -12,6 +12,8 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 
 [Mission in SAP Discovery Center](https://discovery-center.cloud.sap/missiondetail/3239/3325)
 
+[Reference Application](./RefApp.md)
+
 ## Discover
 
 * [The Mission Story](../../tree/mission/mission/discover/MissionStory.md)
@@ -52,7 +54,7 @@ Once we have setup the landscape, we can now develop, test and run a simple UI a
 ![Solution diagram](./doc/img/solution_diagram.png)
 
 
-[Reference Application](./RefApp.md)
+
 
 ## Known Issues
 
