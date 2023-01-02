@@ -1,108 +1,58 @@
-# Managed HTML5 Application Sample
+# Mission: Setup for SAP S/4HANA side-by-side UI Extensions on SAP Business Technology Platform
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-extension-html5-sample)](https://api.reuse.software/info/github.com/SAP-samples/cloud-extension-html5-sample)
 
-SAP Business Technology Platform enables you to access and run HTML5 Applications in a cloud environment without the need to maintain your own runtime infrastructure.
+The main focus of this mission is to show the full end-to-end setup for a SAP S/4HANA on-premise extension on SAP BTP (Cloud Foundry) this includes the following steps:
+* Setup SAP S/4HANA on-premise system
+* Setup of SAP BTP account and development environment
+* End-to-End connection setup with Principal Propagation (SSO)
+* DevOps - using SAP Continuous Integration & Delivery and monitoring
+* Integration of the HTML5 application in a central Launchpad
 
-HTML5 Applications consist of static content that runs on a browser. You can develop your applications - either in SAP Business Application Studio, or in your own IDE (integrated development environment) - and deploy them to the HTML5 Application Repository.
+We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the different SAP Launchpads environments.
 
-Depending on your backend application setup, you either configure the destinations during development, or define them after deploying the application. Finally, to consume the applications, you can create a site in SAP Cloud Portal Service, build the URL, and define custom domains.
+[Mission in SAP Discovery Center](https://discovery-center.cloud.sap/missiondetail/3239/3325)
 
-For more information, please refer to the documentation on [SAP Help Portal](https://help.sap.com/viewer/29badeeee3684338b2e870139bdc4d86/Cloud/en-US/c1b9d6facfc942e3bca664ae06387e9b.html).
+## Discover
 
-## Build Custom SAP Fiori User Experience
-The objective of this reference application is to showcase the ease of building custom frontends for SAP applications – Bring the ease of use of HTML5 Application on SAP Business Technology Platform Neo Environment to the Multi-Cloud environment.
+* [The Mission Story](../../tree/mission/mission/discover/MissionStory.md)
+* [Learn the Basics of SAP BTP](../../tree/mission/mission/discover/BTP.md)
+* [Learn about SAP S/4HANA](../../tree/mission/mission/discover/S4H.md)
+* [Learn about SAP Connectivity Service](../../tree/mission/mission/discover/Connectivity.md)
+* [Learn about HTML5 Applications](../../tree/mission/mission/discover/HTML5.md)
+* [Learn about SAP Business Application Studio](../../tree/mission/mission/discover/BAS.md)
+* [Learn about SAP Cloud Identity Services](../../tree/mission/mission/discover/IAS.md)
+* [Learn about DevOps and SAP Continous Integration and Delivery](../../tree/mission/mission/discover/CICD.md)
+* [Learn about SAP Launchpad Service and SAP Work Zone](../../tree/mission/mission/discover/Launchpad.md)
+* [Learn about Observability on SAP BTP](../../tree/mission/mission/discover/Observability.md)
 
+These are the step-by-step guidelines for running the mission. It is divided in two workstreams:
 
-## Prerequisites
+## Landscape Setup
 
-### Entitlements
+The setup of the landscape consists of preparing the API in the SAP S/4HANA on-premise system and exposing the backend oData service using SAP Cloud Connector. There are also step-by-step instructions to setup the trust between SAP Cloud Connector and SAP S/4HANA system.
 
-Make sure that you have an account with below entitlements for your sub account
-
-| Service                           | Plan       | Number of Instances |
-|-----------------------------------|------------|:-------------------:|
-| Destination                       | lite       |          2          |
-| HTML5 Application                 | app-host   |          2          |
-
-### Subscriptions
-Make sure that the below subscriptions are active for your sub account <br/>
- a. Business Application Studio <br/>
- b. Portal <br/>
- 
- #### Steps
-1. From the Subaccount Overview page, click on the tab "Subscriptions"
-2. Search for "Portal"
-3. Click on "Portal"
-4. Click on "Subscribe"
-5. Click on your subaccount
-6. Similarly, subscribe to Business Application Studio.
-     ![Subscription](/doc/img/Subscription.png)
- 
- ### Role Collections
- To access Business Application Studio, users will the role "Business_Application_Studio_Developer".
- 
-1. In the Subaccount Overview page, Expand Security and Click on Trust Configuration
-2. Click on "SAP ID Service"
-3.  Enter Email Address and Click on "Show Assignments"
-4. Click on "Add User" to add the user to the SAP ID Service (if user is not already present in the IDP)
-5.  Click on "Assign Role Collection"
-6. Select "Business_Application_Studio_Developer"
-7.  Click on "Assign Role collection"
-    ![AssignRoleCollection](/doc/img/AssignRoleCollection.png)
+* [Setup of SAP S/4HANA system from the SAP Cloud Appliance Library](https://github.com/SAP-samples/cloud-extension-ecc-business-process/blob/mission/mission/cal-setup/CALS4H.md)
+* [Setup of S/4HANA on-premise System](../../tree/mission/mission/s4h-setup/README.md)
+* [Setup of SAP Cloud Connector & Trust to the SAP S/4HANA System](../../tree/mission/mission/cloud-connector/README.md)
+* [Setup of SAP Business Technology Platform Account](../../tree/mission/mission/scp-setup/README.md)
+* [End-to-End Connectivity Setup](../../tree/mission/mission/connectivity/README.md)
+* [Setup SAP Identity and Authentication Service (optional)](../../tree/mission/mission/custom-idp/README.md)
 
 
-### Destination Setup
-A destination to ES5 is to be configured in the subaccount from which you will access the SAP Business Application Studio.
-To do this, please follow the steps below:
+## Implementation of a simple UI application
 
-1. Create an Account on the Gateway Demo System using the steps [here](https://developers.sap.com/tutorials/gateway-demo-signup.html)
-2. Create a Destination within the Cloud Foundry Environment using the steps [here](https://developers.sap.com/tutorials/cp-cf-create-destination.html), and set the ES5 destination properties as follows:
-    Common properties
-    - Name: ES5
-    - Type: HTTP
-    - Description: ES5
-    - URL: https://sapes5.sapdevcenter.com:443
-    - Proxy Type: Internet
-    - Authentication: BasicAuthentication
-    - User Name: Your ES5 Gateway user
-    - Authentication: Your ES5 Gateway password
-    - Additional Properties:
-    - HTML5.DynamicDestination: true (Type this additional property manually as it is not available in the drop-down list)
-    - sap-client: 002
-    - WebIDEEnabled: true
-    - WebIDESystem: ES5
-    - WebIDEUsage: odata_abap
-        ![Destination](/doc/img/Destination.png)
-    
+Once we have setup the landscape, we can now develop, test and run a simple UI application. We will show the steps to implement the simple UI application using the SAP BTP managed HTML5 repository. This is a kind of PoC to see if and how the whole landscape setup is working.
 
-## Build and Deploy of the Application
+* [Develop a simple UI application](../../tree/mission/mission/create-application/develop/README.md)
+* [Test the simple UI application](../../tree/mission/mission/create-application/test/README.md)
+* [Build and deploy the application to your SAP BTP Cloud Foundry account](../../tree/mission/mission/create-application/buildDeploy/README.md)
+* [Integrate the Continous Integration & Continous Delivery Service](../../tree/mission/mission/ci-cd-service/README.md)
+* [Publishing your application to a SAP Launchpad site](../../tree/mission/mission/launchpad/README.md)
+  
+![Solution diagram](./doc/img/solution_diagram.png)
 
-1. Open the Business Application Studio from Subaccount> Subscriptions
-2. Login to the Application using your CF account login credentials
-3. Click on "Create Dev Space"
-4. Enter the name of the space and Choose "SAP Fiori" and select "Launchpad Module" from Additional Extensions
-    ![BizappDevSpace](/doc/img/BizappDevSpace.png)
-5. Once the devspace is created, open it.
-6. Go to View-> Select "Find Command"
-    ![FindCommand](/doc/img/FindCommand.png)
-7. Search for "CF Login"
-8. Select for "CF: Login on to Cloud Foundry"
-    ![CFLoginBizapp](/doc/img/CFLoginBizapp.png)
-9. Enter CF API endpoint
-10. Enter "Email" and "Password" when prompted
-11. Select your org and space to login to Cloud Foundry
-12. Go to View > Find Command
-13. Search for "Clone" and select the command "Git:Clone"
-14. In the pop up, enter the git repository [link](../../)
-15. Once the cloning is complete, you can view the project in 'Explorer'
-16. Go to Terminal > New Terminal
-17. In the terminal window, navigate to the project root folder
-18. Run the command - ```mbt build```
-19. Once the build is complete, expand the mta_archives folder in the project root folder.
-20. Right click on the cloud-extension-html5-sample-1.0.0.mtar and select " Deploy MTA Archive"
-![BuildAndDeploy](/doc/img/BuildAndDeploy.png)
-21. Add the role collection "BPViewerRC" to your user using the steps mentioned [above](#role-collections).
-22. Now, run the command ```cf html5-list -u -d```. Open the URL corresponding to the application.
+
+![Link to Reference Application](.)
 
 ## Known Issues
 
