@@ -13,7 +13,7 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 
 ## Discover
 
-* [The Mission Story](./tree/mission/mission/discover/MissionStory.md)
+* [The Mission Story](../../tree/mission/mission/discover/MissionStory.md)
 * [Learn the Basics of SAP BTP](./tree/mission/mission/discover/BTP.md)
 * [Learn about SAP S/4HANA](./tree/mission/mission/discover/S4H.md)
 * [Learn about SAP Connectivity Service](./tree/mission/mission/discover/Connectivity.md)
