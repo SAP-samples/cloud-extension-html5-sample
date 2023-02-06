@@ -1,10 +1,10 @@
-# Publishing your application to SAP Launchpad Site
+# Integrate the Application with SAP Build Work Zone, standard edition
 
 ## Introduction
 
-In this section, we would describe steps of how you can add your HTML5 application to the Launchpad and how you can build a company site with the HTML5 application.
+In this section, we would describe steps of how you can add your HTML5 application to the  SAP Build Work Zone, standard edition. This allows to have one central entry point by building a company site to show all of your SAP BTP HTML5 applications.
 
-**Persona:** Launchpad Administrator
+**Persona:** SAP Workzone Administrator
 
 **Abbreviation:** SAP Business Technology Platform = SAP BTP
 
@@ -20,11 +20,11 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 3. Login to Cloud Foundry following the steps described in [Login to CF](../create-application/develop/README.md#login-to-cloud-foundry-in-sap-business-application-studio).
 
 
-### Expose HTML5 Applications in Launchpad
+### Integrate your HTML5 application with SAP Build Work Zone, standard edition
 
-In order that your HTML5 applications are visible to the Launchpad application, you have currently to add some information to the manifest.json file. This information is added automatically by the [Create Project from Template wizard](https://github.com/SAP-samples/cloud-extension-html5-sample/tree/mission/mission/create-application/develop#develop-the-application-from-project-template) if you have chosen **Yes** to add Fiori Launchpad Configuration. You can also add the code snippet in step 3 manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the Launchpad. 
+In order that your HTML5 applications are visible to the SAP Build Work Zone, standard edition, you have currently to add some information to the manifest.json file. This information is added automatically by the [Create Project from Template wizard](https://github.com/SAP-samples/cloud-extension-html5-sample/tree/mission/mission/create-application/develop#develop-the-application-from-project-template) if you have chosen **Yes** to add Work Zone (renamed from SAP Launchpad) Configuration. You can also add the code snippet in step 3 manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the SAP Build Work Zone service. 
 
-For more information, check [Expose HTML5 Applications in Launchpad](https://help.sap.com/viewer/ad4b9f0b14b0458cad9bd27bf435637d/Cloud/en-US/3a0e6d6b791c4c2189f6a0a424188362.html).
+For more information, check [Run Applications in SAP Build Work Zone, standard edition](https://help.sap.com/docs/WZ_STD/8c8e1958338140699bd4811b37b82ece/490a93e539e445e6b4bf7a6e7a3f4874.html).
 
 
 1. Switch to the browser window with **SAP Business Application Studio** and open the Workspace containing your HTML5 project.
@@ -48,32 +48,32 @@ For more information, check [Expose HTML5 Applications in Launchpad](https://hel
             }
         }
    ```
-4. In order that data of the extension application is displayed correctly in the SAP Launchpad site, check also the value of **sap.cloud** in webapp/manifest.json file.
+4. In order that data of the extension application is displayed correctly in the SAP Build Work Zone site, check also the value of **sap.cloud** in webapp/manifest.json file.
 
    ![check manifest](./images/checkmanifest.png)
 
 5.  You have to now build and deploy the application with these changes, refer to [Build, Deploy and Run HTML5 Application on SAP BTP](../create-application/buildDeploy/README.md).
 
-### Create a Launchpad Site
+### Create a SAP Build Work Zone Site
 
 1. Login to your SAP BTP account.
-2. Check if your user has access to open Launchpad application, check and assign the role collection **Launchpad_admin** to your user following [Assign Role for SAP Launchpad](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html). Your user would have automatically got the necessary roles if you have [created a BTP account using the boosters](../scp-setup/README.md).
+2. Check if your user has access to open SAP Build Work Zone, standard edition, check and assign the role collection **Launchpad_admin** to your user following [Assign Role for SAP Build Work Zone, standard edition](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html). Your user would have automatically got the necessary roles if you have [created a BTP account using the boosters](../scp-setup/README.md).
 2. Click **Services** and choose **Instances and Subscriptions**. 
-3. Select the tab **Subscriptions**, look for **Launchpad**, click the three dots **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Launchpad** service. 
+3. Select the tab **Subscriptions**, Search for the application SAP Build Work Zone, standard edition and choose the icon to open it. click the three dots **...** to open the relevant **Actions**. Click **Go to Application** to open **SAP Build Work Zone, standard edition** service. 
 
-   ![Open Biz App Studio](./images/openLaunchpad.png)
+   ![Open Biz App Studio](./images/openWorkZone.png)
    
-4. Enter your SAP BTP email and password or your custom Identity Provider credentials to login to the Launchpad Application which opens in a separate browser tab.
+4. Enter your SAP BTP email and password or your custom Identity Provider credentials to login to the application which opens in a separate browser tab.
 
-5. Click on *Create Site* to create a company Launchpad site.
+5. Click on *Create Site* to create a company site.
    
    ![Open Launchpad](./images/logintoLaunchpad.png)
 
-6. Enter a site name, for example : *companyLaunchpadSite* and click *Ok*.
+6. Enter a site name, for example : *companySite* and click *Ok*.
 
    ![create Site](./images/createSite.png)
    
-7. Now we have created a Launchpad site. In the next step,let us create necessary Groups and Roles needed.
+7. Now we have created a company site. In the next step,let us create necessary Groups and Roles needed.
 
 ### Add HTML5 application to necessary Group and Role
   
@@ -81,11 +81,11 @@ For more information, check [Expose HTML5 Applications in Launchpad](https://hel
 
    ![check Created Site](./images/checkCreatedSite.png)
    
-2.  Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP BTP. This will fetch any new content deployed. Then click on *Content Manager* to look and add the HTML5 apps to Launchpad site.
+2.  Click on *Fetch Updated Content* to manually fetch any new HTML5 applications deployed to the SAP BTP. This will fetch any new content deployed. Then click on *Content Manager* to look and add the HTML5 apps to SAP Work Zone site.
 
    ![refresh Content](./images/refreshContent.png)
    
-3. In *Content Manager*, click on *Content Explorer* tab and click on *HTML5 Apps* to see the list of HTML5 applications to be added to the Launchpad site.
+3. In *Content Manager*, click on *Content Explorer* tab and click on *HTML5 Apps* to see the list of HTML5 applications to be added.
 
     ![open Content Explorer](./images/openContentExplorer.png)
     
@@ -127,15 +127,15 @@ For more information, check [Expose HTML5 Applications in Launchpad](https://hel
    
 
 
-### Adding HTML5 application to the Launchpad site
+### Adding HTML5 application to the SAP Work Zone, standard edition site
 
-1. In the Site Manager, you can see the company Launchpad site, click **Go to site** to open the site.
+1. In the Site Manager, you can see the company site, click **Go to site** to open the site.
 
    ![open Created Site](./images/openCreatedSite.png)
    
-2. Enter the email and password for opening the Launchpad site.
+2. Enter the email and password for opening the company site.
    
-3. You can see the *BusinessPartners* application available as a tile in the company Launchpad site. Click on the tile to open the application.
+3. You can see the *BusinessPartners* application available as a tile in the company site. Click on the tile to open the application.
 
    ![check App in Launchpad](./images/checkAppinLaunchpad.png)
    
@@ -145,4 +145,4 @@ For more information, check [Expose HTML5 Applications in Launchpad](https://hel
 
 ### Result
 
-You have successfully created a Launchpad site, giving necessary roles and groups and added your HTML5 application to the Launchpad site.
+You have successfully created a SAP Build Work Zone, standard edition site, giving necessary roles and groups and added your HTML5 application to have one central entry point to show all of your SAP BTP applications.

@@ -5,7 +5,7 @@ The main focus of this mission is to show the full end-to-end setup for a SAP S/
 * Setup of SAP BTP account and development environment
 * End-to-End connection setup with Principal Propagation (SSO)
 * DevOps - using SAP Continuous Integration & Delivery and monitoring
-* Integration of the HTML5 application in a central Launchpad
+* Integration of the HTML5 application in a central company site with SAP Workzone
 
 We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the different SAP Launchpads environments.
 
@@ -21,7 +21,7 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 * [Learn about SAP Business Application Studio](./discover/BAS.md)
 * [Learn about SAP Cloud Identity Services](./discover/IAS.md)
 * [Learn about DevOps and SAP Continous Integration and Delivery](./discover/CICD.md)
-* [Learn about SAP Launchpad Service and SAP Work Zone](./discover/Launchpad.md)
+* [Learn about SAP Work Zone](./discover/Launchpad.md)
 * [Learn about Observability on SAP BTP](./discover/Observability.md)
 
 These are the step-by-step guidelines for running the mission. It is divided in two workstreams:
@@ -46,6 +46,6 @@ Once we have setup the landscape, we can now develop, test and run a simple UI a
 * [Test the simple UI application](./create-application/test/README.md)
 * [Build and deploy the application to your SAP BTP Cloud Foundry account](./create-application/buildDeploy/README.md)
 * [Integrate the Continous Integration & Continous Delivery Service](./ci-cd-service/README.md)
-* [Publishing your application to a SAP Launchpad site](./launchpad/README.md)
+* [Integrate the Application with SAP Build Work Zone, standard edition](./launchpad/README.md)
   
 ![Solution diagram](./images/solution_diagram.png)

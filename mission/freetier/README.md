@@ -7,7 +7,7 @@
 For running the HTML5 mission you will need the following services in your SAP BTP account:
 
 * SAP Business Application Studio
-* SAP Launchpad   
+* SAP Build Work Zone, standard edition   
 * SAP HTML5 Application (kernel service - no quota necessary)
 * SAP Continuous Integration & Delivery Service (optional)
 
@@ -94,9 +94,9 @@ You can automate the creation of sub-account using **btp-setup-automator**, whic
    
    ![add Entitlements](./images/entitlement3.png) 
 
-4. Search for **Launchpad Service** and select the **free (Application)** plan
+4. Search for **Build Work Zone, standard edition Service** and select the **free (Application)** plan or the **standard** plan (**standard** plan costs estimate are in [SAP Build Work Zone, standard edition](https://discovery-center.cloud.sap/serviceCatalog/sap-build-work-zone-standard-edition?region=all&tab=service_plan)
    
-   ![add Entitlements](./images/entitlement4.png) 
+   ![add Entitlements](./images/entitlement4.png)
 
 5. Search for **Continous Integration & Delivery** and select the **free (Application)** plan
    
@@ -120,7 +120,7 @@ You can automate the creation of sub-account using **btp-setup-automator**, whic
 
    ![subscribe02](./images/subscribe02.png)
 
-3. Repeat the above step also to create a subscription for **SAP Launchpad** service and optionally to **Continous Integration and Delivery** service.
+3. Repeat the above step also to create a subscription for **SAP Build Work Zone, standard edition** service and optionally to **Continous Integration and Delivery** service.
 
 
 ### Assign role collections to BTP users
@@ -130,14 +130,14 @@ You can automate the creation of sub-account using **btp-setup-automator**, whic
    
      ![Check account](./images/checkMembers.png)
 
-2. Let us now assign relevant role collections to your user. Select **Security** - Open the Security section and select **Users**. Again you should see all the users who have access to this sub-account. Click on your user and select **Assign role Collection** to assign relevant roles to access SAP Business Application Studio and SAP Launchpad service. Also you need roles for accessing **Continous Integration and Delivery service**.
+2. Let us now assign relevant role collections to your user. Select **Security** - Open the Security section and select **Users**. Again you should see all the users who have access to this sub-account. Click on your user and select **Assign role Collection** to assign relevant roles to access SAP Business Application Studio and SAP Build Work Zone, standard edition service. Also you need roles for accessing **Continous Integration and Delivery service**.
 
      ![Checkrole](./images/assignRole01.png)
 
 
 
 
-3. Kindly check and assign relevant roles to access  **Business Application Studio**, **Launchpad** and optiinally **Continous Integration & Delivery service** and also assign roles to manage Cloud Connector, Destinations, Subaccount Administrator. Repeat the steps to assign more team members relevant role collections.
+3. Kindly check and assign relevant roles to access  **Business Application Studio**, **Build Work Zone, standard edition** and optiinally **Continous Integration & Delivery service** and also assign roles to manage Cloud Connector, Destinations, Subaccount Administrator. Repeat the steps to assign more team members relevant role collections.
 
      ![assign Role 02](./images/assignRole02.png)
    
@@ -155,7 +155,7 @@ You can automate the creation of sub-account using **btp-setup-automator**, whic
 5. Click **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions**, You should see the subscribed services:
 
     * SAP Business Application Studio
-    * Launchpad
+    * Build Work Zone, standard edition
     * Continuous Integration & Delivery Service (optional)
   
    Click on "Go to Application" to see if you're able to access the subscriptions. (You might have to logout and login or try in a new private window so that the roles you assigned recently works successfully).
@@ -176,9 +176,9 @@ You can automate the creation of sub-account using **btp-setup-automator**, whic
     * Manage Authorization and Rules
   
 
-* [Setup Launchpad](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html)
+* [Setup Build Work Zone, standard edition](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html)
 
-    * Intital Setup - Accessing the SAP Launchpad service
+    * Intital Setup - Accessing the SAP Build Work Zone, standard edition service
 
 * [Setup SAP Continous Integration and Delivery](https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/719acaf61e4b4bf0a496483155c52570.html)
   
