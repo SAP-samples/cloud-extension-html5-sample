@@ -7,7 +7,7 @@ The main focus of this mission is to show the full end-to-end setup for a SAP S/
 * DevOps - using SAP Continuous Integration & Delivery and monitoring
 * Integration of the HTML5 application in a central company site with SAP Workzone
 
-We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the different SAP Launchpads environments.
+We will create a simple custom UI application, show the usage of the HTML5 repository and the different options how to expose this application - as a stand-alone or with the SAP Build Work Zone, standard edition environment to establish a unified point of access to SAP (e.g. SAP S/4HANA), custom-built, and third party applications and extensions, both on the cloud and on premise. Note: SAP Launchpad service was recently renamed to SAP Build Work Zone, standard edition.
 
 [Mission in SAP Discovery Center](https://discovery-center.cloud.sap/missiondetail/3239/3325)
 

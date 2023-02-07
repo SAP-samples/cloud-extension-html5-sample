@@ -119,7 +119,7 @@ Create a simple UI extension application in SAP Business Application Studio usin
    - For field **Application Namespace**, choose **sap.btp**.
    - Leave the defaults for the **Project folder path**, your project will be created in a folder with the module name you have specified.
    - Select **Yes** for **Add Deployment Configuration**.
-   - Optionally, select **Yes** if you want to add Fiori Launchpad Configuration, you can then add your application to a company launchpad site.
+   - Optionally, select **Yes** if you want to add **SAP Build Workzone (previously called as Fiori Launchpad**) Configuration, you can then add your application to a company site.
    - Choose **Next**.
  
      ![projectAttributes](./images/projectAttributes.png)
@@ -128,11 +128,11 @@ Create a simple UI extension application in SAP Business Application Studio usin
    - Choose **Cloud Foundry** as Target.
    - **Destination Name** is prefilled as **bupa**.
    - Choose **Yes** for **Add application to managed application router?**.
-   - Choose **Finish** to finish the project creation or choose **Next** if you have opted to add Fiori Launchpad Configuration in step 6.
+   - Choose **Finish** to finish the project creation or choose **Next** if you have opted to add **SAP Build Workzone (previously called as Fiori Launchpad**) configuration in step 6.
 
      ![deployment Configuration](./images/deploymentConfiguration.png)
      
-8. In the **Fiori Launchpad Configuration** screen:
+8. In the **Fiori Launchpad Configuration** screen we would configurethe **SAP Build Workzone** configurations:
    - Enter **BusinessPartners** for **Semantic object**.
    - Enter **display** for **Action**.
    - Enter **Business Partners** for **Title**.

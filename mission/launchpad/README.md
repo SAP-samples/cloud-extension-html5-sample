@@ -22,7 +22,7 @@ In this section, we would describe steps of how you can add your HTML5 applicati
 
 ### Integrate your HTML5 application with SAP Build Work Zone, standard edition
 
-In order that your HTML5 applications are visible to the SAP Build Work Zone, standard edition, you have currently to add some information to the manifest.json file. This information is added automatically by the [Create Project from Template wizard](https://github.com/SAP-samples/cloud-extension-html5-sample/tree/mission/mission/create-application/develop#develop-the-application-from-project-template) if you have chosen **Yes** to add Work Zone (renamed from SAP Launchpad) Configuration. You can also add the code snippet in step 3 manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the SAP Build Work Zone service. 
+In order that your HTML5 applications are visible to the SAP Build Work Zone, standard edition, you have currently to add some information to the manifest.json file. This information is added automatically by the [Create Project from Template wizard](https://github.com/SAP-samples/cloud-extension-html5-sample/tree/mission/mission/create-application/develop#develop-the-application-from-project-template) if you have chosen **Yes** to add SAP Build Work Zone, standard edition (renamed from SAP Launchpad) Configuration. You can also add the code snippet in step 3 manually. The HTML5 applications you want to expose must be deployed to the same subaccount as the SAP Build Work Zone service. 
 
 For more information, check [Run Applications in SAP Build Work Zone, standard edition](https://help.sap.com/docs/WZ_STD/8c8e1958338140699bd4811b37b82ece/490a93e539e445e6b4bf7a6e7a3f4874.html).
 
@@ -139,7 +139,7 @@ For more information, check [Run Applications in SAP Build Work Zone, standard e
 
    ![check App in Launchpad](./images/checkAppinLaunchpad.png)
    
-4. You can see that the **BusinessPartners** application opens in the Launchpad site successfully as below. 
+4. You can see that the **BusinessPartners** application opens in the company site which can be a central point of access for all your applications. 
 
    ![business Partners App](./images/businessPartnersApp.png)
 

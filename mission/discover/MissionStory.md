@@ -10,7 +10,7 @@ This includes the following steps:
 * Set up the connectivity
 * Security setup of the landscape using SSO (principal propagation)
 * Implement a simple UI application
-* Learn the advantages of the different deployment options – stand-alone, integration in central SAP Launchpad
+* Learn the advantages of the different deployment options – stand-alone, integration with the SAP Build Work Zone, standard edition
 * Learn how to use the SAP Continuous Integration and Delivery service and how to monitor your application.
 
 This mission has a very broad scope. To complete this mission, three different personas of your IT organization would be involved:

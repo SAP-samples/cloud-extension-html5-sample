@@ -5,7 +5,7 @@
 For running the HTML5 mission you will need the following services in your SAP Business Technology (SAP BTP) account:
 
 * SAP Business Application Studio
-* SAP Launchpad or optional SAP Cloud Portal service  
+* SAP Build Work Zone, standard edition 
 * SAP HTML5 Application (kernel service - no quota necessary)
 * SAP Continuous Integration & Delivery Service (optional)
 
@@ -121,7 +121,7 @@ In your new subaccount check the following:
    
      ![Check account](./images/check-booster2.png)
 
-4. You can check that all necessary roles already assigned for the Administrator users to access **Business Application Studio**, **Launchpad** and **Continous Integration & Delivery service**. Choose **Edit** to add additional roles and user to to this role collection. 
+4. You can check that all necessary roles already assigned for the Administrator users to access **Business Application Studio**, **SAP Build Work Zone, standard editionSAP Build Work Zone, standard edition** and **Continous Integration & Delivery service**. Choose **Edit** to add additional roles and user to to this role collection. 
 
      ![Check account](./images/adminRole.png)
      
@@ -134,7 +134,7 @@ In your new subaccount check the following:
 7. Choose **Services** and then choose **Instances and Subscriptions**. Select the tab **Subscriptions**, You should see that the following services have been subscribed:
 
     * SAP Business Application Studio
-    * Launchpad
+    * SAP Build Work Zone, standard editionSAP Build Work Zone, standard edition
     * Continuous Integration & Delivery Service (optional)
   
    Choose "Go to Application" to see if you're able to access the subscriptions.
