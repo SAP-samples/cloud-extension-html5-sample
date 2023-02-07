@@ -32,9 +32,9 @@ For more information, check [Run Applications in SAP Build Work Zone, standard e
 3. Open the manifest.json and check if the following source code snippet inside the **sap.app** section is already added automatically from the Project creation wizard. If you don't have this code snippet, add the following snippet manually. Do not forget to add a **,** to this **sap.app** section before you add the code below.
 
    ```
-   "crossNavigation": {
+   crossNavigation": {
             "inbounds": {
-                "intent1": {
+                "sap-btp-sapui5-inbound": {
                     "signature": {
                         "parameters": {},
                         "additionalParameters": "allowed"
@@ -42,12 +42,12 @@ For more information, check [Run Applications in SAP Build Work Zone, standard e
                     "semanticObject": "BusinessPartners",
                     "action": "display",
                     "title": "BusinessPartners",
-                    "info": "List of BusinessPartners",
+                    "subTitle": "List of BusinessPartners",
                     "icon": "sap-icon://BusinessSuiteInAppSymbols/icon-business-partner"
                 }
             }
         }
-   ```
+      ```
 4. In order that data of the extension application is displayed correctly in the SAP Build Work Zone site, check also the value of **sap.cloud** in webapp/manifest.json file.
 
    ![check manifest](./images/checkmanifest.png)
@@ -77,7 +77,7 @@ For more information, check [Run Applications in SAP Build Work Zone, standard e
 
 ### Add HTML5 application to necessary Group and Role
   
-1. Click on *Provider Manager* to check the Content Providers and to refresh the list of HTML5 Applications. 
+1. Click on *Channel Manger* to check the Content Providers and to refresh the list of HTML5 Applications. 
 
    ![check Created Site](./images/checkCreatedSite.png)
    

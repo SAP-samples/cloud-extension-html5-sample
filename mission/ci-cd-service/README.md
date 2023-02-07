@@ -172,7 +172,7 @@ We recommend using a technical user. However, you can use also use your cloud cr
     
 18. For **Content Type**, select **application/json** and configure the job to be triggered for every **Push** event and choose **Add Webhook**. Now, any new push request to this repository triggers the CI/CD pipeline you have created.
 
-19. To trigger the pipeline manually, select the CI/CD job you have created and choose the **Trigger build** icon as shown below. 
+19. To trigger the pipeline manually, select the CI/CD job you have created and choose **Run** as shown below. 
 
     ![manual trigger Job](./images/triggerbuild.png)
     
@@ -219,3 +219,4 @@ You have successfully configured and added a continous integration / continous d
 - [Git - Initializing a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init)
 - [Assigning Roles and Permissions for SAP Continous Integration and Delivery](https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/c679ebdbe76142bd9fb1071e5e53511d.html)
 
+	
