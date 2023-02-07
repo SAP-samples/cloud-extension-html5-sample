@@ -23,14 +23,14 @@ There are two ways to establish a trust between the IDP and your SAP BTP account
 You can manage trust configurations for a global account only if you have created the global account or if you are an SCP Administrator of the account and you are an Administrator in your company's Identity and Authentication Tenant(SAP IAS).
 
 
-1. Click on your Subaccount.
-2. Click on Security > Trust Configuration from left pane. 
-3. Click on **SAML Metadata** button and download the XML file.
+1. Select your Subaccount.
+2. Choose Security > Trust Configuration from left pane. 
+3. Choose **SAML Metadata** button and download the XML file.
    
    ![Download XML](./images/CustIDP-SAML.png)
    
 4. Now, open your company's Identity and Authentication Tenant (SAP IAS) and login to the same.
-5. Select **Application & Resources** > Application from left pane.
+5. Select **Application & Resources** > **Applications** from left pane.
 6. Choose **Create**.
    
    ![Add App](./images/CustIDP-addApp.png)
@@ -39,18 +39,21 @@ You can manage trust configurations for a global account only if you have create
 8. Select **Save**.
 
    ![Save App](./images/CustIDP-saveApp.png)
-9. Choose **SAML 2.0 Configuration** under Trust Tab.
+   
+9. Choose **SAML 2.0 Configuration** in **Trust** > **Single Sign-On** section.
    
    ![Configure SAML](./images/CustIDP-configureSAML.png)
-10. Seletct **Browse** for Metadata file upload. Choose the metadata xml file downloaded from previous step number 3.
+   
+10. Choose **Browse** to upload the Metadata file of your SAP BTP subaccount. Choose the metadata xml file downloaded from previous step number 3.
 
-    ![Save SAML](./images/CustIDP-saveSAML.png)   
-11. Click on Save button.
-12. Click on **Subject Name Identifier**
+    ![Save SAML](./images/CustIDP-saveSAML.png)
+    
+11. Choose **Save** button.
+12. Choose **Subject Name Identifier**
     
     ![Subject NameID](./images/CustIDP-subjectNameID.png) 
    
-13. Choose basic attribute as E-mail and Click on Save button.
+13. Choose basic attribute as E-mail and Choose Save button.
    
     ![Save Subject NameID](./images/CustIDP-subjectNameIDSave.png) 
 
@@ -58,7 +61,7 @@ You can manage trust configurations for a global account only if you have create
     
     ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
-15. Click on Add and select the Groups attribute, set the assertion attribute to "Groups" with capital G. Click on save
+15. Choose Add and select the Groups attribute, set the assertion attribute to "Groups" with capital G. Choose save
  
     ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
 
@@ -86,12 +89,12 @@ You can manage trust configurations for a global account only if you have create
 19. Map the group to a user which should have the UX extension developer role. 
     * Open User Management
     * Select the user  
-    * Click on User Groups
+    * Choose User Groups
     * Press **Assign Groups**
    
     ![User Groups](./images/CustIDP-assertGroup.png)
 
-20. Check the ExtensionDeveloper group and click on save.
+20. Check the ExtensionDeveloper group and choose **Save**.
    
     ![User Groups](./images/CustIDP-assertGroup2.png)
 
@@ -102,26 +105,26 @@ You can manage trust configurations for a global account only if you have create
 ### Establish Trust with a custom SAML 2.0 Identity Provider in your Subaccount
 You have your company's SAML 2.0 identity provider, for example, SAP Cloud Identity Authentication service. This is where your business users are stored. You must establish a trust relationship with your custom SAML 2.0 identity provider in your subaccount in SAP BTP. The following procedure describes how you establish trust in the SAP Cloud Identity Authentication service.
 
-1. Click on **Application & Resources** > Tenant settings from the left pane.
-2. Click on SAML 2.0 Configuration.
+1. Choose **Application & Resources** > **Tenant settings**.
+2. Select **SAML 2.0 Configuration**.
 
    ![Download SAML](./images/CustIDP-IAS-SAML.png) 
    
-3. Click on Download Metadata file button.
+3. Choose **Download Metadata File** button.
 
-   ![Download SAML](./images/CustIDP-downloadIAS-SAML.png)
+   ![Download SAML1](./images/CustIDP-downloadIAS-SAML.png)
    
 4. Now, login again to your CF subaccount and choose Security > Trust Configuration.
-5. Click on New Trust Configuration button.
+5. Choose New Trust Configuration button.
  
    ![Configure Trust](./images/CustIDP-configurenewTrust.png)
    
-6. Click on **Upload** to upload metadata file. Choose the Tenant metadata file downloaded from previous step.
+6. Choose **Upload** to upload metadata file. Choose the Tenant metadata file downloaded from previous step.
 7. Enter Name. For eg., **ExtendUI-Tenant**
    
    ![Configure Trust](./images/CustIDP-configurenewTrust1.png)
    
-8. Click on **Save**.
+8. Choose **Save**.
 9. Now assign the created Identity Provider groups with the role collections of your subaccount in SAP BTP by following the steps [Map IDP Groups with Role Collection](./AutomaticTrust.md#map-idp-groups-with-role-collection).
 
 

@@ -44,7 +44,14 @@ Create a simple UI extension application in SAP Business Application Studio usin
 
     ![copy Space Name](./images/copySpaceName.png)
 
-5. Switch to the tab where you have opened **SAP Business Application Studio**. In the tabs, choose **View** > **Select** > **Find Command**.
+5. Switch to the tab where you have opened **SAP Business Application Studio**. Let us customize the editor layout to show the **Menu Bar**. Choose **Customize Layout** on top right, toggle the visibilty of **Menu bar** by selecting it to On.
+   
+   ![customize](./images/customizeLayout.png)
+   
+6. In the Main Menu, choose **View** > **Command Palette**.
+
+	![Login to CF](./images/openCommands.png)
+
 6. Search for **CF Login** and select **CF: Login on to Cloud Foundry**.
 
     ![Login to CF](./images/loginToCF.png)
@@ -62,7 +69,7 @@ Create a simple UI extension application in SAP Business Application Studio usin
 
 ### Develop the Application from Project Template
 
-1. Click on **Start from template** in the Welcome page to create the project. Alternatively, Go to **View** > **Find Command** and search for **Create Project**. Select the command **SAP Application Studio: Create project from Template**.
+1. Choose **Start from template** in the **Get Started** page to create the project. Alternatively, Go to main menu **File** > **New project from Template**.
 
    ![Create Project](./images/createProject.png)
     
@@ -134,13 +141,13 @@ Create a simple UI extension application in SAP Business Application Studio usin
 
      ![fioriLaunchpadConfig](./images/fioriLaunchpadConfig.png)
      
-9. Once the project is generated, choose **File**, **Open Workspace** from the menu and select the created project **sapui5**. Choose **Open** to open the workspace.
+9. Once the project is generated, a popup comes up asking you to open the newly generated project folder, choose **Open folder** to open the created project **sapui5**. 
 
    ![Open Workspace](./images/OpenWorkspace.png)
 
 
 10. Check in the generated code if the mapping to the Business Partner Address is correct. 
-    - Open **Details.view.xml**. You find the file in the webapp/view folder of the project.
+    - Open **Details.view.xml** from the webapp/view folder of the project.
     - Search for id="lineItemsList" and set the items parameter to **to_BusinessPartnerAddress**
     - Save the file.
     
