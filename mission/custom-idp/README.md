@@ -87,10 +87,10 @@ You can manage trust configurations for a global account only if you have create
      * Press **Create**
   
 19. Map the group to a user which should have the UX extension developer role. 
-    * Open User Management
-    * Select the user  
-    * Choose User Groups
-    * Press **Assign Groups**
+    * Choose **User Management**
+    * Select the user you want to assign the developer role
+    * Choose **User Groups**
+    * Select **Assign Groups**
    
     ![User Groups](./images/CustIDP-assertGroup.png)
 
@@ -100,7 +100,7 @@ You can manage trust configurations for a global account only if you have create
 
     Repeat the last 2 steps for all user that needs the extension developer privilege.
 
-21. Repeat steps 19&20 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
+21. Repeat steps 19 and 20 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
 
 ### Establish Trust with a custom SAML 2.0 Identity Provider in your Subaccount
 You have your company's SAML 2.0 identity provider, for example, SAP Cloud Identity Authentication service. This is where your business users are stored. You must establish a trust relationship with your custom SAML 2.0 identity provider in your subaccount in SAP BTP. The following procedure describes how you establish trust in the SAP Cloud Identity Authentication service.
