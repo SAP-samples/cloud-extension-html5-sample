@@ -97,7 +97,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    3. If no sub-folders are present, right click and Create
    4. Scroll down to certificate and click on **Import certificate** icon
    
-   ![STRUST](./images/S4PrincipalPropagation1.png)
+      ![STRUST](./images/S4PrincipalPropagation1.png)
 
 3. Upload Certificate
    1. Under the tab 'File', choose the file path of **sys\_Cert.DER** file which you have download from the Cloud Connector System certificate step 3.
@@ -105,12 +105,18 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    3. Click on **Add to Certificate List** button
    4. Click on **Save** button
 
-   ![STRUST](./images/S4PrincipalPropagation1a.png)
+      ![STRUST](./images/S4PrincipalPropagation1a.png)
+   
+   5. You can see the imported system certificate in the **Certificate List**
+   
+      ![trust08](./images/sccTrustStore08.png) 
+   
 4. Create Certification Rule - call transaction /nCERTRULE
    1. Click on **Display/Change** icon to Edit mode.
    2. Click on **Import certificate** icon next to Subject textbox. Choose the **scc\_sample\_cert.DER** file which you have downloaded from Cloud Connector Principal propagation tab in step 5. 
-   3. Click on **Rule** button and confirm.   
-   ![STRUST](./images/S4PrincipalPropagation2.png)
+   3. Click on **Rule** button and confirm.  
+    
+      ![STRUST](./images/S4PrincipalPropagation2.png)
    
 
 5. Define Rule
@@ -136,6 +142,10 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 8. Add icm/trusted\_reverse\_proxy\_0 parameter
    1. Enter parameter name as **icm/trusted\_reverse\_proxy\_0**
    2. Enter parameter value as **SUBJECT="CN=\<your CN\>, L=\<your city\>, O=\<your company\>, C=\<your country\>", ISSUER="CN=REFAPPS, L=\<your city\>, O=\<your company\>, C=\<your country\>"**. The values must be the same as from the certificate we have created in Cloud Connector on step 3. Make sure that there is a blankspace between Subject and Issuer as in screenshot below.
+   3. To make sure you can entering the correct value, select transaction **/oSTRUST** and choose the imported cloud connector certificate which you added in step 3 above. Copy the value of **Subject** and **Issuer** and give in the parameter value with a blankspace between Subject and Issuer as in screenshot below.
+      
+      ![trust08](./images/sccTrustStore08.png) 
+      
    3. Click on **Copy** and then **Back**
 
    ![STRUST](./images/S4PrincipalPropagation5.png)
@@ -163,6 +173,43 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
 
 
      After the restart, your system is ready for Principal Propagation with the Cloud Connector.
+     
+ 
+### **D: Configure SAP Cloud Connector Trust Store**
+
+As of SAP Cloud Connector version 2.15, Cloud connector does not trust any backend system by default when connecting via TLS. So for using the principal propagation setup, we need the cloud connector to trust our SAP S/4HANA backend system. See [official SAP Help](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/configure-trust#configure-the-trust-store-(as-of-version-2.15))
+
+1. Login to Cloud Connector with the administrator user you have created at the installation.
+2. Choose **Configuration**, **On Premise** and scroll down to **Trust Store**. You will see the **Trust Store** only from cloud connector version 2.15. You can ignore the steps below if you have an older version of cloud connector.
+   
+   ![trust01](./images/sccTrustStore01.png) 
+   
+3. For demo usage, you can choose that the cloud connector trusts all backends. You can configure this by switching off **Determining Trust Through Allowlist**
+
+   ![trust02](./images/sccTrustStore02.png) 
+   
+4. For productive usage, you can import the certificate of the SAP S/4HANA backend system and import in the cloud connector. Choose to switch on **Determining Trust Through Allowlist**
+
+5. To export the SAP S/4HANA self certificate, login to the SAP S/4HANA system and select transaction **/nSTRUST**. 
+6. Double-click **SSL server standard** and choose **Own Certificate**. Double-click the **Subject** of the own certificate to see the details of the certificate. Choose **Export certificate**.
+
+   ![trust03](./images/sccTrustStore03.png) 
+   
+7. Choose the **File path** to a local folder and select the file extension as **.der** and choose **File format** as **binary** and export the SAP S/4HANA own certificate.
+   
+   ![trust04](./images/sccTrustStore04.png) 
+   
+8. Switch to the SAP Cloud connector Administration tab and choose **Configuration**, **On Premise** and scroll down to **Trust Store**. and enable the **Determining Trust Through Allowlist** if not already done.
+   
+   ![trust05](./images/sccTrustStore05.png) 
+   
+10. Click **+** to import the SAP S/4HANA certificate which we downloaded in step 7 and select the file to import the certifcate.
+
+    ![trust06](./images/sccTrustStore06.png)
+    
+11. Your SAP S/4HANA backend system certificate is listed in the **Allowed list** of trusted backend by the SAP cloud connector.
+     
+    ![trust07](./images/sccTrustStore07.png)
 
 
 ## Summary
