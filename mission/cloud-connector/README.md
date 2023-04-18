@@ -120,7 +120,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    
 
 5. Define Rule
-   1. In the Certificate Attr. Dropdown choose **CN=<email id of user created>
+   1. In the Certificate Attr. Dropdown choose **CN=\<email id of user created\>**
    2. Choose Login as Email
    3. Click **Ok**
    4. Click on **Save** icon
