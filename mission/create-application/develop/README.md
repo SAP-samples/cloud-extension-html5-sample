@@ -78,7 +78,7 @@ Create a simple UI extension application in SAP Business Application Studio usin
    ![Choose Template](./images/ChooseTemplate.png)
 
 3. In the **Floorplan Selection**, choose the following:
-   - For the field, **Application Type**, choose **SAPUI5 freestyle** from the drop-down.
+   - For the field, **Application Type**, choose **Deprecated Templates** from the drop-down.
    - Select floorplan as **SAP Fiori List-Detail Application**.
    - Choose **Next**.
    
