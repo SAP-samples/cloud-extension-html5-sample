@@ -107,38 +107,56 @@ We recommend using a technical user. However, you can use also use your cloud cr
    ![Cloud Credentials](./images/cloudCredentials.png)
     
 7. Select the **Repositories** tab and then choose the **+** icon to create a new repository.
+
 8. In the **Add Repository** screen enter the following values:
-   * In the **Name** field set the name for the repository for example: cloud-extension-html5-sample
+   * In the **Name** field set the name for the repository for example: cloud-extension-sf-mission
    * In the **Clone URL** set the clone URL of your GitHub repository
-   * In the **Credentials** field, choose the credentials for your GitHub repository which you created in step 6  - it is necessary for private GitHub repositories.
-   * In the **Type** field choose GitHub   
-   * In the **Webhook Credential** field, choose the default option: **GENERATE**
-   * Keep the **State** field as **ON**
-   * **Add** the repository  
-   
+   * In the **Credentials** field choose the credentials for your GitHub repository which you created in step 5 in the first section  - it is necessary for private GitHub repositories.
+  
    ![create repository](./images/repository1.png)
 
-9. Select the created repository. On the right top choose the symbol '**...**' and then choose **Webhook Data**.
-
-   ![create repository](./images/repository2.png)
-
-
-10. The **Webhook Creation** pop-up appears. It provides you with the data you need to define a webhook in GitHub. Copy the **Payload URL** and the **Secret** into a text editor of your choice.
+9. At the WEBHOOK EVENT RECEIVER section add the following
    
-     ![copy payload URL](./images/repository3.png)
-   
+   * In the **Type** field chosse GitHub
+   * In the **Webhook Credential** field choose **\Create Credentials\>**
+   * Keep the **State** field on
+  
+   ![add credentials](./images/webhookCredentials01.png)
 
-11. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the **API Endpoint** and **Org Name** into a text editor of your choice.  
+
+10. In the **Create Credential** window do the following
+   
+   * Enter a name for the credentials
+   * Generate a secret
+   * Copy the secret into a text editor of your choice.
+   * Press Create
+  
+     ![add credentials](./images/webhookCredentials.png)
+
+11. Press *Add* to save the repository 
+   
+    ![add credentials](./images/repositoryAdd.png)
+
+
+12. The Webhook Creation pop-up appears. It provides you with the data you need to define a webhook in GitHub. Copy the **Payload URL** into a text editor of your choice.
+   
+     ![copy payload URL](./images/webhookdata.png)
+    
+13. Open your GitHub repository and choose **Settings** --> **Webhooks** --> **Add webhook**.
+
+     ![add Web Hook](./images/addWebHook.png)
+
+14. Before creating the CI/CD Job, let us copy the Cloud Foundry API endpoint, Org and Space which is needed for this next step. Choose the Overview page of your SAP BTP subaccount and copy the **API Endpoint** and **Org Name** into a text editor of your choice.  
 
     ![copy Cloud Data](./images/copyCloudData.png)
     
-12. Choose **Spaces** and copy the space name to a text editor of your choice. 
+15. Choose **Spaces** and copy the space name to a text editor of your choice. 
 
     ![copy Space Name](./images/copySpaceName.png)
 
-13. Go back to the SAP Continous Integration and Delivery service. Choose the **Jobs** tab and **+** icon to create a new job.
+16. Go back to the SAP Continous Integration and Delivery service. Choose the **Jobs** tab and **+** icon to create a new job.
 
-14. In the **Create Job** screen, enter the following inputs :
+17. In the **Create Job** screen, enter the following inputs :
     
     - In the **Job Name** field enter a name for example, **cloud-extension-html5-mission**
     - In the **Repository** field choose the repository you have created in step 8. 
@@ -149,7 +167,7 @@ We recommend using a technical user. However, you can use also use your cloud cr
     
     ![create CICD Job](./images/cicdjob1.png)
     
-15. In the **Stages** section do the following:
+18. In the **Stages** section do the following:
    - In the **Configuration Mode** field choose **Job Editor**
    - Choose **ON** for the **State** field in the **Build** section
    - In the Malware Scan section choose **ON** for the **State** field. This will force a check for malicious software in your build package. 
@@ -162,21 +180,21 @@ We recommend using a technical user. However, you can use also use your cloud cr
    ![create CICD Job](./images/cicdjob2.png)
    ![create CICD Job](./images/cicdjob2a.png)
     
-16. Open your GitHub repository and choose **Settings** --> **Webhooks** --> **Add webhook**.
+19. Open your GitHub repository and choose **Settings** --> **Webhooks** --> **Add webhook**.
 
     ![add Web Hook](./images/addWebHook.png)
     
-17. For the **Payload URL** and **Secret**, copy and paste the payload URL and secret from step 10.
+20. For the **Payload URL** and **Secret**, copy and paste the payload URL and secret from step 10.
 
     ![add Web Hook](./images/addWebHook1.png)
     
-18. For **Content Type**, select **application/json** and configure the job to be triggered for every **Push** event and choose **Add Webhook**. Now, any new push request to this repository triggers the CI/CD pipeline you have created.
+21. For **Content Type**, select **application/json** and configure the job to be triggered for every **Push** event and choose **Add Webhook**. Now, any new push request to this repository triggers the CI/CD pipeline you have created.
 
-19. To trigger the pipeline manually, select the CI/CD job you have created and choose **Run** as shown below. 
+22. To trigger the pipeline manually, select the CI/CD job you have created and choose **Run** as shown below. 
 
     ![manual trigger Job](./images/triggerbuild.png)
     
-20. You can see the successful log results of **Build** and **Deploy**. To view the full log file, click on the respective tile.
+23. You can see the successful log results of **Build** and **Deploy**. To view the full log file, click on the respective tile.
 	
     ![Build Deploy Results](./images/buildresult.png)   
 
