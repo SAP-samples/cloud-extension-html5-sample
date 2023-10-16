@@ -35,12 +35,11 @@ You can manage trust configurations for a global account only if you have create
    
    ![Add App](./images/CustIDP-addApp.png)
    
-7. Enter Name. For eg., **ExtendUI\_IDP** and choose **SAP BTP solution** as **Application Type**
-8. Select **Save**.
+7. Enter the Display Name for example **ExtendUI\_IDP**, choose **SAP BTP solution** as **Type** and the **SAML 2.0** protocol. Select **Create**.
 
    ![Save App](./images/CustIDP-saveApp.png)
    
-9. Choose **SAML 2.0 Configuration** in **Trust** > **Single Sign-On** section.
+9. In the **Trust** section choose **SAML 2.0 Configuration**  
    
    ![Configure SAML](./images/CustIDP-configureSAML.png)
    
