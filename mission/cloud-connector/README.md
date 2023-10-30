@@ -127,19 +127,21 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
     
       ![STRUST](./images/S4PrincipalPropagation2a.png)
 
-6. Change System Parameter - call transaction /nRZ10
+    > To use the rule based certification mapping check if the [login/certificate_mapping_rulebased parameter is enabled](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/rule-based-mapping-of-certificates)
+
+7. Change System Parameter - call transaction /nRZ10
    1. Choose Profile **DEFAULT**
    2. Choose **Extended maintenance** under edit profile
    3. Click on **Change** button and press Save in the popup.
       
    ![STRUST](./images/S4PrincipalPropagation3.png)
 
-7. Add a new Parameter in Profile 'DEFAULT' 
+8. Add a new Parameter in Profile 'DEFAULT' 
    1. Select the **Create Parameter** icon
     
    ![STRUST](./images/S4PrincipalPropagation4.png)
 
-8. Add icm/trusted\_reverse\_proxy\_0 parameter
+9. Add icm/trusted\_reverse\_proxy\_0 parameter
    1. Enter parameter name as **icm/trusted\_reverse\_proxy\_0**
    2. Enter parameter value as **SUBJECT="CN=\<your CN\>, L=\<your city\>, O=\<your company\>, C=\<your country\>", ISSUER="CN=REFAPPS, L=\<your city\>, O=\<your company\>, C=\<your country\>"**. The values must be the same as from the certificate we have created in Cloud Connector on step 3. Make sure that there is a blankspace between Subject and Issuer as in screenshot below.
    3. To make sure you can entering the correct value, select transaction **/oSTRUST** and choose the imported cloud connector certificate which you added in step 3 above. Copy the value of **Subject** and **Issuer** and give in the parameter value with a blankspace between Subject and Issuer as in screenshot below.
@@ -151,7 +153,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation5.png)
    
    
-9. Save the Profile
+10. Save the Profile
     1. In the next screen too, click on **Copy** and then **Back**. Click on **Save** button    
     2. Click on **No** (if asked for error check)
     3. Click on **Yes** for activate profile
@@ -159,7 +161,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
    ![STRUST](./images/S4PrincipalPropagation6.png)
    
 
-10.  Restart ICM 
+11.  Restart ICM 
 
      For taking the certificate and profile change effect you have to restart the ICM system. - Call transaction **/nSMICM**    
     
