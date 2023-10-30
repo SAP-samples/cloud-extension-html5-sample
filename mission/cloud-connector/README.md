@@ -127,7 +127,7 @@ To establish a secure connection between your SAP S/4HANA system and the cloud c
     
       ![STRUST](./images/S4PrincipalPropagation2a.png)
 
-    > To use the rule based certification mapping check if the [login/certificate_mapping_rulebased parameter is enabled](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/rule-based-mapping-of-certificates)
+    > To use the rule based certification mapping check if the [login/certificate_mapping_rulebased parameter](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/rule-based-mapping-of-certificates) is enabled.
 
 7. Change System Parameter - call transaction /nRZ10
    1. Choose Profile **DEFAULT**
