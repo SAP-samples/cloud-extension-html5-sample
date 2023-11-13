@@ -56,19 +56,16 @@ You can manage trust configurations for a global account only if you have create
    
     ![Save Subject NameID](./images/CustIDP-subjectNameIDSave.png) 
 
-14. Select Assertion Attributes
+14. Select Attributes. In the Self-defined Attributes section, select new and add a new entry **Groups** with the source **Identity Directory** and value **Groups**. Save your settings. 
     
     ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
-15. Choose Add and select the Groups attribute, set the assertion attribute to "Groups" with capital G. Choose save
- 
-    ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
 
-16. In the Home view select User Groups
+15. In the Home view select User Groups
 
     ![User Groups](./images/CustIDP-addGroups.png)
 
-17. Create an Extension Developer group. 
+16. Create an Extension Developer group. 
     * Select **Create**
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
@@ -78,14 +75,14 @@ You can manage trust configurations for a global account only if you have create
     ![User Groups](./images/CustIDP-addGroups2.png)
 
 
-18.  Create an Extension Administrator group. Same steps as before.     
+17.  Create an Extension Administrator group. Same steps as before.     
      * Select **Create**
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
      * Press **Create**
   
-19. Map the group to a user which should have the UX extension developer role. 
+18. Map the group to a user which should have the UX extension developer role. 
     * Choose **User Management**
     * Select the user you want to assign the developer role
     * Choose **User Groups**
@@ -93,13 +90,13 @@ You can manage trust configurations for a global account only if you have create
    
     ![User Groups](./images/CustIDP-assertGroup.png)
 
-20. Check the ExtensionDeveloper group and choose **Save**.
+19. Check the ExtensionDeveloper group and choose **Save**.
    
     ![User Groups](./images/CustIDP-assertGroup2.png)
 
     Repeat the last 2 steps for all user that needs the extension developer privilege.
 
-21. Repeat steps 19 and 20 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
+20. Repeat steps 19 and 20 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
 
 ### Establish Trust with a custom SAML 2.0 Identity Provider in your Subaccount
 You have your company's SAML 2.0 identity provider, for example, SAP Cloud Identity Authentication service. This is where your business users are stored. You must establish a trust relationship with your custom SAML 2.0 identity provider in your subaccount in SAP BTP. The following procedure describes how you establish trust in the SAP Cloud Identity Authentication service.
