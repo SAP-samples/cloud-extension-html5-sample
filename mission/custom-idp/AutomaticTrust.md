@@ -57,7 +57,7 @@ Establishing the trust between your company's IDP could be done in an automatic 
 13. Check if the Subject Name Identifier is set to E-mail. If not change it.
     ![Subject Name Identifier](./images/CustIDP_subjectName.png) 
 
-14. Select Attributes. In the Self-defined Attributes section, select new and add a new entry **Groups** with the source **Identity Directory** and value **Groups**. Save your settings. 
+14. Select Attributes. In the Self-defined Attributes section, select **Add** and add a new entry **Groups** with the source **Identity Directory** and value **Groups**. Save your settings. 
     
    ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 

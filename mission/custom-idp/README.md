@@ -56,7 +56,7 @@ You can manage trust configurations for a global account only if you have create
    
     ![Save Subject NameID](./images/CustIDP-subjectNameIDSave.png) 
 
-14. Select Attributes. In the Self-defined Attributes section, select new and add a new entry **Groups** with the source **Identity Directory** and value **Groups**. Save your settings. 
+14. Select Attributes. In the Self-defined Attributes section, select **Add** and add a new entry **Groups** with the source **Identity Directory** and value **Groups**. Save your settings. 
     
     ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
