@@ -96,7 +96,7 @@ You can manage trust configurations for a global account only if you have create
 
     Repeat the last 2 steps for all user that needs the extension developer privilege.
 
-20. Repeat steps 19 and 20 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
+20. Repeat steps 18 and 19 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
 
 ### Establish Trust with a custom SAML 2.0 Identity Provider in your Subaccount
 You have your company's SAML 2.0 identity provider, for example, SAP Cloud Identity Authentication service. This is where your business users are stored. You must establish a trust relationship with your custom SAML 2.0 identity provider in your subaccount in SAP BTP. The following procedure describes how you establish trust in the SAP Cloud Identity Authentication service.

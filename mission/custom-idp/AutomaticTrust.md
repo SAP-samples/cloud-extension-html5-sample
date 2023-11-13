@@ -57,19 +57,17 @@ Establishing the trust between your company's IDP could be done in an automatic 
 13. Check if the Subject Name Identifier is set to E-mail. If not change it.
     ![Subject Name Identifier](./images/CustIDP_subjectName.png) 
 
-14. Select Assertion Attributes
+14. Select Attributes. In the Self-defined Attributes section, select new and add a new entry **Groups** with the source **Identity Directory** and value **Groups**. Save your settings. 
     
    ![Assertion Attributes](./images/CustIDP-addAssertion.png) 
 
-15. Choose **Add** and select the **Groups** attribute, set the assertion attribute to **Groups** with capital G. Click on save
- 
-   ![Set Assertion Group](./images/CustIDP-addGroupAssertion.png)  
 
-16. In the Home view select User Groups
+
+15. In the Home view select User Groups
 
    ![User Groups](./images/CustIDP-addGroups.png)
 
-17. Create a Extension Developer group. 
+16. Create a Extension Developer group. 
     * Select **Create**
     * Set Name = ExtensionDeveloper
     * Set Display name = ExtensionDeveloper
@@ -79,14 +77,14 @@ Establishing the trust between your company's IDP could be done in an automatic 
    ![User Groups](./images/CustIDP-addGroups2.png)
 
 
-18. Create a Extension Administrator group. Same steps as before.     
+17. Create a Extension Administrator group. Same steps as before.     
      * Select **Create**
      * Set Name = ExtensionAdministrator
      * Set Display name = ExtensionAdministrator
      * Enter a description
      * Press **Create**
   
-19. Map the group to a user which should have the UX extension developer role. 
+18. Map the group to a user which should have the UX extension developer role. 
     * Open User Management
     * Select your user  
     * Click on User Groups
@@ -94,13 +92,13 @@ Establishing the trust between your company's IDP could be done in an automatic 
    
    ![User Groups](./images/CustIDP-assertGroup.png)
 
-20. Check the ExtensionDeveloper group and click on save.
+19. Check the ExtensionDeveloper group and click on save.
    
    ![User Groups](./images/CustIDP-assertGroup2.png)
 
     Repeat the last 2 steps for all user that needs the extension developer privilege.
 
-21. Repeat steps 19&20 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
+20. Repeat steps 18 & 19 by mapping the **ExtensionAdministrator** group to all users that should have the UX extension administrator role. 
 
 ### Map IDP Groups with Role Collection
 
