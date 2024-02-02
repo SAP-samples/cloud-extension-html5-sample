@@ -18,8 +18,7 @@ In this section we set up the end-to-end communication between the SAP S/4HANA o
    
    ![Get Subaccount](./images/subaccount.png) 
 
-2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user, you can create a new user with the technical roles for the Cloud Connector. See [Communication User](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/daca64dacc6148fcb5c70ed86082ef91.html) for more details.
-
+2. (optional) If you don't want to use the SAP BTP administrator credentials as communication user, enable custom identity provider (IDP) authentication to configure a [Cloud Foundry subaccount in the Cloud Connector by using a one-time passcode](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/use-custom-idp-for-subaccount-configuration).
 3. Create a new Connector to your SAP BTP subaccount: 
    1. Log in to the Cloud Connector and select the **Connector** entry.
    2. Select **+ Add Subaccount**
