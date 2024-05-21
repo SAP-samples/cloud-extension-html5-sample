@@ -1,4 +1,4 @@
-# Create Data Definition
+# Create the Data Definition
 
 ## Introduction 
 
