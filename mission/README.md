@@ -23,20 +23,32 @@ We will create a simple custom UI application, show the usage of the HTML5 repos
 * [Learn about DevOps and SAP Continous Integration and Delivery](./discover/CICD.md)
 * [Learn about SAP Work Zone](./discover/Launchpad.md)
 * [Learn about Observability on SAP BTP](./discover/Observability.md)
+* [Learn about ABAP Development Tools](./discover/adt.md)
 
-These are the step-by-step guidelines for running the mission. It is divided in two workstreams:
+These are the step-by-step guidelines for running the mission. It is divided in three workstreams:
 
 ## Landscape Setup
 
 The setup of the landscape consists of preparing the API in the SAP S/4HANA on-premise system and exposing the backend oData service using SAP Cloud Connector. There are also step-by-step instructions to setup the trust between SAP Cloud Connector and SAP S/4HANA system.
 
-* [Setup of SAP S/4HANA system from the SAP Cloud Appliance Library](https://github.com/SAP-samples/cloud-extension-ecc-business-process/blob/mission/mission/cal-setup/CALS4H.md)
-* [Set Up the SAP S/4HANA on-premise System](./s4h-setup/README.md)
-* [Set Up SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
-* [Set Up the SAP Business Technology Platform Account](./scp-setup/README.md)
+* [Set up an SAP S/4HANA system from the SAP Cloud Appliance Library - optional](https://github.com/SAP-samples/cloud-extension-ecc-business-process/blob/mission/mission/cal-setup/CALS4H.md)
+* [Set up the SAP S/4HANA on-premise System](./s4h-setup/README.md)
+* [Set up SAP Cloud Connector & Trust to the SAP S/4HANA System](./cloud-connector/README.md)
+* [Set up the SAP Business Technology Platform Account](./scp-setup/README.md)
 * [End-to-End Connectivity Setup](./connectivity/README.md)
-* [Set Up SAP Identity and Authentication Service (optional)](./custom-idp/README.md)
+* [Set up SAP Identity and Authentication Service (optional)](./custom-idp/README.md)
 
+## Implementation of a custom OData service
+
+After the setup is done we can start to create UI API for the future application. Standard APIs provided by SAP cannot be used for this purpose.
+
+* [Motivation](./rap-service/motivation.md)
+* [Explore Business Object Projection](./rap-service/explore-projection.md)
+* [Setup ABAP Development Tools](./rap-service/adt-setup.md)
+* [Create data definitions](./rap-service/create-data-definitions.md)
+* [Create a metadata extension](./rap-service/create-metadata-extension.md)
+* [Expose an OData service](./rap-service/expose.md)
+* [Test the service](./rap-service/test.md)
 
 ## Implementation of a simple UI application
 

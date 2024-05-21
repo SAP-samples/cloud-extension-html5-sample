@@ -134,7 +134,7 @@ With this step the on-premise setup is finished.
   
     * **Proxy Type**: OnPremise
     * **Authentication**: Principal Propagation. You can also use 'Basic Authentication' with your backend user and password to test for demo purposes.
-    * **Location ID**: optional field, you have use this field if you connect more than one cloud connectors to your account. See [Destination Configuration Help page](https://help.sap.com/viewer/6d3eac5a9e3144a7b43932a1078c7628/Cloud/en-US/0a2e5a45d5494ec08318ead2019d54db.html).
+    * **Location ID**: optional field, you have to use this field if you connect more than one SAP Cloud Connector to your account. See [Destination Configuration Help page](https://help.sap.com/viewer/6d3eac5a9e3144a7b43932a1078c7628/Cloud/en-US/0a2e5a45d5494ec08318ead2019d54db.html).
      
     Add the following properties by clicking on the **New Property** button:
 

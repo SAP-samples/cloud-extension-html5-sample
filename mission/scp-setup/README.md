@@ -25,11 +25,12 @@ You have to create entitlements for the above mentioned services. See section [E
 
 See sections [Enterprise Accounts and Commercial Models](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/171511cc425c4e079d0684936486eee6.html) and [Using Free Service Plans](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/524e1081d8dc4b0f9d055a6bec383ec3.html) for more details.
 
-## Setup of a SAP BTP Subaccount
+## Setup of an SAP BTP Subaccount
 
-You can setup a SAP BTP subaccount in different ways:
+You can set up an SAP BTP subaccount in different ways:
 
-- [Setup of a SAP BTP subccount using btp-setup-automator or manually](../freetier/README.md).
+- [Setup of an SAP BTP subccount manually](../freetier/README.md).
+- [Setup of an SAP BTP subaccount with the SAP BTP Terraform Provider](https://github.com/SAP-samples/btp-terraform-samples/tree/main/released/discovery_center/mission_3239)
 - Using **boosters**: Boosters are a collection of wizards that provides functionalities for specific scenarios to automate and speed-up the installation and configuration process of a SAP BTP subaccount. This also includes the user management with the mapping of the respective administrator and developer roles.
  
 **Persona:** Cloud Administrator
