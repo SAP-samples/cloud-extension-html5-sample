@@ -1,4 +1,4 @@
-# Expose Service
+# Expose the OData Service
 
 ## Introduction 
 
