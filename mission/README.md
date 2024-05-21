@@ -44,8 +44,8 @@ After the setup is done we can start to create UI API for the future application
 
 * [Motivation](./rap-service/motivation.md)
 * [Explore Business Object Projection](./rap-service/explore-projection.md)
-* [Setup ABAP Development Tools](./rap-service/adt-setup.md)
-* [Create the Data Definitions](./rap-service/create-data-definitions.md)
+* [Set up the ABAP Development Tools](./rap-service/adt-setup.md)
+* [Create the Data Definition](./rap-service/create-data-definitions.md)
 * [Create the Metadata Extension](./rap-service/create-metadata-extension.md)
 * [Expose the OData Service](./rap-service/expose.md)
 * [Test the Service](./rap-service/test.md)
