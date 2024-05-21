@@ -1,4 +1,4 @@
-# Create Metadata Extensions
+# Create the Metadata Extension
 
 ## Introduction 
 
