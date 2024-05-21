@@ -48,4 +48,4 @@ Once we have setup the landscape, we can now develop, test and run a simple UI a
 * [Integrate the Continous Integration & Continous Delivery Service](./ci-cd-service/README.md)
 * [Integrate the Application with SAP Build Work Zone, standard edition](./launchpad/README.md)
   
-![Solution diagram](./images/solution_diagram.png)
+![Solution diagram](./images/simpleUI.drawio.png)
