@@ -40,6 +40,17 @@ The setup of the landscape consists of preparing the API in the SAP S/4HANA on-p
 * [End-to-End Connectivity Setup](../../tree/mission/mission/connectivity/README.md)
 * [Setup SAP Identity and Authentication Service (optional)](../../tree/mission/mission/custom-idp/README.md)
 
+## Implementation of a custom OData service
+
+After the setup is done we can start to create UI API for the future application. Standard APIs provided by SAP cannot be used for this purpose.
+
+* [Motivation](../../tree/mission/mission/rap-service/motivation.md)
+* [Explore Business Object Projection](../../tree/mission/mission/rap-service/explore-projection.md)
+* [Set up the ABAP Development Tools](../../tree/mission/mission/rap-service/adt-setup.md)
+* [Create the Data Definition](../../tree/mission/mission/rap-service/create-data-definitions.md)
+* [Create the Metadata Extension](../../tree/mission/mission/rap-service/create-metadata-extension.md)
+* [Expose the OData Service](../../tree/mission/mission/rap-service/expose.md)
+* [Test the Service](../../tree/mission/mission/rap-service/test.md)
 
 ## Implementation of a simple UI application
 
