@@ -62,7 +62,7 @@ Once we have setup the landscape, we can now develop, test and run a simple UI a
 * [Integrate the Continous Integration & Continous Delivery Service](../../tree/mission/mission/ci-cd-service/README.md)
 * [Publishing your application to a SAP Launchpad site](../../tree/mission/mission/launchpad/README.md)
   
-![Solution diagram](./doc/img/solution_diagram.png)
+![Solution diagram](./doc/img/simpleUI.drawio.png)
 
 
 
