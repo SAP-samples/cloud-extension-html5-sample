@@ -20,7 +20,7 @@ This mission has a very broad scope. To complete this mission, three different p
 * UX Developer
 
 ### Prerequisites
-* SAP S/4HANA 2023
+* SAP S/4HANA 2023 or later
 * Installation of SAP Cloud Connector
 * SAP BTP subaccount with the following subscriptions:
    - SAP Business Application Studio
