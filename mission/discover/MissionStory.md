@@ -23,6 +23,6 @@ This mission has a very broad scope. To complete this mission, three different p
 * SAP S/4HANA 2023
 * Installation of SAP Cloud Connector
 * SAP BTP subaccount with the following subscriptions:
-   - SAP Business Application Studion
+   - SAP Business Application Studio
    - SAP Build Work Zone - standard edition
    - SAP Continuous & Integration service (optional)
