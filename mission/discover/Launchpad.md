@@ -35,4 +35,4 @@ For this mission, we use the **SAP Build Work Zone, standard edition** service t
 * [SAP Build Work Zone, standard edition](https://help.sap.com/docs/WZ_STD)
 * [Feature Scope Description for SAP Build Work
 Zone, standard edition](https://help.sap.com/doc/eb57eb0ef530411093f071d5d7b20b0a/Cloud/en-US/WZ_STD_FSD.pdf)
-* [What is SAP Work Zone, advanced edition?](https://help.sap.com/viewer/fec5ca6e3229418f84a932c745cbe985/Cloud/en-US)
+* [What is SAP Work Zone, advanced edition?](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/what-is-sap-build-work-zone-advanced-edition)
